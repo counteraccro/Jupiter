@@ -1,0 +1,8 @@
+parameters:
+    Player:
+        Aymeric:
+            setName: Aymeric
+            setHp: 100
+        Ryden:
+            setName: Ryden
+            setHp: 100
