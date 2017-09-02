@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>{% block title %}Welcome!{% endblock %}</title>
         
         <link rel="stylesheet" href="{{ asset('/bundles/app/css/materialize.min.css') }}" type="text/css" />
+        <link rel="stylesheet" href="{{ asset('/bundles/app/css/style.css') }}" type="text/css" />
         <script type="text/javascript" src="{{ asset('/bundles/app/js/jquery/jquery-3.2.1.min.js') }}"></script>
         <script type="text/javascript" src="{{ asset('/bundles/app/js/materialize.min.js') }}"></script>
          
@@ -12,7 +13,9 @@
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
+    	<div class="container">
         {% block body %}{% endblock %}
+        </div>
         {% block javascripts %}{% endblock %}
     </body>
 </html>
