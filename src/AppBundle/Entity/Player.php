@@ -27,6 +27,11 @@ class Player {
 	private $lobbyPlayers;
 	
 	/**
+	 * @ORM\OneToMany(targetEntity="AppBundle\Entity\Log", mappedBy="lobby")
+	 */
+	private $logs;
+	
+	/**
 	 *
 	 * @var string @Assert\NotBlank()
 	 *      @ORM\Column(name="name", type="string", length=255)
@@ -142,5 +147,39 @@ class Player {
 	public function getLobbyPlayers()
 	{
 		return $this->lobbyPlayers;
+	}
+
+	/**
+	 * Add log
+	 *
+	 * @param \AppBundle\Entity\Log $log
+	 *
+	 * @return Player
+	 */
+	public function addLog(\AppBundle\Entity\Log $log)
+	{
+		$this->logs [] = $log;
+		
+		return $this;
+	}
+
+	/**
+	 * Remove log
+	 *
+	 * @param \AppBundle\Entity\Log $log
+	 */
+	public function removeLog(\AppBundle\Entity\Log $log)
+	{
+		$this->logs->removeElement($log);
+	}
+
+	/**
+	 * Get logs
+	 *
+	 * @return \Doctrine\Common\Collections\Collection
+	 */
+	public function getLogs()
+	{
+		return $this->logs;
 	}
 }

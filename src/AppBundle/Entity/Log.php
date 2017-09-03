@@ -20,6 +20,18 @@ class Log
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
+    
+    /**
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Lobby", inversedBy="logs")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $lobby;
+    
+    /**
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Player", inversedBy="logs")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $player;
 
     /**
      * @var string
@@ -124,5 +136,52 @@ class Log
     {
         return $this->type;
     }
-}
 
+    /**
+     * Set lobby
+     *
+     * @param \AppBundle\Entity\Lobby $lobby
+     *
+     * @return Log
+     */
+    public function setLobby(\AppBundle\Entity\Lobby $lobby)
+    {
+        $this->lobby = $lobby;
+
+        return $this;
+    }
+
+    /**
+     * Get lobby
+     *
+     * @return \AppBundle\Entity\Lobby
+     */
+    public function getLobby()
+    {
+        return $this->lobby;
+    }
+
+    /**
+     * Set player
+     *
+     * @param \AppBundle\Entity\Player $player
+     *
+     * @return Log
+     */
+    public function setPlayer(\AppBundle\Entity\Player $player)
+    {
+        $this->player = $player;
+
+        return $this;
+    }
+
+    /**
+     * Get player
+     *
+     * @return \AppBundle\Entity\Player
+     */
+    public function getPlayer()
+    {
+        return $this->player;
+    }
+}
