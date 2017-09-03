@@ -11,7 +11,6 @@ use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
  *
  * @ORM\Table(name="player")
  * @ORM\Entity(repositoryClass="AppBundle\Repository\PlayerRepository")
- * @UniqueEntity("name")
  */
 class Player {
 	/**
@@ -25,7 +24,7 @@ class Player {
 	/**
 	 *
 	 * @var string @Assert\NotBlank()
-	 *      @ORM\Column(name="name", type="string", length=255, unique=true)
+	 *      @ORM\Column(name="name", type="string", length=255)
 	 */
 	private $name;
 	

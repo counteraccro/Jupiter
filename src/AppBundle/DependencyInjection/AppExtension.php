@@ -21,10 +21,13 @@ class AppExtension extends Extension
 		$config = $this->processConfiguration($configuration, $configs);
 		
 		$loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
-		//$loader->load('services.yml');
+		$loader->load('services.yml');
 		//$loader->load('parameters.yml');
 		
-		$personal_loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config/DataFixtures'));
-		$personal_loader->load('player.yml');
+		$fixture_loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config/DataFixtures'));
+		$fixture_loader->load('player.yml');
+		
+		$data_loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/data'));
+		$data_loader->load('first_name.yml');
 	}
 }

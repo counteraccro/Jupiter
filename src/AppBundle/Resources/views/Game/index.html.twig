@@ -1,0 +1,29 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}
+Battle Royale
+{% endblock %}
+
+{% block body %}
+
+<div id="index-bloc">
+	<div class="center-align" id="begin-bloc">
+		<a class="waves-effect waves-light btn-large z-depth-2" href="#" id="new-game">Rejoindre une battle</a>
+	</div>
+</div>
+{% endblock %}
+
+{% block javascripts %}
+ <script type="text/javascript" src="{{ asset('/bundles/app/js/Game.js') }}"></script>
+ 
+<script type="text/javascript">
+
+	var params = {
+		url_generate_player : '{{ path('ajax_generate_players') }}'
+	};
+
+	Game.Launch(params);
+	Game.Event();
+</script>
+
+{% endblock %}

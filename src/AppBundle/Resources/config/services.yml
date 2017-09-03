@@ -1,0 +1,5 @@
+services:
+ #Service for genetation of players
+    app.players_generator:
+        class: AppBundle\Service\PlayersGenerator
+        arguments: ["@doctrine", "@service_container"]
