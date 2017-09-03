@@ -22,6 +22,11 @@ class Player {
 	private $id;
 	
 	/**
+	 * @ORM\OneToMany(targetEntity="AppBundle\Entity\LobbyPlayer", mappedBy="player")
+	 */
+	private $lobbyPlayers;
+	
+	/**
 	 *
 	 * @var string @Assert\NotBlank()
 	 *      @ORM\Column(name="name", type="string", length=255)
@@ -33,7 +38,7 @@ class Player {
 	 * @var int @ORM\Column(name="hp", type="integer")
 	 */
 	private $hp;
-	
+
 	/**
 	 * Get id
 	 *
@@ -43,7 +48,7 @@ class Player {
 	{
 		return $this->id;
 	}
-	
+
 	/**
 	 * Set name
 	 *
@@ -57,7 +62,7 @@ class Player {
 		
 		return $this;
 	}
-	
+
 	/**
 	 * Get name
 	 *
@@ -67,7 +72,7 @@ class Player {
 	{
 		return $this->name;
 	}
-	
+
 	/**
 	 * Set hp
 	 *
@@ -81,7 +86,7 @@ class Player {
 		
 		return $this;
 	}
-	
+
 	/**
 	 * Get hp
 	 *
@@ -91,9 +96,51 @@ class Player {
 	{
 		return $this->hp;
 	}
+
 	public function __toString()
 	{
 		return $this->name;
 	}
-}
 
+	/**
+	 * Constructor
+	 */
+	public function __construct()
+	{
+		$this->lobbyPlayers = new \Doctrine\Common\Collections\ArrayCollection();
+	}
+
+	/**
+	 * Add lobbyPlayer
+	 *
+	 * @param \AppBundle\Entity\LobbyPlayer $lobbyPlayer
+	 *
+	 * @return Player
+	 */
+	public function addLobbyPlayer(\AppBundle\Entity\LobbyPlayer $lobbyPlayer)
+	{
+		$this->lobbyPlayers [] = $lobbyPlayer;
+		
+		return $this;
+	}
+
+	/**
+	 * Remove lobbyPlayer
+	 *
+	 * @param \AppBundle\Entity\LobbyPlayer $lobbyPlayer
+	 */
+	public function removeLobbyPlayer(\AppBundle\Entity\LobbyPlayer $lobbyPlayer)
+	{
+		$this->lobbyPlayers->removeElement($lobbyPlayer);
+	}
+
+	/**
+	 * Get lobbyPlayers
+	 *
+	 * @return \Doctrine\Common\Collections\Collection
+	 */
+	public function getLobbyPlayers()
+	{
+		return $this->lobbyPlayers;
+	}
+}
