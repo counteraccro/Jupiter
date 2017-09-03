@@ -17,12 +17,12 @@ Game.Launch = function(params)
 				dataType: "json",
 				success: function(response) {
 
-					players = JSON.parse(response['data']);
+					data = JSON.parse(response['data']);
+					console.log(data);
+					$('#index-bloc #begin-bloc').html("Affichage des joueurs présent dans " + data['lobby'].name + " n°" + data['lobby'].id + "<br />");
 					
-					$('#index-bloc #begin-bloc').html("Affichage des joueurs <br />");
-					
-					for(var i in players) {
-						player = players[i];
+					for(var i in data['players']) {
+						player = data['players'][i];
 						$('#index-bloc #begin-bloc').append(player.id + ' - Name :' + player.name + ' - HP : ' + player.hp + '<br />');
 					}
 				}

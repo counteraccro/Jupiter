@@ -35,7 +35,7 @@ class PlayersGenerator {
 	}
 
 	/**
-	 * 
+	 *
 	 * @param int $nb_players
 	 * @return \AppBundle\Entity\Player[]
 	 */
@@ -43,7 +43,7 @@ class PlayersGenerator {
 	{
 		$first_nameArray = $this->container->getParameter('First_name');
 		$first_nameArray = explode(' ', $first_nameArray);
-		$tabPlayer = [];
+		$tabPlayer = [ ];
 		
 		$lobby = new Lobby();
 		$lobby->setName("Lobby");
@@ -52,7 +52,7 @@ class PlayersGenerator {
 		for($i = 0; $i < $nb_players; $i ++)
 		{
 			$key = array_rand($first_nameArray);
-			$first_name = $first_nameArray[$key];
+			$first_name = $first_nameArray [$key];
 			
 			$player = new Player();
 			$player->setName($first_name);
@@ -65,7 +65,8 @@ class PlayersGenerator {
 			
 			$this->doctrine->getManager()->persist($player);
 			$this->doctrine->getManager()->persist($lobbyPlayer);
-			$tabPlayer[] = $player;
+			$tabPlayer ['players'] [] = $player;
+			$tabPlayer ['lobby'] = $lobby;
 		}
 		
 		$this->doctrine->getManager()->flush();
