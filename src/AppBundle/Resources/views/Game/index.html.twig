@@ -14,12 +14,13 @@ Battle Royale
 {% endblock %}
 
 {% block javascripts %}
- <script type="text/javascript" src="{{ asset('/bundles/app/js/Game.js') }}"></script>
+ <script type="text/javascript" src="{{ asset('/bundles/app/js/Game.js') }}?{{ date().timestamp }}"></script>
  
 <script type="text/javascript">
 
 	var params = {
-		url_generate_player : '{{ path('ajax_generate_players') }}'
+		url_generate_player : '{{ path('ajax_generate_players') }}',
+		url_game : '{{path('ajax_game', { 'lobby_id': 0 })}}',
 	};
 
 	Game.Launch(params);

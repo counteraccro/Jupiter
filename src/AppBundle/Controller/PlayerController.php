@@ -2,7 +2,6 @@
 
 namespace AppBundle\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -10,8 +9,9 @@ use Symfony\Component\Serializer\Serializer;
 use Symfony\Component\Serializer\Encoder\JsonEncoder;
 use Symfony\Component\Serializer\Encoder\XmlEncoder;
 use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
+use Symfony\Component\HttpFoundation\Response;
 
-class PlayerController extends Controller {
+class PlayerController extends AppController {
 
 	/**
 	 * @Route("/index")
@@ -25,12 +25,12 @@ class PlayerController extends Controller {
 
 	/**
 	 * @Route("/ajax_generate_players", name="ajax_generate_players")
-	 * 
+	 *
 	 * @param Request $request
 	 */
 	public function ajaxGeneratePlayers(Request $request)
 	{
-		if(!$request->isXmlHttpRequest())
+		if(! $request->isXmlHttpRequest())
 		{
 			//return new Response('This is not ajax!', 400);
 		}
@@ -38,13 +38,8 @@ class PlayerController extends Controller {
 		$playerGenerator = $this->container->get('app.players_generator');
 		$tabPlayers = $playerGenerator->generatePlayers(5);
 		
-		// Initialize encoder
-		$encoders = array(new XmlEncoder(), new JsonEncoder());
-		$normalizers = array(new ObjectNormalizer());
-		
-		$serializer = new Serializer($normalizers, $encoders);
-		$json = $serializer->serialize($tabPlayers, 'json');
-		
-		return new JsonResponse(array('data' => $json));
+		return new JsonResponse(array (
+				'data' => $this->serializer($tabPlayers)
+		));
 	}
 }

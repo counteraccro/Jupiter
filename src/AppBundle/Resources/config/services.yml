@@ -3,3 +3,6 @@ services:
     app.players_generator:
         class: AppBundle\Service\PlayersGenerator
         arguments: ["@doctrine", "@service_container"]
+    app.game:
+        class: AppBundle\Service\Game
+        arguments: ["@doctrine", "@service_container"]

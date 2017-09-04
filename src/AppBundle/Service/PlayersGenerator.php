@@ -3,7 +3,6 @@
 namespace AppBundle\Service;
 
 use Symfony\Component\DependencyInjection\Container;
-use Symfony\Component\HttpKernel\Exception\HttpException;
 use Doctrine\Common\Persistence\ManagerRegistry as Doctrine;
 use AppBundle\Entity\Player;
 use AppBundle\Entity\Lobby;
@@ -35,7 +34,7 @@ class PlayersGenerator {
 	}
 
 	/**
-	 *
+	 * 
 	 * @param int $nb_players
 	 * @return \AppBundle\Entity\Player[]
 	 */
