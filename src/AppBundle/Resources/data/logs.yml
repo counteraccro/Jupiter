@@ -1,0 +1,6 @@
+parameters:
+    Logs:
+        divers:
+            0: $player$ ce ballade dans la plaine
+            1: $player$ ce ballade dans la foret
+            2: $player$ ce cache dans un buisson

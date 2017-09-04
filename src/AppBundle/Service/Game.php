@@ -33,6 +33,9 @@ class Game {
 	
 	public function generateGame(Lobby $lobby)
 	{
+		// get Logs
+		$logsArray = $this->container->getParameter('Logs');
+		
 		return $lobby;
 	}
 }

@@ -29,5 +29,6 @@ class AppExtension extends Extension
 		
 		$data_loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/data'));
 		$data_loader->load('first_name.yml');
+		$data_loader->load('logs.yml');
 	}
 }
