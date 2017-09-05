@@ -32,11 +32,11 @@ class PlayerController extends AppController {
 	{
 		if(! $request->isXmlHttpRequest())
 		{
-			//return new Response('This is not ajax!', 400);
+			return new Response('This is not ajax!', 400);
 		}
 		
-		$playerGenerator = $this->container->get('app.players_generator');
-		$tabPlayers = $playerGenerator->generatePlayers(5);
+		$playerGeneratorService = $this->container->get('app.players_generator');
+		$tabPlayers = $playerGeneratorService->generatePlayers(5);
 		
 		return new JsonResponse(array (
 				'data' => $this->serializer($tabPlayers)

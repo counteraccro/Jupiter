@@ -8,7 +8,7 @@ use AppBundle\Entity\Player;
 use AppBundle\Entity\Lobby;
 use AppBundle\Entity\LobbyPlayer;
 
-class PlayersGenerator {
+class PlayersGeneratorService {
 	
 	/**
 	 *

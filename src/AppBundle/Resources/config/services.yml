@@ -1,8 +1,11 @@
 services:
  #Service for genetation of players
     app.players_generator:
-        class: AppBundle\Service\PlayersGenerator
+        class: AppBundle\Service\PlayersGeneratorService
         arguments: ["@doctrine", "@service_container"]
     app.game:
-        class: AppBundle\Service\Game
+        class: AppBundle\Service\GameService
+        arguments: ["@doctrine", "@service_container", "@app.log"]
+    app.log:
+        class: AppBundle\Service\LogService
         arguments: ["@doctrine", "@service_container"]

@@ -54,8 +54,8 @@ class GameController extends AppController {
 			return new Response('This is not ajax!', 400);
 		}
 		
-		$game = $this->container->get('app.game');
-		$result = $game->generateGame($lobby);
+		$gameService = $this->container->get('app.game');
+		$result = $gameService->generateGame($lobby);
 		
 		return new JsonResponse(array (
 				'data' => $this->serializer($result) 
