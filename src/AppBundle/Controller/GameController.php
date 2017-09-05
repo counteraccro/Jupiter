@@ -58,7 +58,7 @@ class GameController extends AppController {
 		$result = $game->generateGame($lobby);
 		
 		return new JsonResponse(array (
-				'data' => $this->serializer($result)
+				'data' => $this->serializer($result) 
 		));
 	}
 }

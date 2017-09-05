@@ -1,6 +1,8 @@
 parameters:
     Logs:
-        divers:
-            0: $player$ ce ballade dans la plaine
-            1: $player$ ce ballade dans la foret
-            2: $player$ ce cache dans un buisson
+        moving:
+            0: $player$ se ballade dans la plaine
+            1: $player$ se ballade dans la foret
+            2: $player$ se déplace discretement dans les fourés
+            3: $player$ marche tranquillement
+            4: $player$ court en petites foulées
