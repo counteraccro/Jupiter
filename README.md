@@ -1,3 +1,5 @@
+[![Code Health](https://landscape.io/github/counteraccro/Jupiter/master/landscape.svg?style=flat)](https://landscape.io/github/counteraccro/Jupiter/master)
+
 jupiter
 =======
 
