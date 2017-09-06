@@ -1,1 +1,7 @@
 language: php
+php:
+    - '7.1'
+install:
+    - composer require symfony/framework-bundle:${SYMFONY_VERSION}
+env:
+    - SYMFONY_VERSION="3.3.*" DB=mysql
