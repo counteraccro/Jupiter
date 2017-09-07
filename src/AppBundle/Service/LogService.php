@@ -48,7 +48,7 @@ class LogService {
 	}
 	
 	/**
-	 * 
+	 * Generate log for action moving
 	 * @param Player $player
 	 * @param Lobby $lobby
 	 * @return mixed
@@ -67,5 +67,89 @@ class LogService {
 		
 		return $strLog;
 		
+	}
+	
+	/**
+	 * Generate log for action kill
+	 * @param Player $player
+	 * @param Player $playerKill
+	 * @param Lobby $lobby
+	 */
+	public function killLog(Player $player, Player $playerKill, Lobby $lobby, $action = 'kill')
+	{
+		$key = array_rand($this->logsArray[$action]);
+		$strLog = $this->logsArray[$action][$key];
+		
+		if($action == 'kill')
+		{
+			$strLog = str_replace('$player$', $player->getName(), $strLog);
+			$strLog = str_replace('$player_kill$', $playerKill->getName(), $strLog);
+		}
+		else if($action == 'self_kill')
+		{
+			$strLog = str_replace('$player$', $player->getName(), $strLog);
+		}
+		
+		$log = new Log();
+		$log->setPlayer($player)->setLobby($lobby)->setLabel($strLog)->setType(1);
+		
+		$this->doctrine->getManager()->persist($log);
+		
+		return $strLog;
+	}
+	
+	/**
+	 * Generate log for daily statistiques
+	 * @param array $stats
+	 * @param int $nbDays
+	 * @return mixed
+	 */
+	public function StatDayLog(array $stats, $nbDays)
+	{
+		$nbKill = 0;
+		if(isset($stats['days'][$nbDays]['kill']))
+		{
+			$nbKill = count($stats['days'][$nbDays]['kill']);
+		}
+		
+		if($nbKill > 0)
+		{
+			$names = '';
+			foreach($stats['days'][$nbDays]['kill'] as $name)
+			{
+				$names .= $name . ',';
+			}
+			$names = substr($names, 0, -1);
+			
+			if($nbKill == 1)
+			{
+				$strLog = $this->logsArray['log_day']['kill'];
+				$strLog = str_replace('$player$', $names, $strLog);
+				$strLog = str_replace('$day$', $nbDays, $strLog);
+			}
+			else
+			{
+				$strLog = $this->logsArray['log_day']['kills'];
+				$strLog = str_replace('$players$', $names, $strLog);
+				$strLog = str_replace('$nb_deads$', $nbKill, $strLog);
+				$strLog = str_replace('$day$', $nbDays, $strLog);
+			}
+		}
+		else
+		{
+			$strLog = $this->logsArray['log_day']['no_kill'];
+			$strLog = str_replace('$day$', $nbDays, $strLog);
+		}
+		
+		return $strLog;
+	}
+	
+	public function Winnerlog(Player $player, $nbDays)
+	{
+		$strLog = $this->logsArray['log_day']['winner'];
+		$strLog = str_replace('$player$', $player->getName(), $strLog);
+		$strLog = str_replace('$day$', $nbDays, $strLog);
+		
+		return $strLog;
 	}
 }

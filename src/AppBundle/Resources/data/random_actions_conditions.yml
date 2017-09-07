@@ -1,0 +1,23 @@
+parameters:
+    RandomActionsConditions:
+        1:
+            0: moving
+        2:
+            0: moving
+        3:
+            0: moving
+        4:
+            0: moving
+        5:
+            0: moving
+        6:
+            0: moving
+        7:
+            0: moving
+        8:
+            0: moving
+            1: kill
+        9:
+            0: kill
+        10:
+            0: kill               

@@ -6,3 +6,13 @@ parameters:
             2: $player$ se déplace discretement dans les fourés
             3: $player$ marche tranquillement
             4: $player$ court en petites foulées
+        kill:
+            0: $player$ à tué $player_kill$
+        self_kill:
+            0: $player$ à décidé de ce suicider en ce jettant dans le vide
+            1: $player$ à fait une mauvaise chute fatale en tombant sur la tête
+        log_day:
+            no_kill: Jour $day$ - Aucun mort !
+            kill: Jour $day$ - Seulement $player$ est mort aujourd'hui
+            kills : Jour $day$ - $nb_deads$ morts - $players$
+            winner: Jour $day$ - Bravo à $player$ qui vient de gagner !
