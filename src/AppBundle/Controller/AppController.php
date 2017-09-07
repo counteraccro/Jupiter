@@ -7,6 +7,8 @@ use Symfony\Component\Serializer\Encoder\XmlEncoder;
 use Symfony\Component\Serializer\Encoder\JsonEncoder;
 use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
 use Symfony\Component\Serializer\Serializer;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 
 class AppController extends Controller {
 
@@ -32,5 +34,19 @@ class AppController extends Controller {
 		
 		$serializer = new Serializer(array($normalizer), $encoders);
 		return $serializer->serialize($dataToSerialize, $encoder);
+	}
+	
+	/**
+	 * Check if the request is Ajax or not
+	 * @param Request $request
+	 * @return boolean
+	 */
+	protected function isAjaxRequest(Request $request)
+	{
+		if(! $request->isXmlHttpRequest())
+		{
+			return new Response('This is not ajax!', 400);
+		}
+		return true;
 	}
 }

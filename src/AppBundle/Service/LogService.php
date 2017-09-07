@@ -37,13 +37,7 @@ class LogService {
 	{
 		$this->doctrine = $doctrine;
 		$this->container = $container;
-	}
-	
-	/**
-	 * 
-	 */
-	public function init()
-	{
+		
 		$this->logsArray = $this->container->getParameter('Logs');
 	}
 	
@@ -144,6 +138,12 @@ class LogService {
 		return $strLog;
 	}
 	
+	/**
+	 * Write log when we have a winner
+	 * @param Player $player
+	 * @param int $nbDays
+	 * @return mixed
+	 */
 	public function Winnerlog(Player $player, $nbDays)
 	{
 		$strLog = $this->logsArray['log_day']['winner'];

@@ -5,11 +5,6 @@ namespace AppBundle\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\JsonResponse;
-use Symfony\Component\Serializer\Serializer;
-use Symfony\Component\Serializer\Encoder\JsonEncoder;
-use Symfony\Component\Serializer\Encoder\XmlEncoder;
-use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
-use Symfony\Component\HttpFoundation\Response;
 
 class PlayerController extends AppController {
 
@@ -30,9 +25,11 @@ class PlayerController extends AppController {
 	 */
 	public function ajaxGeneratePlayers(Request $request)
 	{
-		if(! $request->isXmlHttpRequest())
+	
+		$return = $this->isAjaxRequest($request);
+		if(is_object($return))
 		{
-			return new Response('This is not ajax!', 400);
+			return $return;
 		}
 		
 		$playerGeneratorService = $this->container->get('app.players_generator');

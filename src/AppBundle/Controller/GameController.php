@@ -49,9 +49,10 @@ class GameController extends AppController {
 	 */
 	public function AjaxGameAction(Request $request, Lobby $lobby)
 	{
-		if(! $request->isXmlHttpRequest())
+		$return = $this->isAjaxRequest($request);
+		if(is_object($return))
 		{
-			//return new Response('This is not ajax!', 400);
+			return $return;
 		}
 		
 		$gameService = $this->container->get('app.game');

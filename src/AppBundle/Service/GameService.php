@@ -76,10 +76,14 @@ class GameService {
 		$this->container = $container;
 		$this->logService = $logService;
 		
-		$this->logService->init();
 		$this->randomActionsConditions = $this->container->getParameter('RandomActionsConditions');
 	}
 
+	/**
+	 * Entry of the service
+	 * @param Lobby $lobby
+	 * @return array
+	 */
 	public function generateGame(Lobby $lobby)
 	{
 		$this->lobby = $lobby;
