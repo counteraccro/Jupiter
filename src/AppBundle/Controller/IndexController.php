@@ -16,5 +16,15 @@ class IndexController extends Controller
             // ...
         ));
     }
+    
+    /**
+     * @Route("/ajax_game_menu", name="ajax_game_menu")
+     */
+    public function AjaxGameMenuAction()
+    {
+    	return $this->render('AppBundle:Index:ajax_game_menu.html.twig', array(
+    			// ...
+    	));
+    }
 
 }

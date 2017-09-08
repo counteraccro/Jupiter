@@ -47,6 +47,12 @@ class LobbyPlayer
      */
     private $isDead;
 
+    
+    public function __construct()
+    {
+    	$this->nbKill = 0;
+    	$this->isDead = false;
+    }
 
     /**
      * Get id

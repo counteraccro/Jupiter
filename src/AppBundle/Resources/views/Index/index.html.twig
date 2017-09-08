@@ -7,10 +7,45 @@ Battle Royale
 {% block body %}
 
 
-<div id="index-bloc">
-	<h1> Welcome</h1>
+<div id="global-bloc">
+	<h1>Welcome</h1>
 	<div class="center-align">
-		<a class="waves-effect waves-light btn-large z-depth-2" href="{{ path('battle') }}">Jouer</a>
+
+		<div class="preloader-wrapper small active">
+			<div class="spinner-layer spinner-red-only">
+				<div class="circle-clipper left">
+					<div class="circle"></div>
+				</div>
+				<div class="gap-patch">
+					<div class="circle"></div>
+				</div>
+				<div class="circle-clipper right">
+					<div class="circle"></div>
+				</div>
+			</div>
+		</div>
+		<div>Chargement...</div>
+
 	</div>
 </div>
+
+{% endblock %}
+
+{% block javascripts %}
+ <script type="text/javascript" src="{{ asset('/bundles/app/js/Index/Index.js') }}?{{ date().timestamp }}"></script>
+ <script type="text/javascript" src="{{ asset('/bundles/app/js/HtmlRender.js') }}?{{ date().timestamp }}"></script>
+ 
+<script type="text/javascript">
+
+	HtmlRender.Launch();
+
+	var params = {
+		url_menu : '{{ path('ajax_game_menu') }}',
+		url_new_player : '{{ path('ajax_new_player_form')}}',
+	};
+
+	Index.Launch(params);
+	Index.LoadGameMenu();
+</script>
+
 {% endblock %}

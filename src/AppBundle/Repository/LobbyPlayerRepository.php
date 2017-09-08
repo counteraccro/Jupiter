@@ -2,6 +2,9 @@
 
 namespace AppBundle\Repository;
 
+use AppBundle\Entity\Player;
+use AppBundle\Entity\Lobby;
+
 /**
  * LobbyPlayerRepository
  *
@@ -10,4 +13,22 @@ namespace AppBundle\Repository;
  */
 class LobbyPlayerRepository extends \Doctrine\ORM\EntityRepository
 {
+	/**
+	 * check if exist link betwen lobby and player
+	 * @param string $status
+	 * @return mixed|NULL|\Doctrine\DBAL\Driver\Statement|array
+	 */
+	public function findLobbyPlayer(Player $player, Lobby $lobby)
+	{
+		$qb = $this->createQueryBuilder('lp');
+		
+		$qb->where('lp.lobby = :lobby')
+		->setParameter('lobby', $lobby)
+		->andWhere('lp.player = :player')
+		->setParameter('player', $player)
+		->setMaxResults(1);
+		
+		$query = $qb->getQuery();
+		return $query->getResult();
+	}
 }

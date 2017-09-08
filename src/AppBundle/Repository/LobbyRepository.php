@@ -10,4 +10,27 @@ namespace AppBundle\Repository;
  */
 class LobbyRepository extends \Doctrine\ORM\EntityRepository
 {
+	/**
+	 * Find the first looby open
+	 * @param string $status
+	 * @return mixed|NULL|\Doctrine\DBAL\Driver\Statement|array
+	 */
+	public function findFirstLobbyByStatus($status = 'OPEN')
+	{
+		$qb = $this->createQueryBuilder('l');
+		
+		$qb->where('l.status = :status')
+		->setParameter('status', $status)
+		->setMaxResults(1);
+		
+		$query = $qb->getQuery();
+		if(isset( $query->getResult()[0]))
+		{
+			return $query->getResult()[0];
+		}
+		else
+		{
+			return array();
+		}
+	}
 }

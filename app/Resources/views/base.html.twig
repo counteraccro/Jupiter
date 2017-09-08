@@ -5,9 +5,11 @@
         <title>{% block title %}Welcome!{% endblock %}</title>
         
         <link rel="stylesheet" href="{{ asset('/bundles/app/css/materialize.min.css') }}" type="text/css" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="{{ asset('/bundles/app/css/style.css') }}" type="text/css" />
         <script type="text/javascript" src="{{ asset('/bundles/app/js/jquery/jquery-3.2.1.min.js') }}"></script>
         <script type="text/javascript" src="{{ asset('/bundles/app/js/materialize.min.js') }}"></script>
+        
          
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />

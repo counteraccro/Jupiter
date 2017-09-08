@@ -1,0 +1,27 @@
+<br />
+<div id="modal1" class="modal open" style="display: block">
+	<div class="modal-content">
+		<h4>Nouveau Joueur</h4>
+		{{ form(form) }}
+	</div>
+	<div class="modal-footer">
+		<i>Texte à écrire ici</i>
+	</div>
+</div>
+
+{% block javascripts %}
+<script type="text/javascript"
+	src="{{ asset('/bundles/app/js/Player/Player.js') }}?{{ date().timestamp }}"></script>
+
+<script type="text/javascript">
+
+	var params = {
+		url_new_player : '{{ path('ajax_new_player_form')}}',
+		url_battle : '{{ path('battle') }}',
+	};
+
+	Player.Launch(params);
+	Player.Event();
+</script>
+
+{% endblock %}

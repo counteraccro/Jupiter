@@ -5,7 +5,7 @@ namespace AppBundle\Form;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
-use Symfony\Component\Form\Extension\Core\Type\IntegerType;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 
 class PlayerType extends AbstractType {
 	
@@ -15,7 +15,8 @@ class PlayerType extends AbstractType {
 	 */
 	public function buildForm(FormBuilderInterface $builder, array $options)
 	{
-		$builder->add('name')->add('hp');
+		$builder->add('name')
+		->add('save',  SubmitType::class, array('label' => 'Chercher un lobby', 'attr' => array('class' => 'btn-save-player')));
 	}
 	
 	/**

@@ -6,24 +6,29 @@ Battle Royale
 
 {% block body %}
 
-<div id="index-bloc">
+<div id="game-bloc">
 	<div class="center-align" id="begin-bloc">
-		<a class="waves-effect waves-light btn-large z-depth-2" href="#" id="new-game">Rejoindre une battle</a>
+		
 	</div>
 </div>
 {% endblock %}
 
 {% block javascripts %}
- <script type="text/javascript" src="{{ asset('/bundles/app/js/Game.js') }}?{{ date().timestamp }}"></script>
+ <script type="text/javascript" src="{{ asset('/bundles/app/js/Game/Game.js') }}?{{ date().timestamp }}"></script>
+  <script type="text/javascript" src="{{ asset('/bundles/app/js/HtmlRender.js') }}?{{ date().timestamp }}"></script>
  
 <script type="text/javascript">
+
+	HtmlRender.Launch();
 
 	var params = {
 		url_generate_player : '{{ path('ajax_generate_players') }}',
 		url_game : '{{path('ajax_game', { 'lobby_id': 0 })}}',
+		url_find_open_lobby : '{{ path('find_open_lobby') }}',
 	};
 
 	Game.Launch(params);
+	Game.SearchOpenLobby();
 	Game.Event();
 </script>
 
