@@ -1,0 +1,26 @@
+Bienvenue au lobby {{ lobby.name }}
+<br />
+Liste des joueurs déjà présent <br />
+{%  for lobbyPlayer in  lobby.lobbyPlayers %}
+	
+	{% if lobbyPlayer.player.id == app.session.get('player_id')  %}
+		 Vous --> {{ lobbyPlayer.player.name }} <br />
+	{% else %}
+	    {{ lobbyPlayer.player.name }} <br />
+	{% endif %}
+{% endfor %}
+
+Il reste {{ (lobby.nbPlaceMax - lobby.lobbyPlayers|length) }} places
+
+{% block javascripts %}
+
+{% if lobby.lobbyPlayers|length == lobby.nbPlaceMax  %}
+<script type="text/javascript">
+
+var id = {{ lobby.id }};
+Game.RunGame({{ lobby.id }});
+
+</script>
+{% endif %}
+
+{% endblock %}

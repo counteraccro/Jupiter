@@ -1,4 +1,5 @@
 eclipse.preferences.version=1
 encoding//src/AppBundle/Resources/views/Index/index.html.twig=UTF-8
+encoding//src/AppBundle/Resources/views/Lobby/ajax_waiting_lobby.html.twig=UTF-8
 encoding//src/AppBundle/Resources/views/Player/ajax_new_player_form.html.twig=UTF-8
 encoding/<project>=UTF-8

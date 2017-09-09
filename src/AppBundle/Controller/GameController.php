@@ -5,10 +5,8 @@ namespace AppBundle\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
 use AppBundle\Entity\Lobby;
-use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
-use AppBundle\Entity\LobbyPlayer;
 
 class GameController extends AppController {
 
@@ -67,59 +65,5 @@ class GameController extends AppController {
 		return new JsonResponse(array (
 				'data' => $this->serializer($result) 
 		));
-	}
-
-	/**
-	 * @Route("find_open_lobby", name="find_open_lobby")
-	 */
-	public function ajaxFindOpenLoobyAction(Request $request)
-	{
-		$return = $this->isAjaxRequest($request);
-		if(is_object($return))
-		{
-			return $return;
-		}
-		
-		$em = $this->getDoctrine()->getManager();
-		$lobby = $em->getRepository('AppBundle:Lobby')->findFirstLobbyByStatus();
-		
-		if(empty($lobby))
-		{
-			return new JsonResponse(array (
-					'data' => $this->serializer(array (
-							'response' => 'no_lobby' 
-					)) 
-			));
-		}
-		else
-		{
-			$player = $em->getRepository('AppBundle:Player')->findById($this->get('session')->get('player_id'))[0];
-			
-			$lp = $em->getRepository('AppBundle:LobbyPlayer')->findLobbyPlayer($player, $lobby);
-			
-			if(!empty($lp))
-			{
-				return new JsonResponse(array (
-						'data' => $this->serializer(array (
-								'response' => 'critique_error',
-								'text' => 'Vous êtes déjà présent sur cette session !'
-						))
-				));
-			}
-			
-			$lobbyPlayer = new LobbyPlayer();
-			$lobbyPlayer->setPlayer($player);
-			$lobbyPlayer->setLobby($lobby);
-			
-			$em = $this->getDoctrine()->getManager();
-			$em->persist($lobbyPlayer);
-			$em->flush();
-			
-			return new JsonResponse(array (
-					'data' => $this->serializer(array (
-							'response' => 'success'
-					))
-			));
-		}
 	}
 }

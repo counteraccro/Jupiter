@@ -40,9 +40,15 @@ class Lobby {
 	private $name;
 	
 	/**
-	 * @ORM\Column(type="string", name="status", options={"default": "CLOSE"})
+	 * @var string @ORM\Column(type="string", name="status", options={"default": "CLOSE"})
 	 */
 	private $status;
+	
+	/**
+	 *
+	 * @var int @ORM\Column(name="nb_place_max", type="integer")
+	 */
+	private $nbPlaceMax;
 
 	/**
 	 * Constructor
@@ -51,6 +57,7 @@ class Lobby {
 	{
 		$this->lobbyPlayers = new \Doctrine\Common\Collections\ArrayCollection();
 		$this->status = self::STATUS_OPEN;
+		$this->nbPlaceMax = 10;
 	}
 
 	/**
@@ -186,4 +193,28 @@ class Lobby {
 	{
 		return $this->status;
 	}
+
+    /**
+     * Set nbPlaceMax
+     *
+     * @param integer $nbPlaceMax
+     *
+     * @return Lobby
+     */
+    public function setNbPlaceMax($nbPlaceMax)
+    {
+        $this->nbPlaceMax = $nbPlaceMax;
+
+        return $this;
+    }
+
+    /**
+     * Get nbPlaceMax
+     *
+     * @return integer
+     */
+    public function getNbPlaceMax()
+    {
+        return $this->nbPlaceMax;
+    }
 }

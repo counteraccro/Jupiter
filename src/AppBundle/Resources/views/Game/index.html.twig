@@ -25,6 +25,8 @@ Battle Royale
 		url_generate_player : '{{ path('ajax_generate_players') }}',
 		url_game : '{{path('ajax_game', { 'lobby_id': 0 })}}',
 		url_find_open_lobby : '{{ path('find_open_lobby') }}',
+		url_waiting_lobby : '{{ path('ajax_wait_lobby', {'lobby_id' : 0})}}',
+		player_id : {{ app.session.get('player_id') }}
 	};
 
 	Game.Launch(params);

@@ -5,6 +5,8 @@ Game.Launch = function(params)
 	Game.url_generate_player = params.url_generate_player;
 	Game.url_game = params.url_game;
 	Game.url_find_open_lobby = params.url_find_open_lobby;
+	Game.url_waiting_lobby = params.url_waiting_lobby;
+	Game.player_id = params.player_id;
 
 	Game.data = [];
 	Game.interval = 0;
@@ -39,27 +41,30 @@ Game.Launch = function(params)
 			});
 		}),
 
-		// Event button lauch_game
-		$("body").on("click", "#launch_game", function() {
-			var id = $(this).data('lobby');
-			var url = Game.url_game.substring(0,Game.url_game.length-1) + id;
-
-			$.ajax({
-				type: "GET",
-				url: url,
-				dataType: "json",
-				success: function(response) {
-					Game.data = JSON.parse(response['data']);
-					Game.DisplayLogs(1);
-				}
-			});
-		})
-
 		// Event button next day
 		$("body").on("click", "#log_next_day", function() {
 			var day = $(this).data('day');
 			Game.DisplayLogs(day);
 		})
+	}
+	
+	/**
+	 * Run the game
+	 */
+	Game.RunGame = function(id)
+	{
+		clearInterval(Game.interval);
+		var url = Game.url_game.substring(0,Game.url_game.length-1) + id;
+
+		$.ajax({
+			type: "GET",
+			url: url,
+			dataType: "json",
+			success: function(response) {
+				Game.data = JSON.parse(response['data']);
+				Game.DisplayLogs(1);
+			}
+		});
 	}
 
 	/**
@@ -85,6 +90,9 @@ Game.Launch = function(params)
 		}
 	}
 
+	/**
+	 * Search open lobby
+	 */
 	Game.SearchOpenLobby = function()
 	{
 		HtmlRender.Preloader('#game-bloc #begin-bloc', 'Recherche d\'un lobby... Essai n° ' + Game.loop);
@@ -93,6 +101,9 @@ Game.Launch = function(params)
 
 	}
 
+	/**
+	 * Loop search open lobby
+	 */
 	Game._SearchOpenLobby = function()
 	{
 		$.ajax({
@@ -122,8 +133,33 @@ Game.Launch = function(params)
 				else
 				{
 					clearInterval(Game.interval);
-					alert('fin et trouvé');
+					Game.WaitInLobby(data.lobby_id);
 				}
+			}
+		});
+	}
+	
+	/**
+	 * Waiting complete game
+	 */
+	Game.WaitInLobby = function(lobby_id)
+	{
+		Game.interval = '';
+		HtmlRender.Preloader('#game-bloc #begin-bloc', 'Lobby trouvé en attente de joueur....');
+		Game.interval = setInterval(function () {Game._WaitInLobby(lobby_id)}, 3000);
+	}
+	
+	Game._WaitInLobby = function(lobby_id)
+	{
+		var url =  Game.url_waiting_lobby.substring(0, Game.url_waiting_lobby.length-1) + lobby_id;
+		
+		console.log(url);
+		
+		$.ajax({
+			type: "GET",
+			url: url,
+			success: function(response) {
+				$('#game-bloc #begin-bloc').html(response);
 			}
 		});
 	}
