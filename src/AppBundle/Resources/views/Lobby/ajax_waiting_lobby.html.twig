@@ -1,6 +1,9 @@
 Bienvenue au lobby {{ lobby.name }}
 <br />
 Liste des joueurs déjà présent <br />
+
+{%  set first_id = lobby.lobbyPlayers[0].player.id %}
+
 {%  for lobbyPlayer in  lobby.lobbyPlayers %}
 	
 	{% if lobbyPlayer.player.id == app.session.get('player_id')  %}
@@ -14,13 +17,16 @@ Il reste {{ (lobby.nbPlaceMax - lobby.lobbyPlayers|length) }} places
 
 {% block javascripts %}
 
-{% if lobby.lobbyPlayers|length == lobby.nbPlaceMax  %}
+
 <script type="text/javascript">
-
-var id = {{ lobby.id }};
-Game.RunGame({{ lobby.id }});
-
-</script>
+{% if lobby.lobbyPlayers|length == lobby.nbPlaceMax %}
+	{% if app.session.get('player_id') == first_id %}
+		Game.RunGame({{ lobby.id }}, true);
+	{% else  %}
+		Game.RunGame({{ lobby.id }}, false);
+	{% endif %}
 {% endif %}
+</script>
+
 
 {% endblock %}

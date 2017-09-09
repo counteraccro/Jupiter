@@ -51,20 +51,28 @@ Game.Launch = function(params)
 	/**
 	 * Run the game
 	 */
-	Game.RunGame = function(id)
+	Game.RunGame = function(id, is_first)
 	{
 		clearInterval(Game.interval);
-		var url = Game.url_game.substring(0,Game.url_game.length-1) + id;
-
-		$.ajax({
-			type: "GET",
-			url: url,
-			dataType: "json",
-			success: function(response) {
-				Game.data = JSON.parse(response['data']);
-				Game.DisplayLogs(1);
-			}
-		});
+		
+		if(is_first)
+		{
+			var url = Game.url_game.substring(0,Game.url_game.length-1) + id;
+	
+			$.ajax({
+				type: "GET",
+				url: url,
+				dataType: "json",
+				success: function(response) {
+					Game.data = JSON.parse(response['data']);
+					Game.DisplayLogs(1);
+					Game.RunGame(id, false);
+				}
+			});
+		}
+		else {
+			console.log('a faire');
+		}
 	}
 
 	/**
