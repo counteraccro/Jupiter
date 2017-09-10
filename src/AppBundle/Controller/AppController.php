@@ -49,4 +49,17 @@ class AppController extends Controller {
 		}
 		return true;
 	}
+	
+	/**
+	 * Check if the session of player exist
+	 * @return \Symfony\Component\HttpFoundation\RedirectResponse|boolean
+	 */
+	protected function checkSessionPlayer()
+	{
+		if(! $this->get('session')->has('player_id'))
+		{
+			return $this->redirect($this->generateUrl('homepage'));
+		}
+		return true;
+	}
 }

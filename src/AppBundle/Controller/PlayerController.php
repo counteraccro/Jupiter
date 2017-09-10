@@ -33,7 +33,7 @@ class PlayerController extends AppController {
 		$return = $this->isAjaxRequest($request);
 		if(is_object($return))
 		{
-			//return $return;
+			return $return;
 		}
 		
 		$playerGeneratorService = $this->container->get('app.players_generator');

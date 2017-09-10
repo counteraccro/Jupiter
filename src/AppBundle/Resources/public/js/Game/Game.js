@@ -6,6 +6,7 @@ Game.Launch = function(params)
 	Game.url_game = params.url_game;
 	Game.url_find_open_lobby = params.url_find_open_lobby;
 	Game.url_waiting_lobby = params.url_waiting_lobby;
+	Game.url_create_lobby = params.url_create_lobby;
 	Game.player_id = params.player_id;
 
 	Game.data = [];
@@ -130,7 +131,7 @@ Game.Launch = function(params)
 					if(Game.loop == 6)
 					{
 						clearInterval(Game.interval);
-						alert('fin mais pas trouvé');
+						Game.CreateNewLobby();
 					}
 				}
 				else if(data.response == 'critique_error')
@@ -210,7 +211,26 @@ Game.Launch = function(params)
 				data = JSON.parse(response['data']);
 				console.log(data);
 				HtmlRender.Preloader('#game-bloc #begin-bloc', 'Lancement de la partie');
-				Game.RunGame(data['lobby']['id'], false);
+				Game.RunGame(data['lobby'], true);
+			}
+		});
+	}
+	
+	/**
+	 * Create a new Lobby
+	 */
+	Game.CreateNewLobby = function()
+	{
+		HtmlRender.Preloader('#game-bloc #begin-bloc', 'Création d\'un nouveau looby');
+		
+		$.ajax({
+			type: "GET",
+			url: Game.url_create_lobby,
+			dataType: "json",
+			success: function(response) {
+				data = JSON.parse(response['data']);
+				console.log(data);
+				Game.WaitInLobby(data['lobby_id']);
 			}
 		});
 	}

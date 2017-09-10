@@ -37,10 +37,7 @@ class GameController extends AppController {
 		 * "<br /> ---------> Loby : " . $lp->getLobby()->getId() . " " . $lp->getLobby()->getName();
 		 * }
 		 */
-		if(! $this->get('session')->has('player_id'))
-		{
-			return $this->redirect($this->generateUrl('homepage'));
-		}
+		$this->checkSessionPlayer();
 		
 		return $this->render('AppBundle:Game:index.html.twig', array (
 			// ...

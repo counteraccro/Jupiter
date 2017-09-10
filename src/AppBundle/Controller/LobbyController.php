@@ -91,9 +91,10 @@ class LobbyController extends AppController {
 			//return $return;
 		}
 		
+		$must_redirect = false;
 		if(! $this->get('session')->has('lobby_id') || $this->get('session')->get('lobby_id') != $lobby->getId())
 		{
-			return $this->redirect($this->generateUrl('homepage'));
+			$must_redirect = true;
 		}
 		
 		if($lobby->getNbPlaceMax() == $lobby->getLobbyPlayers()->count())
@@ -105,7 +106,49 @@ class LobbyController extends AppController {
 		}
 		
 		return $this->render('AppBundle:Lobby:ajax_waiting_lobby.html.twig', array (
-				'lobby' => $lobby
+				'lobby' => $lobby,
+				'must_redirect' =>$must_redirect
+		));
+	}
+
+	/**
+	 * find an open lobby
+	 * @Route("ajax_create_lobby", name="ajax_create_lobby")
+	 */
+	public function ajaxCreateLobbyAction(Request $request)
+	{
+		$return = $this->isAjaxRequest($request);
+		if(is_object($return))
+		{
+			return $return;
+		}
+		
+		$this->checkSessionPlayer();
+		
+		$lobby = new Lobby();
+		$lobby->setName('Name');
+		
+		$em = $this->getDoctrine()->getManager();
+		$em->persist($lobby);
+		$em->flush();
+		
+		$lobby->setName('Lobby n° ' . $lobby->getId());
+		
+		$player = $em->getRepository('AppBundle:Player')->findById($this->get('session')->get('player_id'))[0];
+		
+		$lobbyPlayer = new LobbyPlayer();
+		$lobbyPlayer->setLobby($lobby)->setPlayer($player);
+		
+		$em->persist($lobbyPlayer);
+		$em->flush();
+		
+		$this->get('session')->set('lobby_id', $lobby->getId());
+		
+		return new JsonResponse(array (
+				'data' => $this->serializer(array (
+						'response' => 'success',
+						'lobby_id' => $lobby->getId() 
+				)) 
 		));
 	}
 }
