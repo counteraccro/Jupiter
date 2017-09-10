@@ -55,6 +55,8 @@ Game.Launch = function(params)
 	 */
 	Game.RunGame = function(id, is_first)
 	{
+		HtmlRender.Preloader('#game-bloc #begin-bloc', 'La partie est en cours');
+		
 		clearInterval(Game.interval);
 		
 		if(is_first)
@@ -77,6 +79,9 @@ Game.Launch = function(params)
 	
 	Game.ShowResult = function(id)
 	{
+		
+		HtmlRender.Preloader('#game-bloc #begin-bloc', 'Génération du résultat');
+		
 		var url = Game.url_load_result.substring(0,Game.url_load_result.length-1) + id;
 		
 		$.ajax({
