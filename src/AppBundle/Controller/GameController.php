@@ -7,6 +7,8 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
 use AppBundle\Entity\Lobby;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Filesystem\Filesystem;
+use Symfony\Component\HttpFoundation\File\File;
 
 class GameController extends AppController {
 
@@ -62,5 +64,27 @@ class GameController extends AppController {
 		return new JsonResponse(array (
 				'data' => $this->serializer($result) 
 		));
+	}
+	
+	/**
+	 * @Route("battle/ajax_load_result/{lobby_id}", name="ajax_load_result")
+	 * @ParamConverter("lobby", options={"mapping": {"lobby_id": "id"}})
+	 * @param Request $request
+	 */
+	public function ajaxLoadLog(Request $request, Lobby $lobby)
+	{
+		$return = $this->isAjaxRequest($request);
+		if(is_object($return))
+		{
+			return $return;
+		}
+		
+		$logService = $this->container->get('app.log');
+		$result = $logService->readLog($lobby->getId());
+		
+		return new JsonResponse(array (
+				'data' => $this->serializer($result)
+		));
+		
 	}
 }

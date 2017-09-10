@@ -7,6 +7,7 @@ use Doctrine\Common\Persistence\ManagerRegistry as Doctrine;
 use AppBundle\Entity\Player;
 use AppBundle\Entity\Lobby;
 use AppBundle\Entity\Log;
+use Symfony\Component\HttpFoundation\Session\Session;
 
 class LogService {
 	
@@ -29,16 +30,30 @@ class LogService {
 	private $logsArray;
 	
 	/**
+	 * Path
+	 * @var string
+	 */
+	private $folder_path;
+	
+	/**
+	 * 
+	 * @var Session
+	 */
+	private $session;
+	
+	/**
 	 *
 	 * @param Doctrine $doctrine
 	 * @param Container $container
 	 */
-	public function __construct(Doctrine $doctrine, Container $container)
+	public function __construct(Doctrine $doctrine, Container $container, Session $session)
 	{
 		$this->doctrine = $doctrine;
 		$this->container = $container;
+		$this->session = $session;
 		
 		$this->logsArray = $this->container->getParameter('Logs');
+		$this->folder_path =  dirname(__DIR__) . '/Resources/public/battles/';
 	}
 	
 	/**
@@ -59,7 +74,7 @@ class LogService {
 		
 		$this->doctrine->getManager()->persist($log);
 		
-		return $strLog;
+		return $this->writeLog($strLog);
 		
 	}
 	
@@ -89,7 +104,7 @@ class LogService {
 		
 		$this->doctrine->getManager()->persist($log);
 		
-		return $strLog;
+		return $this->writeLog($strLog);
 	}
 	
 	/**
@@ -135,7 +150,7 @@ class LogService {
 			$strLog = str_replace('$day$', $nbDays, $strLog);
 		}
 		
-		return $strLog;
+		return $this->writeLog($strLog);
 	}
 	
 	/**
@@ -150,6 +165,56 @@ class LogService {
 		$strLog = str_replace('$player$', $player->getName(), $strLog);
 		$strLog = str_replace('$day$', $nbDays, $strLog);
 		
+		return $this->writeLog($strLog);
+	}
+	
+	/**
+	 * Write log in a file
+	 * @param string $strLog
+	 * @return string
+	 */
+	private function writeLog($strLog)
+	{
+		$fileLog = fopen($this->folder_path . 'battle-' . $this->session->get('lobby_id') . '.txt', 'a+');
+		fputs($fileLog, $strLog . "\n");
+		fclose($fileLog);
+		
 		return $strLog;
+	}
+	
+	/**
+	 * Read log file
+	 * @param Lobby $lobby_id
+	 * @return array
+	 */
+	public function readLog($lobby_id)
+	{
+		$logs = file($this->folder_path . 'battle-' . $lobby_id . '.txt');
+		return $this->formatTabLog($logs);
+	}
+	
+	/**
+	 * Format the logs for display
+	 * @param array $logs
+	 * @return array
+	 */
+	private function formatTabLog($logs)
+	{
+		$result = [];
+		$jour = 1;
+		foreach($logs as $log)
+		{
+			if(preg_match('/Jour/', $log, $matchs))
+			{
+				$result['logs'][$jour][] = $log;
+				$jour++;
+			}
+			else
+			{
+				$result['logs'][$jour][] = $log;
+			}
+		}
+		
+		return $result;
 	}
 }

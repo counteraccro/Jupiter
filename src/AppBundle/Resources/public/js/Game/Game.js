@@ -7,6 +7,7 @@ Game.Launch = function(params)
 	Game.url_find_open_lobby = params.url_find_open_lobby;
 	Game.url_waiting_lobby = params.url_waiting_lobby;
 	Game.url_create_lobby = params.url_create_lobby;
+	Game.url_load_result = params.url_load_result;
 	Game.player_id = params.player_id;
 
 	Game.data = [];
@@ -65,15 +66,28 @@ Game.Launch = function(params)
 				url: url,
 				dataType: "json",
 				success: function(response) {
-					Game.data = JSON.parse(response['data']);
-					Game.DisplayLogs(1);
 					Game.RunGame(id, false);
 				}
 			});
 		}
 		else {
-			console.log('Run game a faire');
+			Game.ShowResult(id);
 		}
+	}
+	
+	Game.ShowResult = function(id)
+	{
+		var url = Game.url_load_result.substring(0,Game.url_load_result.length-1) + id;
+		
+		$.ajax({
+			type: "GET",
+			url: url,
+			dataType: "json",
+			success: function(response) {
+				Game.data = JSON.parse(response['data']);
+				Game.DisplayLogs(1);
+			}
+		});
 	}
 
 	/**

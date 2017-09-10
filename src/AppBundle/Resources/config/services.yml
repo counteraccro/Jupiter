@@ -8,4 +8,4 @@ services:
         arguments: ["@doctrine", "@service_container", "@app.log"]
     app.log:
         class: AppBundle\Service\LogService
-        arguments: ["@doctrine", "@service_container"]
+        arguments: ["@doctrine", "@service_container", "@session"]
