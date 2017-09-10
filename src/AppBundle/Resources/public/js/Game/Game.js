@@ -71,7 +71,7 @@ Game.Launch = function(params)
 			});
 		}
 		else {
-			console.log('a faire');
+			console.log('Run game a faire');
 		}
 	}
 
@@ -126,7 +126,7 @@ Game.Launch = function(params)
 				if(data.response == 'no_lobby')
 				{
 					HtmlRender.Preloader('#game-bloc #begin-bloc', 'Recherche d\'un lobby... Essai n° ' + Game.loop);
-
+					// Create new lobby
 					if(Game.loop == 6)
 					{
 						clearInterval(Game.interval);
@@ -138,6 +138,7 @@ Game.Launch = function(params)
 					clearInterval(Game.interval);
 					alert(data.text);
 				}
+				// Find lobby
 				else
 				{
 					clearInterval(Game.interval);
@@ -153,21 +154,63 @@ Game.Launch = function(params)
 	Game.WaitInLobby = function(lobby_id)
 	{
 		Game.interval = '';
+		Game.loop = 10;
 		HtmlRender.Preloader('#game-bloc #begin-bloc', 'Lobby trouvé en attente de joueur....');
 		Game.interval = setInterval(function () {Game._WaitInLobby(lobby_id)}, 3000);
 	}
 	
+	/**
+	 * Loop for waiting in lobby new player
+	 */
 	Game._WaitInLobby = function(lobby_id)
 	{
-		var url =  Game.url_waiting_lobby.substring(0, Game.url_waiting_lobby.length-1) + lobby_id;
+		if(Game.loop < 20)
+		{
+			var url =  Game.url_waiting_lobby.substring(0, Game.url_waiting_lobby.length-1) + lobby_id;
+			
+			$.ajax({
+				type: "GET",
+				url: url,
+				success: function(response) {
+					$('#game-bloc #begin-bloc').html(response);
+					if((60 - Game.loop*3) > 0)
+					{
+						$('#game-bloc #begin-bloc').append('<br />Temps restant ' + (60 - Game.loop*3) + ' secondes');
+					}
+					else
+					{
+						$('#game-bloc #begin-bloc').append('<br />Aucun autre joueur trouvé, lancement de la génération des joueurs IA');
+					}
+				}
+			});
+		}
+		else
+		{
+			clearInterval(Game.interval);
+			HtmlRender.Preloader('#game-bloc #begin-bloc', 'Génération de joueur IA');
+			Game.GeneratePlayer(lobby_id);
+		}
 		
+		Game.loop++;
+	}
+	
+	/**
+	 * Generate IA player to complete the lobby 
+	 */
+	Game.GeneratePlayer = function(lobby_id)
+	{
+		var url =  Game.url_generate_player.substring(0, Game.url_generate_player.length-1) + lobby_id;
 		console.log(url);
 		
 		$.ajax({
 			type: "GET",
 			url: url,
+			dataType: "json",
 			success: function(response) {
-				$('#game-bloc #begin-bloc').html(response);
+				data = JSON.parse(response['data']);
+				console.log(data);
+				HtmlRender.Preloader('#game-bloc #begin-bloc', 'Lancement de la partie');
+				Game.RunGame(data['lobby']['id'], false);
 			}
 		});
 	}

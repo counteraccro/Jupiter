@@ -2,7 +2,6 @@
 
 namespace AppBundle\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
 use Symfony\Component\HttpFoundation\Request;
@@ -97,9 +96,13 @@ class LobbyController extends AppController {
 			return $this->redirect($this->generateUrl('homepage'));
 		}
 		
-		/*return new JsonResponse(array (
-				'data' => $this->serializer($lobby) 
-		));*/
+		if($lobby->getNbPlaceMax() == $lobby->getLobbyPlayers()->count())
+		{
+			$lobby->setStatus('CLOSE');
+			$em = $this->getDoctrine()->getManager();
+			$em->persist($lobby);
+			$em->flush();
+		}
 		
 		return $this->render('AppBundle:Lobby:ajax_waiting_lobby.html.twig', array (
 				'lobby' => $lobby

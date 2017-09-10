@@ -34,19 +34,16 @@ class PlayersGeneratorService {
 	}
 
 	/**
-	 * 
-	 * @param int $nb_players
-	 * @return \AppBundle\Entity\Player[]
+	 * Generate player for lobby
+	 * @param Lobby $lobby
+	 * @return \AppBundle\Entity\Lobby
 	 */
-	public function generatePlayers($nb_players)
+	public function generatePlayers(Lobby $lobby)
 	{
 		$first_nameArray = $this->container->getParameter('First_name');
 		$first_nameArray = explode(' ', $first_nameArray);
-		$tabPlayer = [ ];
 		
-		$lobby = new Lobby();
-		$lobby->setName("Lobby");
-		$this->doctrine->getManager()->persist($lobby);
+		$nb_players = ($lobby->getNbPlaceMax() - $lobby->getLobbyPlayers()->count());
 		
 		for($i = 0; $i < $nb_players; $i ++)
 		{
@@ -64,12 +61,13 @@ class PlayersGeneratorService {
 			
 			$this->doctrine->getManager()->persist($player);
 			$this->doctrine->getManager()->persist($lobbyPlayer);
-			$tabPlayer ['players'] [] = $player;
-			$tabPlayer ['lobby'] = $lobby;
 		}
+		
+		$lobby->setStatus('CLOSE');
+		$this->doctrine->getManager()->persist($lobby);
 		
 		$this->doctrine->getManager()->flush();
 		
-		return $tabPlayer;
+		return $lobby;
 	}
 }

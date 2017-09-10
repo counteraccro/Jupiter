@@ -22,7 +22,7 @@ Battle Royale
 	HtmlRender.Launch();
 
 	var params = {
-		url_generate_player : '{{ path('ajax_generate_players') }}',
+		url_generate_player : '{{ path('ajax_generate_players', { 'lobby_id': 0 }) }}',
 		url_game : '{{path('ajax_game', { 'lobby_id': 0 })}}',
 		url_find_open_lobby : '{{ path('find_open_lobby') }}',
 		url_waiting_lobby : '{{ path('ajax_wait_lobby', {'lobby_id' : 0})}}',
