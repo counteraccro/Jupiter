@@ -79,7 +79,7 @@ Game.Launch = function(params)
 	
 	Game.ShowResult = function(id)
 	{
-		
+		clearInterval(Game.interval);
 		HtmlRender.Preloader('#game-bloc #begin-bloc', 'Génération du résultat');
 		
 		var url = Game.url_load_result.substring(0,Game.url_load_result.length-1) + id;
@@ -90,7 +90,15 @@ Game.Launch = function(params)
 			dataType: "json",
 			success: function(response) {
 				Game.data = JSON.parse(response['data']);
-				Game.DisplayLogs(1);
+				if(Game.data.length == 0)
+				{
+					Game.WaitInLobby(id);
+				}
+				else
+				{
+					Game.DisplayLogs(1);
+				}
+				
 			}
 		});
 	}
@@ -156,7 +164,8 @@ Game.Launch = function(params)
 				else if(data.response == 'critique_error')
 				{
 					clearInterval(Game.interval);
-					alert(data.text);
+					HtmlRender.Preloader('#game-bloc #begin-bloc', 'Vous êtes déjà associé à un lobby');
+					Game.ShowResult(data.lobby_id);
 				}
 				// Find lobby
 				else

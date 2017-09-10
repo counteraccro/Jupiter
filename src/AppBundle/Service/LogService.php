@@ -189,8 +189,16 @@ class LogService {
 	 */
 	public function readLog($lobby_id)
 	{
-		$logs = file($this->folder_path . 'battle-' . $lobby_id . '.txt');
-		return $this->formatTabLog($logs);
+		$file = $this->folder_path . 'battle-' . $lobby_id . '.txt';
+		
+		if(file_exists($file))
+		{
+			$logs = file($file);
+			return $this->formatTabLog($logs);
+		}
+		else {
+			return [];
+		}
 	}
 	
 	/**

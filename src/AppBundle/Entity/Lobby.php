@@ -57,7 +57,7 @@ class Lobby {
 	{
 		$this->lobbyPlayers = new \Doctrine\Common\Collections\ArrayCollection();
 		$this->status = self::STATUS_OPEN;
-		$this->nbPlaceMax = 2;
+		$this->nbPlaceMax = 10;
 	}
 
 	/**

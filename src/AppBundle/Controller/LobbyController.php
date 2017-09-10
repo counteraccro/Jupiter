@@ -54,7 +54,8 @@ class LobbyController extends AppController {
 				return new JsonResponse(array (
 						'data' => $this->serializer(array (
 								'response' => 'critique_error',
-								'text' => 'Vous êtes déjà présent sur cette session !' 
+								'text' => 'Vous êtes déjà présent sur cette session !',
+								'lobby_id' => $lobby->getId()
 						)) 
 				));
 			}
