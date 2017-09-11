@@ -1,0 +1,134 @@
+parameters:
+    Object:
+        Pomme:
+            setName: Pomme
+            setValue: 10
+            setUnit: '%'
+            setType: HP
+            setCategoryObject: Soins
+        Boite_de_conserve:
+            setName: Boite de conserve
+            setValue: 10
+            setUnit: '%'
+            setType: HP
+            setCategoryObject: Soins
+        Anti_douleur:
+            setName: Anti douleur
+            setValue: 80
+            setUnit: '%'
+            setType: HP
+            setCategoryObject: Soins
+        Sachet_de_bonbon:
+            setName: Sachet de bonbon
+            setValue: 15
+            setUnit: '%'
+            setType: HP
+            setCategoryObject: Soins
+        Kalachnikov:
+            setName: Kalachnikov
+            setValue: 100
+            setUnit: '%'
+            setType: DPS
+            setCategoryObject: Fusils_assaults
+        M16:
+            setName: M16
+            setValue: 100
+            setUnit: '%'
+            setType: DPS
+            setCategoryObject: Fusils_assaults
+        SKS:
+            setName: SKS
+            setValue: 100
+            setUnit: '%'
+            setType: DPS
+            setCategoryObject: Fusils_assaults
+        SSG_97:
+            setName: SSG 97
+            setValue: 100
+            setUnit: '%'
+            setType: DPS
+            setCategoryObject: Fusils_assaults
+        UZI_SMG:
+            setName: UZI SMG
+            setValue: 80
+            setUnit: '%'
+            setType: DPS
+            setCategoryObject: Pistolets
+        Revolver_38:
+            setName: Revolver .38
+            setValue: 80
+            setUnit: '%'
+            setType: DPS
+            setCategoryObject: Pistolets
+        Glock:
+            setName: Glock
+            setValue: 50
+            setUnit: '%'
+            setType: DPS
+            setCategoryObject: Pistolets
+        Beretta:
+            setName: Beretta
+            setValue: 80
+            setUnit: '%'
+            setType: DPS
+            setCategoryObject: Pistolets
+        Desert_eagle:
+            setName: Desert Eagle
+            setValue: 80
+            setUnit: '%'
+            setType: DPS
+            setCategoryObject: Pistolets
+        MKA:
+            setName: MKA
+            setValue: 100
+            setUnit: '%'
+            setType: DPS
+            setCategoryObject: Fusils_semi_auto
+        FABARM:
+            setName: FABARM
+            setValue: 100
+            setUnit: '%'
+            setType: DPS
+            setCategoryObject: Fusils_semi_auto
+        Ballon_foot:
+            setName: Ballon de foot
+            setValue: 0
+            setUnit: '%'
+            setType: FUN
+            setCategoryObject: Divers
+        Ballon_basket:
+            setName: Ballon de basket
+            setValue: 0
+            setUnit: '%'
+            setType: FUN
+            setCategoryObject: Divers
+        Telephone:
+            setName: Téléphone
+            setValue: 0
+            setUnit: '%'
+            setType: FUN
+            setCategoryObject: Divers
+        Casserolle:
+            setName: Casserole
+            setValue: 5
+            setUnit: '%'
+            setType: DPS
+            setCategoryObject: Divers
+        Ours_peluche:
+            setName: Ours en peluche
+            setValue: 0
+            setUnit: '%'
+            setType: FUN
+            setCategoryObject: Divers
+        petit_sac_dos:
+            setName: Petit sac à dos
+            setValue: 2
+            setUnit: '%'
+            setType: SEAT
+            setCategoryObject: Stockage
+        grand_sac_dos:
+            setName: Grand sac à dos
+            setValue: 3
+            setUnit: '%'
+            setType: SEAT
+            setCategoryObject: Stockage

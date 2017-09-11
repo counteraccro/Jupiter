@@ -1,0 +1,17 @@
+parameters:
+    CategoryObject:
+        Soins:
+            setName: Soins
+        Pistolets:
+            setName: Pistolets
+        Fusils_assaults:
+            setName: Fusils d'assaults
+        Fusils_semi_auto:
+            setName: Fusils semi-automatique
+        Armes_tranchantes:
+            setName: Armes tranchantes
+        Stockage:
+            setName: Stockage
+        Divers:
+            setName: Divers
+        

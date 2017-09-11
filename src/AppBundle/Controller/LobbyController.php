@@ -121,7 +121,7 @@ class LobbyController extends AppController {
 		$return = $this->isAjaxRequest($request);
 		if(is_object($return))
 		{
-			return $return;
+			//return $return;
 		}
 		
 		$this->checkSessionPlayer();

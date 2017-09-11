@@ -25,7 +25,8 @@ class AppExtension extends Extension
 		//$loader->load('parameters.yml');
 		
 		$fixture_loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config/DataFixtures'));
-		$fixture_loader->load('player.yml');
+		$fixture_loader->load('CategoryObjects.yml');
+		$fixture_loader->load('Objects.yml');
 		
 		$data_loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/data'));
 		$data_loader->load('first_name.yml');

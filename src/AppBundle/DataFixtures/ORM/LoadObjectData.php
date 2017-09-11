@@ -7,9 +7,9 @@ use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Doctrine\Common\DataFixtures\AbstractFixture;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
-use AppBundle\Entity\Player;
+use AppBundle\Entity\Object;
 
-class LoadPlayerData extends AbstractFixture implements FixtureInterface, ContainerAwareInterface, OrderedFixtureInterface {
+class LoadObjectData extends AbstractFixture implements FixtureInterface, ContainerAwareInterface, OrderedFixtureInterface {
 	/**
 	 *
 	 * @var ContainerInterface
@@ -24,25 +24,32 @@ class LoadPlayerData extends AbstractFixture implements FixtureInterface, Contai
 	
 	public function load(ObjectManager $manager)
 	{
-		$playerArray = $this->container->getParameter('Player');
+		$objectArray = $this->container->getParameter('Object');
 		
-		foreach( $playerArray as $name => $object )
+		foreach( $objectArray as $name => $obj )
 		{
-			$player = new Player();
+			$object = new Object();
 			
-			foreach( $object as $key => $value )
+			foreach( $obj as $key => $value )
 			{
-				$player->{$key}($value);
+				if($key == 'setCategoryObject')
+				{
+					$object->{$key}($this->getReference($value));
+				}
+				else 
+				{
+					$object->{$key}($value);
+				}
 			}
 			
-			$manager->persist($player);
-			$this->addReference($name, $player);
+			$manager->persist($object);
+			$this->addReference($name, $object);
 		}
 		$manager->flush();
 	}
 	
 	public function getOrder()
 	{
-		return 1;
+		return 2;
 	}
 }

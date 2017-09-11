@@ -46,12 +46,35 @@ class LobbyPlayer
      * @ORM\Column(name="is_dead", type="boolean")
      */
     private $isDead;
+    
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="hp", type="integer")
+     */
+    private $hp;
+    
+    /**
+     * @ORM\OneToOne(targetEntity="AppBundle\Entity\Object", cascade={"persist"})
+     */
+    private $object_1;
+    
+    /**
+     * @ORM\OneToOne(targetEntity="AppBundle\Entity\Object", cascade={"persist"})
+     */
+    private $object_2;
+    
+    /**
+     * @ORM\OneToOne(targetEntity="AppBundle\Entity\Object", cascade={"persist"})
+     */
+    private $object_3;
 
     
     public function __construct()
     {
     	$this->nbKill = 0;
     	$this->isDead = false;
+    	$this->hp = 100;
     }
 
     /**
@@ -158,5 +181,101 @@ class LobbyPlayer
     public function getPlayer()
     {
         return $this->player;
+    }
+
+    /**
+     * Set hp
+     *
+     * @param integer $hp
+     *
+     * @return LobbyPlayer
+     */
+    public function setHp($hp)
+    {
+        $this->hp = $hp;
+
+        return $this;
+    }
+
+    /**
+     * Get hp
+     *
+     * @return integer
+     */
+    public function getHp()
+    {
+        return $this->hp;
+    }
+
+    /**
+     * Set object1
+     *
+     * @param \AppBundle\Entity\Object $object1
+     *
+     * @return LobbyPlayer
+     */
+    public function setObject1(\AppBundle\Entity\Object $object1 = null)
+    {
+        $this->object_1 = $object1;
+
+        return $this;
+    }
+
+    /**
+     * Get object1
+     *
+     * @return \AppBundle\Entity\Object
+     */
+    public function getObject1()
+    {
+        return $this->object_1;
+    }
+
+    /**
+     * Set object2
+     *
+     * @param \AppBundle\Entity\Object $object2
+     *
+     * @return LobbyPlayer
+     */
+    public function setObject2(\AppBundle\Entity\Object $object2 = null)
+    {
+        $this->object_2 = $object2;
+
+        return $this;
+    }
+
+    /**
+     * Get object2
+     *
+     * @return \AppBundle\Entity\Object
+     */
+    public function getObject2()
+    {
+        return $this->object_2;
+    }
+
+    /**
+     * Set object3
+     *
+     * @param \AppBundle\Entity\Object $object3
+     *
+     * @return LobbyPlayer
+     */
+    public function setObject3(\AppBundle\Entity\Object $object3 = null)
+    {
+        $this->object_3 = $object3;
+
+        return $this;
+    }
+
+    /**
+     * Get object3
+     *
+     * @return \AppBundle\Entity\Object
+     */
+    public function getObject3()
+    {
+        return $this->object_3;
     }
 }
