@@ -107,7 +107,7 @@ class GameService {
 			$this->choiceAction($lobbyPlayer);
 		}
 		
-		if(!$endLoop && $this->checkEndGame())
+		if(! $endLoop && $this->checkEndGame())
 		{
 			$endLoop = true;
 		}
@@ -218,6 +218,7 @@ class GameService {
 			break;
 			default:
 				$log = 'Action ' . $action . ' inconnu';
+				$this->logService->errorLog($log);
 			break;
 		}
 	}

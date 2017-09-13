@@ -167,6 +167,11 @@ class LogService {
 		return $this->writeLog($strLog);
 	}
 
+	/**
+	 * Write presentation log
+	 * @param Lobby $lobby
+	 * @return string
+	 */
 	public function Presentationlog(Lobby $lobby)
 	{
 		$action = 'presentation';
@@ -184,6 +189,15 @@ class LogService {
 		$strLog = str_replace('$nb$', $lobby->getLobbyPlayers()->count(), $strLog);
 		
 		return $this->writeLog($strLog);
+	}
+	
+	/**
+	 * Write error log
+	 * @param string $str
+	 */
+	public function errorLog($str)
+	{
+		$this->writeLog($str);
 	}
 
 	/**
