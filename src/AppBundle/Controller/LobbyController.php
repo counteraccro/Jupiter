@@ -121,29 +121,16 @@ class LobbyController extends AppController {
 		$return = $this->isAjaxRequest($request);
 		if(is_object($return))
 		{
-			//return $return;
+			return $return;
 		}
 		
 		$this->checkSessionPlayer();
 		
-		$lobby = new Lobby();
-		$lobby->setName('Name');
-		
 		$em = $this->getDoctrine()->getManager();
-		$em->persist($lobby);
-		$em->flush();
-		
-		$lobby->setName('Lobby n° ' . $lobby->getId());
-		
 		$player = $em->getRepository('AppBundle:Player')->findById($this->get('session')->get('player_id'))[0];
 		
-		$lobbyPlayer = new LobbyPlayer();
-		$lobbyPlayer->setLobby($lobby)->setPlayer($player);
-		
-		$em->persist($lobbyPlayer);
-		$em->flush();
-		
-		$this->get('session')->set('lobby_id', $lobby->getId());
+		$lobbyService = $this->container->get('app.lobby');
+		$lobby = $lobbyService->createLobby($player);
 		
 		return new JsonResponse(array (
 				'data' => $this->serializer(array (

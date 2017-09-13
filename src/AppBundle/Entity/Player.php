@@ -43,6 +43,15 @@ class Player {
 	 * @var int @ORM\Column(name="hp", type="integer")
 	 */
 	private $hp;
+	
+	/**
+	 * Constructor
+	 */
+	public function __construct()
+	{
+		$this->lobbyPlayers = new \Doctrine\Common\Collections\ArrayCollection();
+		$this->hp = 100;
+	}
 
 	/**
 	 * Get id
@@ -102,17 +111,10 @@ class Player {
 		return $this->hp;
 	}
 
+	
 	public function __toString()
 	{
 		return $this->name;
-	}
-
-	/**
-	 * Constructor
-	 */
-	public function __construct()
-	{
-		$this->lobbyPlayers = new \Doctrine\Common\Collections\ArrayCollection();
 	}
 
 	/**

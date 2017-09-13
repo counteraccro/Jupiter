@@ -59,6 +59,8 @@ class PlayersGeneratorService {
 			$lobbyPlayer->setIsDead(false)->setNbKill(0);
 			$lobbyPlayer->setLobby($lobby);
 			
+			$lobby->addLobbyPlayer($lobbyPlayer);
+			
 			$this->doctrine->getManager()->persist($player);
 			$this->doctrine->getManager()->persist($lobbyPlayer);
 		}

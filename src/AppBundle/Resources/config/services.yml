@@ -9,3 +9,6 @@ services:
     app.log:
         class: AppBundle\Service\LogService
         arguments: ["@doctrine", "@service_container", "@session"]
+    app.lobby:
+        class: AppBundle\Service\LobbyService
+        arguments: ["@doctrine", "@service_container", "@session"]

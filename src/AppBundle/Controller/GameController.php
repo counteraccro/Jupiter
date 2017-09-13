@@ -9,6 +9,7 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\HttpFoundation\File\File;
+use AppBundle\Entity\Player;
 
 class GameController extends AppController {
 
@@ -59,10 +60,10 @@ class GameController extends AppController {
 		}
 		
 		$gameService = $this->container->get('app.game');
-		$result = $gameService->generateGame($lobby);
+		$gameService->generateGame($lobby);
 		
 		return new JsonResponse(array (
-				'data' => $this->serializer($result) 
+				'data' => 'success'
 		));
 	}
 	
@@ -86,5 +87,35 @@ class GameController extends AppController {
 				'data' => $this->serializer($result)
 		));
 		
+	}
+	
+	/**
+	 * @Route("battle/test_battle", name="test_battle")
+	 */
+	public function test_battle(Request $request)
+	{
+		
+		$player = new Player();
+		$player->setName('Player-test');
+		
+		$em = $this->getDoctrine()->getManager();
+		$em->persist($player);
+		$em->flush();
+		
+		$lobbyService = $this->container->get('app.lobby');
+		$lobby = $lobbyService->createLobby($player);
+		
+		$playerGeneratorService = $this->container->get('app.players_generator');
+		$lobby = $playerGeneratorService->generatePlayers($lobby);
+		
+		$gameService = $this->container->get('app.game');
+		$gameService->generateGame($lobby);
+		
+		$logService = $this->container->get('app.log');
+		$result = $logService->readLog($lobby->getId());
+		
+		return new JsonResponse(array (
+				'data' => $this->serializer($result)
+		));
 	}
 }

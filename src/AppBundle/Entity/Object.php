@@ -50,6 +50,13 @@ class Object
     private $type;
     
     /**
+     * @var string
+     *
+     * @ORM\Column(name="pronoun", type="string", length=10)
+     */
+    private $pronoun;
+    
+    /**
      * @ORM\ManyToOne(targetEntity="AppBundle\Entity\CategoryObject", inversedBy="$objects")
      * @ORM\JoinColumn(nullable=false)
      */
@@ -184,5 +191,29 @@ class Object
     public function getCategoryObject()
     {
         return $this->categoryObject;
+    }
+
+    /**
+     * Set pronoun
+     *
+     * @param string $pronoun
+     *
+     * @return Object
+     */
+    public function setPronoun($pronoun)
+    {
+        $this->pronoun = $pronoun;
+
+        return $this;
+    }
+
+    /**
+     * Get pronoun
+     *
+     * @return string
+     */
+    public function getPronoun()
+    {
+        return $this->pronoun;
     }
 }

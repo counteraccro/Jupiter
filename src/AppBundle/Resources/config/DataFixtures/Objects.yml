@@ -5,130 +5,180 @@ parameters:
             setValue: 10
             setUnit: '%'
             setType: HP
-            setCategoryObject: Soins
+            setCategoryObject: Nourritures
+            setPronoun: une
+        Barre_cereales:
+            setName: Barre de céréales
+            setValue: 10
+            setUnit: '%'
+            setType: HP
+            setCategoryObject: Nourritures
+            setPronoun: une
+        Canette_soda:
+            setName: Canette de soda
+            setValue: 20
+            setUnit: '%'
+            setType: HP
+            setCategoryObject: Nourritures
+            setPronoun: une
         Boite_de_conserve:
             setName: Boite de conserve
             setValue: 10
             setUnit: '%'
             setType: HP
-            setCategoryObject: Soins
+            setCategoryObject: Nourritures
+            setPronoun: une
         Anti_douleur:
             setName: Anti douleur
             setValue: 80
             setUnit: '%'
             setType: HP
             setCategoryObject: Soins
+            setPronoun: un
         Sachet_de_bonbon:
             setName: Sachet de bonbon
             setValue: 15
             setUnit: '%'
             setType: HP
-            setCategoryObject: Soins
+            setCategoryObject: Nourritures
+            setPronoun: un
         Kalachnikov:
             setName: Kalachnikov
             setValue: 100
             setUnit: '%'
             setType: DPS
             setCategoryObject: Fusils_assaults
+            setPronoun: une
         M16:
             setName: M16
             setValue: 100
             setUnit: '%'
             setType: DPS
             setCategoryObject: Fusils_assaults
+            setPronoun: une
         SKS:
             setName: SKS
             setValue: 100
             setUnit: '%'
             setType: DPS
             setCategoryObject: Fusils_assaults
+            setPronoun: une
         SSG_97:
             setName: SSG 97
             setValue: 100
             setUnit: '%'
             setType: DPS
             setCategoryObject: Fusils_assaults
+            setPronoun: une
         UZI_SMG:
             setName: UZI SMG
             setValue: 80
             setUnit: '%'
             setType: DPS
             setCategoryObject: Pistolets
+            setPronoun: un
         Revolver_38:
             setName: Revolver .38
             setValue: 80
             setUnit: '%'
             setType: DPS
             setCategoryObject: Pistolets
+            setPronoun: un
         Glock:
             setName: Glock
             setValue: 50
             setUnit: '%'
             setType: DPS
             setCategoryObject: Pistolets
+            setPronoun: un
         Beretta:
             setName: Beretta
             setValue: 80
             setUnit: '%'
             setType: DPS
             setCategoryObject: Pistolets
+            setPronoun: un
         Desert_eagle:
             setName: Desert Eagle
             setValue: 80
             setUnit: '%'
             setType: DPS
             setCategoryObject: Pistolets
+            setPronoun: un
         MKA:
             setName: MKA
             setValue: 100
             setUnit: '%'
             setType: DPS
             setCategoryObject: Fusils_semi_auto
+            setPronoun: une
         FABARM:
             setName: FABARM
             setValue: 100
             setUnit: '%'
             setType: DPS
             setCategoryObject: Fusils_semi_auto
+            setPronoun: une
         Ballon_foot:
             setName: Ballon de foot
             setValue: 0
             setUnit: '%'
             setType: FUN
             setCategoryObject: Divers
+            setPronoun: un
         Ballon_basket:
             setName: Ballon de basket
             setValue: 0
             setUnit: '%'
             setType: FUN
             setCategoryObject: Divers
+            setPronoun: un
         Telephone:
             setName: Téléphone
             setValue: 0
             setUnit: '%'
             setType: FUN
             setCategoryObject: Divers
+            setPronoun: un
         Casserolle:
             setName: Casserole
             setValue: 5
             setUnit: '%'
             setType: DPS
             setCategoryObject: Divers
+            setPronoun: une
         Ours_peluche:
             setName: Ours en peluche
             setValue: 0
             setUnit: '%'
             setType: FUN
             setCategoryObject: Divers
+            setPronoun: un
         petit_sac_dos:
             setName: Petit sac à dos
             setValue: 2
             setUnit: '%'
             setType: SEAT
             setCategoryObject: Stockage
+            setPronoun: un
         grand_sac_dos:
             setName: Grand sac à dos
             setValue: 3
             setUnit: '%'
             setType: SEAT
             setCategoryObject: Stockage
+            setPronoun: un
+        Petite_trousse_secours:
+            setName: Petite trousse de secours
+            setValue: 40
+            setUnit: '%'
+            setType: HP
+            setCategoryObject: Soins
+            setPronoun: une
+        Grande_trousse_secours:
+            setName: Grande trousse de secours
+            setValue: 80
+            setUnit: '%'
+            setType: HP
+            setCategoryObject: Soins
+            setPronoun: une

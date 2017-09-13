@@ -2,6 +2,8 @@ parameters:
     CategoryObject:
         Soins:
             setName: Soins
+        Nourritures:
+            setName: Nourritures
         Pistolets:
             setName: Pistolets
         Fusils_assaults:

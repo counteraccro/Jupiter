@@ -2,12 +2,16 @@ parameters:
     RandomActionsConditions:
         1:
             0: moving
+            1: find
         2:
             0: moving
+            1: find
         3:
             0: moving
+            1: find
         4:
             0: moving
+            1: find
         5:
             0: moving
         6:

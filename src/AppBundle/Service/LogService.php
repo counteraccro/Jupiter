@@ -36,11 +36,11 @@ class LogService {
 	private $folder_path;
 	
 	/**
-	 * 
+	 *
 	 * @var Session
 	 */
 	private $session;
-	
+
 	/**
 	 *
 	 * @param Doctrine $doctrine
@@ -53,9 +53,9 @@ class LogService {
 		$this->session = $session;
 		
 		$this->logsArray = $this->container->getParameter('Logs');
-		$this->folder_path =  dirname(__DIR__) . '/Resources/public/battles/';
+		$this->folder_path = dirname(__DIR__) . '/Resources/public/battles/';
 	}
-	
+
 	/**
 	 * Generate log for action moving
 	 * @param Player $player
@@ -75,9 +75,8 @@ class LogService {
 		$this->doctrine->getManager()->persist($log);
 		
 		return $this->writeLog($strLog);
-		
 	}
-	
+
 	/**
 	 * Generate log for action kill
 	 * @param Player $player
@@ -106,7 +105,7 @@ class LogService {
 		
 		return $this->writeLog($strLog);
 	}
-	
+
 	/**
 	 * Generate log for daily statistiques
 	 * @param array $stats
@@ -124,11 +123,11 @@ class LogService {
 		if($nbKill > 0)
 		{
 			$names = '';
-			foreach($stats['days'][$nbDays]['kill'] as $name)
+			foreach( $stats['days'][$nbDays]['kill'] as $name )
 			{
-				$names .= $name . ',';
+				$names .= $name . ', ';
 			}
-			$names = substr($names, 0, -1);
+			$names = substr($names, 0, - 2);
 			
 			if($nbKill == 1)
 			{
@@ -152,7 +151,7 @@ class LogService {
 		
 		return $this->writeLog($strLog);
 	}
-	
+
 	/**
 	 * Write log when we have a winner
 	 * @param Player $player
@@ -167,7 +166,26 @@ class LogService {
 		
 		return $this->writeLog($strLog);
 	}
-	
+
+	public function Presentationlog(Lobby $lobby)
+	{
+		$action = 'presentation';
+		$key = array_rand($this->logsArray[$action]);
+		$strLog = $this->logsArray[$action][$key];
+		
+		$players = '';
+		foreach ($lobby->getLobbyPlayers() as $lobbyPLayer)
+		{
+			$players .= $lobbyPLayer->getPlayer()->getName() . ', ';
+		}
+		$players = substr($players, 0, - 2);
+		
+		$strLog = str_replace('$players$', $players, $strLog);
+		$strLog = str_replace('$nb$', $lobby->getLobbyPlayers()->count(), $strLog);
+		
+		return $this->writeLog($strLog);
+	}
+
 	/**
 	 * Write log in a file
 	 * @param string $strLog
@@ -181,7 +199,7 @@ class LogService {
 		
 		return $strLog;
 	}
-	
+
 	/**
 	 * Read log file
 	 * @param Lobby $lobby_id
@@ -196,11 +214,12 @@ class LogService {
 			$logs = file($file);
 			return $this->formatTabLog($logs);
 		}
-		else {
-			return [];
+		else
+		{
+			return [ ];
 		}
 	}
-	
+
 	/**
 	 * Format the logs for display
 	 * @param array $logs
@@ -208,14 +227,14 @@ class LogService {
 	 */
 	private function formatTabLog($logs)
 	{
-		$result = [];
+		$result = [ ];
 		$jour = 1;
-		foreach($logs as $log)
+		foreach( $logs as $log )
 		{
 			if(preg_match('/Jour/', $log, $matchs))
 			{
 				$result['logs'][$jour][] = $log;
-				$jour++;
+				$jour ++;
 			}
 			else
 			{

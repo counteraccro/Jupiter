@@ -1,5 +1,7 @@
 parameters:
     Logs:
+        presentation:
+            0: "Bienvenue à nos $nb$ joueurs qui sont : $players$"
         moving:
             0: $player$ se ballade dans la plaine
             1: $player$ se ballade dans la foret

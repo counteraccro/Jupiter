@@ -37,14 +37,6 @@ class GameService {
 	private $nbDays = 1;
 	
 	/**
-	 *
-	 * @var array
-	 */
-	private $dataReturn = [ 
-			'logs' => [ ] 
-	];
-	
-	/**
 	 * Array containing the trigger values of the conditions of the actions
 	 * @var array
 	 */
@@ -87,9 +79,9 @@ class GameService {
 	public function generateGame(Lobby $lobby)
 	{
 		$this->lobby = $lobby;
+		$this->logService->Presentationlog($this->lobby);
 		$this->_generateGame();
 		$this->doctrine->getManager()->flush();
-		return $this->dataReturn;
 	}
 
 	/**
@@ -125,7 +117,7 @@ class GameService {
 			return true;
 		}
 		
-		$this->dataReturn['logs'][$this->nbDays][] = $this->logService->StatDayLog($this->statistiques, $this->nbDays);
+		$this->logService->StatDayLog($this->statistiques, $this->nbDays);
 		
 		$this->nbDays ++;
 		$this->_generateGame();
@@ -145,7 +137,7 @@ class GameService {
 			{
 				if(! $lobbyPlayerWinner->getIsDead())
 				{
-					$this->dataReturn['logs'][$this->nbDays][] = $this->logService->Winnerlog($lobbyPlayerWinner->getPlayer(), $this->nbDays);
+					$this->logService->Winnerlog($lobbyPlayerWinner->getPlayer(), $this->nbDays);
 					$endLoop = true;
 					break;
 				}
@@ -219,17 +211,15 @@ class GameService {
 		
 		switch($action) {
 			case self::ACTION_MOVING:
-				$log = $this->logService->movingLog($lobbyPlayer->getPlayer(), $this->lobby);
+				$this->logService->movingLog($lobbyPlayer->getPlayer(), $this->lobby);
 			break;
 			case self::ACTION_KILL:
-				$log = $this->killAction($lobbyPlayer);
+				$this->killAction($lobbyPlayer);
 			break;
 			default:
 				$log = 'Action ' . $action . ' inconnu';
 			break;
 		}
-		
-		$this->dataReturn['logs'][$this->nbDays][] = $log;
 	}
 
 	/**
@@ -262,8 +252,11 @@ class GameService {
 		
 		if($lobbyPlayer->getId() == $lobbyPlayerKill->getId())
 		{
-			return $this->logService->killLog($lobbyPlayer->getPlayer(), $lobbyPlayerKill->getPlayer(), $this->lobby, self::ACTION_SELF_KILL);
+			$this->logService->killLog($lobbyPlayer->getPlayer(), $lobbyPlayerKill->getPlayer(), $this->lobby, self::ACTION_SELF_KILL);
 		}
-		return $this->logService->killLog($lobbyPlayer->getPlayer(), $lobbyPlayerKill->getPlayer(), $this->lobby, self::ACTION_KILL);
+		else
+		{
+			$this->logService->killLog($lobbyPlayer->getPlayer(), $lobbyPlayerKill->getPlayer(), $this->lobby, self::ACTION_KILL);
+		}
 	}
 }
