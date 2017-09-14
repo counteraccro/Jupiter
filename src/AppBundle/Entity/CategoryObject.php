@@ -29,6 +29,13 @@ class CategoryObject
     private $name;
     
     /**
+     * @var int
+     *
+     * @ORM\Column(name="priority", type="integer")
+     */
+    private $priority;
+    
+    /**
      * @ORM\OneToMany(targetEntity="AppBundle\Entity\Object", mappedBy="object")
      */
     private $objects;
@@ -107,5 +114,30 @@ class CategoryObject
     public function getObjects()
     {
         return $this->objects;
+    }
+
+
+    /**
+     * Set priority
+     *
+     * @param integer $priority
+     *
+     * @return CategoryObject
+     */
+    public function setPriority($priority)
+    {
+        $this->priority = $priority;
+
+        return $this;
+    }
+
+    /**
+     * Get priority
+     *
+     * @return integer
+     */
+    public function getPriority()
+    {
+        return $this->priority;
     }
 }

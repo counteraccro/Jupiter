@@ -2,18 +2,26 @@ parameters:
     CategoryObject:
         Soins:
             setName: Soins
+            setPriority: 100
         Nourritures:
             setName: Nourritures
+            setPriority: 75
         Pistolets:
             setName: Pistolets
+            setPriority: 90
         Fusils_assaults:
             setName: Fusils d'assaults
+            setPriority: 95
         Fusils_semi_auto:
             setName: Fusils semi-automatique
+            setPriority: 95
         Armes_tranchantes:
             setName: Armes tranchantes
+            setPriority: 60
         Stockage:
             setName: Stockage
+            setPriority: 100
         Divers:
             setName: Divers
+            setPriority: 50
         
