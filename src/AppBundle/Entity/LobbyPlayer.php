@@ -98,6 +98,7 @@ class LobbyPlayer
     	$this->isDead = false;
     	$this->hp = 100;
     	$this->nextActionPossible = '';
+    	$this->lastActions = '';
     }
 
     /**

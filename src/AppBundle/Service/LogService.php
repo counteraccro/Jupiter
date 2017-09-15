@@ -179,7 +179,7 @@ class LogService {
 		$strLog = $this->logsArray[$action][$key];
 		
 		$players = '';
-		foreach ($lobby->getLobbyPlayers() as $lobbyPLayer)
+		foreach( $lobby->getLobbyPlayers() as $lobbyPLayer )
 		{
 			$players .= $lobbyPLayer->getPlayer()->getName() . ', ';
 		}
@@ -190,7 +190,7 @@ class LogService {
 		
 		return $this->writeLog($strLog);
 	}
-	
+
 	/**
 	 * Write error log
 	 * @param string $str
@@ -207,11 +207,32 @@ class LogService {
 	 */
 	private function writeLog($strLog)
 	{
-		$fileLog = fopen($this->folder_path . 'battle-' . $this->session->get('lobby_id') . '.txt', 'a+');
+		$fileLog = fopen($this->folder_path . $this->getFileName(), 'a+');
 		fputs($fileLog, $strLog . "\n");
 		fclose($fileLog);
 		
 		return $strLog;
+	}
+
+	/**
+	 * Get the name of the log file
+	 * @param integer $lobby_id
+	 * @return string
+	 */
+	private function getFileName($lobby_id = null)
+	{
+		if($lobby_id == null)
+		{
+			$fileName = 'battle-' . $this->session->get('lobby_id') . '.txt';
+		}
+		else
+		{
+			$fileName = 'battle-' . $lobby_id . '.txt';
+		}
+		
+		// For débug
+		$fileName = 'battle-demo.txt';
+		return $fileName;
 	}
 
 	/**
@@ -221,7 +242,7 @@ class LogService {
 	 */
 	public function readLog($lobby_id)
 	{
-		$file = $this->folder_path . 'battle-' . $lobby_id . '.txt';
+		$file = $this->folder_path . $this->getFileName();
 		
 		if(file_exists($file))
 		{

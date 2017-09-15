@@ -1,20 +1,43 @@
 parameters:
     Logs:
         presentation:
-            0: "Bienvenue à nos $nb$ joueurs qui sont : $players$"
+            0: "Bienvenue à nos $nb$ joueurs qui sont : $players$."
         moving:
-            0: $player$ se ballade dans la plaine
-            1: $player$ se ballade dans la foret
-            2: $player$ se déplace discretement dans les fourés
-            3: $player$ marche tranquillement
-            4: $player$ court en petites foulées
+            0: $player$ se ballade dans la plaine.
+            1: $player$ se ballade dans la foret.
+            2: $player$ se déplace discretement dans les fourés.
+            3: $player$ marche tranquillement.
+            4: $player$ court en petites foulées.
+            5: $player$ ce déplace de façon chaotique complètement paniqué.
+            6: $player$ marche rapidement de façon déterminé.
         kill:
-            0: $player$ à tué $player_kill$
+            0: $player$ à tué $player_kill$.
         self_kill:
-            0: $player$ à décidé de ce suicider en ce jettant dans le vide
-            1: $player$ à fait une chute fatale en tombant sur la tête
+            0: $player$ à décidé de ce suicider en ce jettant dans le vide.
+            1: $player$ à fait une chute fatale en tombant sur la tête.
+            2: $player$ se noie en tentant de traverser une rivière en crue.
+        find:
+            0: $player$ trouve $object$ en fouillant un fourré.
+            1: $player$ trouve $object$ en fouillant un buisson.
+            2: $player$ trouve $object$ dans un batiment en ruine.
+            3: $player$ tombe par hasard sur $object$ en regardant le sol.
+            4: $player$ ramasse $object$ caché dans un arbre.
+        find_let:
+            0: $player$ ramasse $object$ mais décide de ne pas le prendre, ce n'est pas intéressant pour lui.
+            1: $player$ prend $object$ dans sa main mais le laisse tomber au sol.
+            2: $player$ regarde $object$ et décide finalement de ne pas le prendre.
+            3: $player$ regarde $object$ mais n'y prête aucune attention.
+        find_exchange:
+            0: $player$ fait le choix de garder $object_find$ qu'il vient de trouver et de laisser $object_let$ à la place
+            1: $player$ ramasse $object_find$ et laisse $object_let$ à la place.
+            2: $player$ estime que $object_find$ est plus intéressant que $object_let$, il laisse donc $object_let$ sur place.
+            3: $player$ trouve $object_find$ et décide de jetter $object_let$ par manque de place.
+        find_stockage_no_item:
+            0: $player$ trouve $object_find$ et gagne $nb place$pluriel$ de plus de stockage.
+        find_stockage_item:
+            0: $player$ trouve $object_find$ et gagne $nb place$pluriel$ de plus de stockage, du coup il peut garder aussi $object$.
         log_day:
             no_kill: Jour $day$ - Aucun mort !
-            kill: Jour $day$ - Seulement $player$ est mort aujourd'hui
-            kills : Jour $day$ - $nb_deads$ morts - $players$
+            kill: Jour $day$ - Seulement $player$ est mort aujourd'hui.
+            kills : Jour $day$ - $nb_deads$ morts - $players$.
             winner: Jour $day$ - Bravo à $player$ qui vient de gagner !
