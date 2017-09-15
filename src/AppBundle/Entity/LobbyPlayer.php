@@ -55,6 +55,28 @@ class LobbyPlayer
     private $hp;
     
     /**
+     * Possible action after completion of certain actions
+     * @var string @ORM\Column(name="next_action_possible", type="string", length=100)
+     */
+    private $nextActionPossible;
+    
+    /**
+     * History of actions 
+     * @var string @ORM\Column(name="last_action", type="text")
+     */
+    private $lastActions;
+    
+    /**
+     * @ORM\OneToOne(targetEntity="AppBundle\Entity\Player", cascade={"persist"})
+     */
+    private $playerFollow;
+    
+    /**
+     * @ORM\OneToOne(targetEntity="AppBundle\Entity\Player", cascade={"persist"})
+     */
+    private $teammate;
+    
+    /**
      * @ORM\OneToOne(targetEntity="AppBundle\Entity\Object", cascade={"persist"})
      */
     private $object_1;
@@ -75,6 +97,7 @@ class LobbyPlayer
     	$this->nbKill = 0;
     	$this->isDead = false;
     	$this->hp = 100;
+    	$this->nextActionPossible = '';
     }
 
     /**
@@ -277,5 +300,101 @@ class LobbyPlayer
     public function getObject3()
     {
         return $this->object_3;
+    }
+
+    /**
+     * Set nextActionPossible
+     *
+     * @param string $nextActionPossible
+     *
+     * @return LobbyPlayer
+     */
+    public function setNextActionPossible($nextActionPossible)
+    {
+        $this->nextActionPossible = $nextActionPossible;
+
+        return $this;
+    }
+
+    /**
+     * Get nextActionPossible
+     *
+     * @return string
+     */
+    public function getNextActionPossible()
+    {
+        return $this->nextActionPossible;
+    }
+
+    /**
+     * Set playerFollow
+     *
+     * @param \AppBundle\Entity\Player $playerFollow
+     *
+     * @return LobbyPlayer
+     */
+    public function setPlayerFollow(\AppBundle\Entity\Player $playerFollow = null)
+    {
+        $this->playerFollow = $playerFollow;
+
+        return $this;
+    }
+
+    /**
+     * Get playerFollow
+     *
+     * @return \AppBundle\Entity\Player
+     */
+    public function getPlayerFollow()
+    {
+        return $this->playerFollow;
+    }
+
+    /**
+     * Set teammate
+     *
+     * @param \AppBundle\Entity\Player $teammate
+     *
+     * @return LobbyPlayer
+     */
+    public function setTeammate(\AppBundle\Entity\Player $teammate = null)
+    {
+        $this->teammate = $teammate;
+
+        return $this;
+    }
+
+    /**
+     * Get teammate
+     *
+     * @return \AppBundle\Entity\Player
+     */
+    public function getTeammate()
+    {
+        return $this->teammate;
+    }
+
+    /**
+     * Set lastActions
+     *
+     * @param string $lastActions
+     *
+     * @return LobbyPlayer
+     */
+    public function setLastActions($lastActions)
+    {
+        $this->lastActions = $lastActions;
+
+        return $this;
+    }
+
+    /**
+     * Get lastActions
+     *
+     * @return string
+     */
+    public function getLastActions()
+    {
+        return $this->lastActions;
     }
 }
