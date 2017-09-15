@@ -231,7 +231,7 @@ class LogService {
 		}
 		
 		// For débug
-		$fileName = 'battle-demo.txt';
+		//$fileName = 'battle-demo.txt';
 		return $fileName;
 	}
 
