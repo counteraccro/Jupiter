@@ -1,0 +1,49 @@
+Bienvenue à nos 10 joueurs qui sont : Player-test, Anthony, Émile, Julien, Olivier, Noah, Benjamin, Maude, Maéva, Émile.
+Player-test court en petites foulées.
+Anthony marche tranquillement.
+Émile se déplace discretement dans les fourés.
+Julien à tué Benjamin.
+Olivier à tué Maude.
+Noah ce déplace de façon chaotique complètement paniqué.
+Maéva à tué Julien.
+Émile à tué Noah.
+Jour 1 - 4 morts - Benjamin, Maude, Julien, Noah.
+Player-test se noie en tentant de traverser une rivière en crue.
+Anthony court en petites foulées.
+Émile se déplace discretement dans les fourés.
+Olivier court en petites foulées.
+Action find inconnu
+Émile marche rapidement de façon déterminé.
+Jour 2 - Seulement Player-test est mort aujourd'hui.
+Anthony se noie en tentant de traverser une rivière en crue.
+Émile à tué Maéva.
+Olivier se ballade dans la foret.
+Émile à tué Émile.
+Jour 3 - 3 morts - Anthony, Maéva, Émile.
+Olivier se déplace discretement dans les fourés.
+Émile à tué Olivier.
+Jour 4 - Bravo à Émile qui vient de gagner !
+-----------------------------------
+
+Bienvenue à nos 10 joueurs qui sont : Player-test, Olivier, Élodie, Elizabeth, Ève, Mia, Rosalie, Vincent, Émilie, Alice.
+Player-test se déplace discretement dans les fourés.
+Action find inconnu
+Élodie à tué Mia.
+Elizabeth à tué Émilie.
+Ève ce déplace de façon chaotique complètement paniqué.
+Rosalie marche tranquillement.
+Vincent à fait une chute fatale en tombant sur la tête.
+Alice se ballade dans la plaine.
+Jour 1 - 3 morts - Mia, Émilie, Vincent.
+Player-test à fait une chute fatale en tombant sur la tête.
+Olivier à tué Élodie.
+Elizabeth à fait une chute fatale en tombant sur la tête.
+Ève à tué Olivier.
+Rosalie court en petites foulées.
+Alice se ballade dans la plaine.
+Jour 2 - 4 morts - Player-test, Élodie, Elizabeth, Olivier.
+Ève à fait une chute fatale en tombant sur la tête.
+Rosalie à tué Alice.
+Jour 3 - Bravo à Rosalie qui vient de gagner !
+-----------------------------------
+

@@ -64,8 +64,7 @@ class LogService {
 	 */
 	public function movingLog(Player $player, Lobby $lobby)
 	{
-		$key = array_rand($this->logsArray['moving']);
-		$strLog = $this->logsArray['moving'][$key];
+		$strLog = $this->getRandomLog('moving');
 		
 		$strLog = str_replace('$player$', $player->getName(), $strLog);
 		
@@ -85,8 +84,7 @@ class LogService {
 	 */
 	public function killLog(Player $player, Player $playerKill, Lobby $lobby, $action = 'kill')
 	{
-		$key = array_rand($this->logsArray[$action]);
-		$strLog = $this->logsArray[$action][$key];
+		$strLog = $this->getRandomLog($action);
 		
 		if($action == 'kill')
 		{
@@ -164,6 +162,8 @@ class LogService {
 		$strLog = str_replace('$player$', $player->getName(), $strLog);
 		$strLog = str_replace('$day$', $nbDays, $strLog);
 		
+		$strLog .= "\n-----------------------------------\n"; 
+		
 		return $this->writeLog($strLog);
 	}
 
@@ -175,8 +175,7 @@ class LogService {
 	public function Presentationlog(Lobby $lobby)
 	{
 		$action = 'presentation';
-		$key = array_rand($this->logsArray[$action]);
-		$strLog = $this->logsArray[$action][$key];
+		$strLog = $this->getRandomLog($action);
 		
 		$players = '';
 		foreach( $lobby->getLobbyPlayers() as $lobbyPLayer )
@@ -198,6 +197,18 @@ class LogService {
 	public function errorLog($str)
 	{
 		$this->writeLog($str);
+	}
+	
+	/**
+	 * get random log from array_log
+	 * @param string $key
+	 * @return string
+	 */
+	private function getRandomLog($key)
+	{
+		$randKey = array_rand($this->logsArray[$key]);
+		return $this->logsArray[$key][$randKey];
+		
 	}
 
 	/**
@@ -231,7 +242,7 @@ class LogService {
 		}
 		
 		// For débug
-		//$fileName = 'battle-demo.txt';
+		$fileName = 'battle-demo.txt';
 		return $fileName;
 	}
 
@@ -266,7 +277,7 @@ class LogService {
 		$jour = 1;
 		foreach( $logs as $log )
 		{
-			if(preg_match('/Jour/', $log, $matchs))
+			if(preg_match('/Jour/', $log))
 			{
 				$result['logs'][$jour][] = $log;
 				$jour ++;

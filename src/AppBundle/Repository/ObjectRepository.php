@@ -10,4 +10,13 @@ namespace AppBundle\Repository;
  */
 class ObjectRepository extends \Doctrine\ORM\EntityRepository
 {
+	public function getRandomObject()
+	{
+		$q = $this->createQueryBuilder('o')
+		->addSelect('RAND() as HIDDEN rand')
+		->orderBy('rand')
+		->setMaxResults(1);
+		
+		return $q->getQuery()->getResult()[0];
+	}
 }

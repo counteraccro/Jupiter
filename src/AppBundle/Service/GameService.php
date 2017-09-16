@@ -10,6 +10,7 @@ use AppBundle\Entity\LobbyPlayer;
 class GameService {
 	const ACTION_MOVING = 'moving';
 	const ACTION_KILL = 'kill';
+	const ACTION_FIND = 'find';
 	const ACTION_SELF_KILL = 'self_kill';
 	
 	/**
@@ -29,6 +30,18 @@ class GameService {
 	 * @var LogService
 	 */
 	private $logService;
+	
+	/**
+	 *
+	 * @var GameObjectService
+	 */
+	private $gameObjectService;
+	
+	/**
+	 *
+	 * @var GamePlayerService
+	 */
+	private $gamePlayerService;
 	
 	/**
 	 * day counter
@@ -62,11 +75,13 @@ class GameService {
 	 * @param Container $container
 	 * @param LogService $log
 	 */
-	public function __construct(Doctrine $doctrine, Container $container, LogService $logService)
+	public function __construct(Doctrine $doctrine, Container $container, LogService $logService, GameObjectService $gameObjectService, GamePlayerService $gamePlayerService)
 	{
 		$this->doctrine = $doctrine;
 		$this->container = $container;
 		$this->logService = $logService;
+		$this->gameObjectService = $gameObjectService;
+		$this->gamePlayerService = $gamePlayerService;
 		
 		$this->randomActionsConditions = $this->container->getParameter('RandomActionsConditions');
 	}
@@ -214,50 +229,15 @@ class GameService {
 				$this->logService->movingLog($lobbyPlayer->getPlayer(), $this->lobby);
 			break;
 			case self::ACTION_KILL:
-				$this->killAction($lobbyPlayer);
+				$this->statistiques = $this->gamePlayerService->killAction($lobbyPlayer, $this->lobby, $this->statistiques, $this->nbDays, self::ACTION_KILL, self::ACTION_SELF_KILL);
 			break;
+			/*case self::ACTION_FIND:
+				$this->gameObjectService->findObjectAction($lobbyPlayer);
+			break;*/
 			default:
 				$log = 'Action ' . $action . ' inconnu';
 				$this->logService->errorLog($log);
 			break;
-		}
-	}
-
-	/**
-	 * Defined who kills who
-	 * @param LobbyPlayer $lobbyPlayer
-	 * @return mixed
-	 */
-	private function killAction(LobbyPlayer $lobbyPlayer)
-	{
-		$tabLobbyPlayerTmp = [ ];
-		foreach( $this->lobby->getLobbyPlayers() as $lPlayer )
-		{
-			if($lPlayer->getIsDead())
-			{
-				continue;
-			}
-			$tabLobbyPlayerTmp[] = $lPlayer;
-		}
-		
-		$key = array_rand($tabLobbyPlayerTmp);
-		$lobbyPlayerKill = $tabLobbyPlayerTmp[$key];
-		
-		$lobbyPlayerKill->setIsDead(true);
-		$lobbyPlayer->setNbKill($lobbyPlayer->getNbKill() + 1);
-		$this->doctrine->getManager()->persist($lobbyPlayerKill);
-		$this->doctrine->getManager()->persist($lobbyPlayer);
-		
-		$this->statistiques['days'][$this->nbDays]['kill'][] = $lobbyPlayerKill->getPlayer()->getName();
-		$this->statistiques['total_kill'] = $this->statistiques['total_kill'] + 1;
-		
-		if($lobbyPlayer->getId() == $lobbyPlayerKill->getId())
-		{
-			$this->logService->killLog($lobbyPlayer->getPlayer(), $lobbyPlayerKill->getPlayer(), $this->lobby, self::ACTION_SELF_KILL);
-		}
-		else
-		{
-			$this->logService->killLog($lobbyPlayer->getPlayer(), $lobbyPlayerKill->getPlayer(), $this->lobby, self::ACTION_KILL);
 		}
 	}
 }

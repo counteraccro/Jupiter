@@ -5,10 +5,16 @@ services:
         arguments: ["@doctrine", "@service_container"]
     app.game:
         class: AppBundle\Service\GameService
-        arguments: ["@doctrine", "@service_container", "@app.log"]
+        arguments: ["@doctrine", "@service_container", "@app.log", "@app.game_object", "@app.game_player"]
     app.log:
         class: AppBundle\Service\LogService
         arguments: ["@doctrine", "@service_container", "@session"]
     app.lobby:
         class: AppBundle\Service\LobbyService
         arguments: ["@doctrine", "@service_container", "@session"]
+    app.game_object:
+        class: AppBundle\Service\GameObjectService
+        arguments: ["@doctrine", "@service_container", "@app.log"]
+    app.game_player:
+        class: AppBundle\Service\GamePlayerService
+        arguments: ["@doctrine", "@service_container", "@app.log"]

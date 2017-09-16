@@ -36,6 +36,10 @@ parameters:
             0: $player$ trouve $object_find$ et gagne $nb place$pluriel$ de plus de stockage.
         find_stockage_item:
             0: $player$ trouve $object_find$ et gagne $nb place$pluriel$ de plus de stockage, du coup il peut garder aussi $object$.
+        find_no_item:
+            0: $player$ à fouillé toute la zone sans absolument rien trouvé.
+            1: $player$ pensait avoir trouvé quelque chose mais en fait il n'en ai rien
+            2: $player$ n'a rien trouvé d'intéressant ici
         log_day:
             no_kill: Jour $day$ - Aucun mort !
             kill: Jour $day$ - Seulement $player$ est mort aujourd'hui.
