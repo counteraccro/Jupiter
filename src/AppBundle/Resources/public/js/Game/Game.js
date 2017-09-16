@@ -108,6 +108,8 @@ Game.Launch = function(params)
 	 */
 	Game.DisplayLogs = function(day) {
 
+		clearInterval(Game.interval);
+		
 		$('#game-bloc #begin-bloc').html('').append('Jour ' + day).append('<ul>');
 
 		for(var i in Game.data['logs'][day]) {
