@@ -47,3 +47,47 @@ Rosalie à tué Alice.
 Jour 3 - Bravo à Rosalie qui vient de gagner !
 -----------------------------------
 
+Bienvenue à nos 10 joueurs qui sont : Player-test, Mathieu, Chloé, Charlotte, Léa, Raphaël, Victor, Annabelle, Benjamin, Gabriel.
+Player-test se ballade dans la plaine.
+Mathieu se déplace discretement dans les fourés.
+Chloé se déplace discretement dans les fourés.
+Charlotte à tué Victor.
+Léa se déplace discretement dans les fourés.
+Raphaël se déplace discretement dans les fourés.
+Annabelle à tué Gabriel.
+Benjamin à tué Raphaël.
+Jour 1 - 3 morts - Victor, Gabriel, Raphaël.
+Player-test à tué Chloé.
+Mathieu à tué Player-test.
+Charlotte à fait une chute fatale en tombant sur la tête.
+Léa se déplace discretement dans les fourés.
+Annabelle à tué Mathieu.
+Benjamin à fait une chute fatale en tombant sur la tête.
+Jour 2 - 5 morts - Chloé, Player-test, Charlotte, Mathieu, Benjamin.
+Léa à tué Annabelle.
+Jour 3 - Bravo à Léa qui vient de gagner !
+-----------------------------------
+
+Bienvenue à nos 10 joueurs qui sont : Player-test, Jonathan, Mégan, Léo, Julien, Alexandre, Louis, Gabrielle, Claire, Laurie.
+Player-test à tué Mégan.
+Action find inconnu
+Léo à tué Gabrielle.
+Action find inconnu
+Alexandre se ballade dans la plaine.
+Louis à fait une chute fatale en tombant sur la tête.
+Claire à tué Laurie.
+Jour 1 - 4 morts - Mégan, Gabrielle, Louis, Laurie.
+Player-test ce déplace de façon chaotique complètement paniqué.
+Jonathan se déplace discretement dans les fourés.
+Léo à tué Jonathan.
+Julien ce déplace de façon chaotique complètement paniqué.
+Action find inconnu
+Claire marche rapidement de façon déterminé.
+Jour 2 - Seulement Jonathan est mort aujourd'hui.
+Player-test à fait une chute fatale en tombant sur la tête.
+Léo à tué Alexandre.
+Julien se noie en tentant de traverser une rivière en crue.
+Claire à décidé de ce suicider en ce jettant dans le vide.
+Jour 3 - Bravo à Léo qui vient de gagner !
+-----------------------------------
+

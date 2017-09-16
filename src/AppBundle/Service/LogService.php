@@ -68,10 +68,7 @@ class LogService {
 		
 		$strLog = str_replace('$player$', $player->getName(), $strLog);
 		
-		$log = new Log();
-		$log->setPlayer($player)->setLobby($lobby)->setLabel($strLog)->setType(1);
-		
-		$this->doctrine->getManager()->persist($log);
+		$this->createLogEntity($player, $lobby, $strLog, 1);
 		
 		return $this->writeLog($strLog);
 	}
@@ -96,10 +93,7 @@ class LogService {
 			$strLog = str_replace('$player$', $player->getName(), $strLog);
 		}
 		
-		$log = new Log();
-		$log->setPlayer($player)->setLobby($lobby)->setLabel($strLog)->setType(1);
-		
-		$this->doctrine->getManager()->persist($log);
+		$this->createLogEntity($player, $lobby, $strLog, 1);
 		
 		return $this->writeLog($strLog);
 	}
@@ -208,7 +202,21 @@ class LogService {
 	{
 		$randKey = array_rand($this->logsArray[$key]);
 		return $this->logsArray[$key][$randKey];
+	}
+	
+	/**
+	 * Create entity Log
+	 * @param Player $player
+	 * @param Lobby $lobby
+	 * @param string $strLog
+	 * @param int $type
+	 */
+	private function createLogEntity(Player $player, Lobby $lobby, $strLog, $type)
+	{
+		$log = new Log();
+		$log->setPlayer($player)->setLobby($lobby)->setLabel($strLog)->setType(1);
 		
+		$this->doctrine->getManager()->persist($log);
 	}
 
 	/**
