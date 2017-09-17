@@ -7,7 +7,7 @@ use Doctrine\Common\Persistence\ManagerRegistry as Doctrine;
 use AppBundle\Entity\LobbyPlayer;
 use AppBundle\Entity\Lobby;
 
-class GamePlayerService {
+class GamePlayerService extends AppService {
 	
 	/**
 	 *
@@ -51,7 +51,7 @@ class GamePlayerService {
 	 * @param string $action_self_kill
 	 * @return array
 	 */
-	public function killAction(LobbyPlayer $lobbyPlayer, Lobby $lobby, array $gameStatistiques, $nbDay, $action_kill, $action_self_kill)
+	public function killAction(LobbyPlayer $lobbyPlayer, Lobby $lobby, array $gameStatistiques, $nbDay)
 	{
 		$tabLobbyPlayerTmp = [ ];
 		foreach( $lobby->getLobbyPlayers() as $lPlayer )
@@ -76,11 +76,11 @@ class GamePlayerService {
 		
 		if($lobbyPlayer->getId() == $lobbyPlayerKill->getId())
 		{
-			$this->logService->killLog($lobbyPlayer->getPlayer(), $lobbyPlayerKill->getPlayer(), $lobby, $action_self_kill);
+			$this->logService->killLog($lobbyPlayer->getPlayer(), $lobbyPlayerKill->getPlayer(), $lobby, self::ACTION_SELF_KILL);
 		}
 		else
 		{
-			$this->logService->killLog($lobbyPlayer->getPlayer(), $lobbyPlayerKill->getPlayer(), $lobby, $action_kill);
+			$this->logService->killLog($lobbyPlayer->getPlayer(), $lobbyPlayerKill->getPlayer(), $lobby, self::ACTION_KILL);
 		}
 		
 		return $gameStatistiques;

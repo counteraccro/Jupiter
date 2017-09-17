@@ -8,8 +8,9 @@ use AppBundle\Entity\Player;
 use AppBundle\Entity\Lobby;
 use AppBundle\Entity\Log;
 use Symfony\Component\HttpFoundation\Session\Session;
+use AppBundle\Entity\Object;
 
-class LogService {
+class LogService extends AppService {
 	
 	/**
 	 *
@@ -64,7 +65,7 @@ class LogService {
 	 */
 	public function movingLog(Player $player, Lobby $lobby)
 	{
-		$strLog = $this->getRandomLog('moving');
+		$strLog = $this->getRandomLog(self::ACTION_MOVING);
 		
 		$strLog = str_replace('$player$', $player->getName(), $strLog);
 		
@@ -79,16 +80,30 @@ class LogService {
 	 * @param Player $playerKill
 	 * @param Lobby $lobby
 	 */
-	public function killLog(Player $player, Player $playerKill, Lobby $lobby, $action = 'kill')
+	public function killLog(Player $player, Player $playerKill, Lobby $lobby, $action = self::ACTION_KILL)
 	{
 		$strLog = $this->getRandomLog($action);
 		
-		if($action == 'kill')
+		if($action == self::ACTION_KILL)
 		{
 			$strLog = str_replace('$player$', $player->getName(), $strLog);
 			$strLog = str_replace('$player_kill$', $playerKill->getName(), $strLog);
 		}
-		else if($action == 'self_kill')
+		else if($action == self::ACTION_SELF_KILL)
+		{
+			$strLog = str_replace('$player$', $player->getName(), $strLog);
+		}
+		
+		$this->createLogEntity($player, $lobby, $strLog, 1);
+		
+		return $this->writeLog($strLog);
+	}
+
+	public function findLog($action, Player $player, Lobby $lobby, Object $object = null)
+	{
+		$strLog = $this->getRandomLog($action);
+		
+		if($action == self::ACTION_FIND_NO_ITEM)
 		{
 			$strLog = str_replace('$player$', $player->getName(), $strLog);
 		}
@@ -107,6 +122,7 @@ class LogService {
 	public function StatDayLog(array $stats, $nbDays)
 	{
 		$nbKill = 0;
+		
 		if(isset($stats['days'][$nbDays]['kill']))
 		{
 			$nbKill = count($stats['days'][$nbDays]['kill']);
@@ -123,13 +139,13 @@ class LogService {
 			
 			if($nbKill == 1)
 			{
-				$strLog = $this->logsArray['log_day']['kill'];
+				$strLog = $this->logsArray[self::LOG_DAY][self::LOG_DAY_KILL];
 				$strLog = str_replace('$player$', $names, $strLog);
 				$strLog = str_replace('$day$', $nbDays, $strLog);
 			}
 			else
 			{
-				$strLog = $this->logsArray['log_day']['kills'];
+				$strLog = $this->logsArray[self::LOG_DAY][self::LOG_DAY_KILLS];
 				$strLog = str_replace('$players$', $names, $strLog);
 				$strLog = str_replace('$nb_deads$', $nbKill, $strLog);
 				$strLog = str_replace('$day$', $nbDays, $strLog);
@@ -137,7 +153,7 @@ class LogService {
 		}
 		else
 		{
-			$strLog = $this->logsArray['log_day']['no_kill'];
+			$strLog = $this->logsArray[self::LOG_DAY][self::LOG_DAY_NO_KILL];
 			$strLog = str_replace('$day$', $nbDays, $strLog);
 		}
 		
@@ -152,11 +168,14 @@ class LogService {
 	 */
 	public function Winnerlog(Player $player, $nbDays)
 	{
-		$strLog = $this->logsArray['log_day']['winner'];
+		$strLog = $this->logsArray[self::LOG_DAY][self::LOG_DAY_WINNER];
 		$strLog = str_replace('$player$', $player->getName(), $strLog);
 		$strLog = str_replace('$day$', $nbDays, $strLog);
 		
-		$strLog .= "\n-----------------------------------\n"; 
+		if($this->debug)
+		{
+			$strLog .= "\n-----------------------------------\n";
+		}
 		
 		return $this->writeLog($strLog);
 	}
@@ -168,8 +187,7 @@ class LogService {
 	 */
 	public function Presentationlog(Lobby $lobby)
 	{
-		$action = 'presentation';
-		$strLog = $this->getRandomLog($action);
+		$strLog = $this->getRandomLog(self::ACTION_PRESENTATION);
 		
 		$players = '';
 		foreach( $lobby->getLobbyPlayers() as $lobbyPLayer )
@@ -192,7 +210,7 @@ class LogService {
 	{
 		$this->writeLog($str);
 	}
-	
+
 	/**
 	 * get random log from array_log
 	 * @param string $key
@@ -203,7 +221,7 @@ class LogService {
 		$randKey = array_rand($this->logsArray[$key]);
 		return $this->logsArray[$key][$randKey];
 	}
-	
+
 	/**
 	 * Create entity Log
 	 * @param Player $player
@@ -249,8 +267,10 @@ class LogService {
 			$fileName = 'battle-' . $lobby_id . '.txt';
 		}
 		
-		// For débug
-		$fileName = 'battle-demo.txt';
+		if($this->debug)
+		{
+			$fileName = 'battle-demo.txt';
+		}
 		return $fileName;
 	}
 

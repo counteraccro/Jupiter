@@ -7,11 +7,7 @@ use Doctrine\Common\Persistence\ManagerRegistry as Doctrine;
 use AppBundle\Entity\Lobby;
 use AppBundle\Entity\LobbyPlayer;
 
-class GameService {
-	const ACTION_MOVING = 'moving';
-	const ACTION_KILL = 'kill';
-	const ACTION_FIND = 'find';
-	const ACTION_SELF_KILL = 'self_kill';
+class GameService extends AppService {
 	
 	/**
 	 *
@@ -44,12 +40,6 @@ class GameService {
 	private $gamePlayerService;
 	
 	/**
-	 * day counter
-	 * @var integer
-	 */
-	private $nbDays = 1;
-	
-	/**
 	 * Array containing the trigger values of the conditions of the actions
 	 * @var array
 	 */
@@ -62,11 +52,17 @@ class GameService {
 	private $lobby;
 	
 	/**
+	 * day counter
+	 * @var integer
+	 */
+	private $nbDays = 1;
+	
+	/**
 	 *
 	 * @var array
 	 */
-	private $statistiques = [ 
-			'total_kill' => 0 
+	private $statistiques = [
+			'total_kill' => 0
 	];
 
 	/**
@@ -146,7 +142,7 @@ class GameService {
 		$endLoop = false;
 		
 		$nbPlayers = $this->lobby->getLobbyPlayers()->count();
-		if($this->statistiques['total_kill'] == ($nbPlayers - 1) || $this->nbDays == 100)
+		if($this->statistiques['total_kill'] == ($nbPlayers - 1) || $this->nbDays == self::MAX_DAY_GAME)
 		{
 			foreach( $this->lobby->getLobbyPlayers() as $lobbyPlayerWinner )
 			{
@@ -224,16 +220,18 @@ class GameService {
 		$key = array_rand($this->randomActionsConditions[$action_number]);
 		$action = $this->randomActionsConditions[$action_number][$key];
 		
+		//$action = self::ACTION_FIND;
+		
 		switch($action) {
 			case self::ACTION_MOVING:
 				$this->logService->movingLog($lobbyPlayer->getPlayer(), $this->lobby);
 			break;
 			case self::ACTION_KILL:
-				$this->statistiques = $this->gamePlayerService->killAction($lobbyPlayer, $this->lobby, $this->statistiques, $this->nbDays, self::ACTION_KILL, self::ACTION_SELF_KILL);
+				$this->statistiques = $this->gamePlayerService->killAction($lobbyPlayer, $this->lobby, $this->statistiques, $this->nbDays);
 			break;
-			/*case self::ACTION_FIND:
-				$this->gameObjectService->findObjectAction($lobbyPlayer);
-			break;*/
+			case self::ACTION_FIND:
+				$this->gameObjectService->findObjectAction($lobbyPlayer, $this->lobby);
+			break;
 			default:
 				$log = 'Action ' . $action . ' inconnu';
 				$this->logService->errorLog($log);
