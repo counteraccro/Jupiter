@@ -22,21 +22,21 @@ parameters:
             2: $player$ trouve $object$ dans un batiment en ruine.
             3: $player$ tombe par hasard sur $object$ en regardant le sol.
             4: $player$ ramasse $object$ caché dans un arbre.
-        find_let:
+        find_let_object:
             0: $player$ ramasse $object$ mais décide de ne pas le prendre, ce n'est pas intéressant pour lui.
             1: $player$ prend $object$ dans sa main mais le laisse tomber au sol.
             2: $player$ regarde $object$ et décide finalement de ne pas le prendre.
             3: $player$ regarde $object$ mais n'y prête aucune attention.
-        find_exchange:
+        find_exchange_object:
             0: $player$ fait le choix de garder $object_find$ qu'il vient de trouver et de laisser $object_let$ à la place
             1: $player$ ramasse $object_find$ et laisse $object_let$ à la place.
             2: $player$ estime que $object_find$ est plus intéressant que $object_let$, il laisse donc $object_let$ sur place.
             3: $player$ trouve $object_find$ et décide de jetter $object_let$ par manque de place.
-        find_stockage_no_item:
+        find_stockage_no_object:
             0: $player$ trouve $object$ et gagne $nb$ place$pluriel$ de plus de stockage.
-        find_stockage_item:
-            0: $player$ trouve $object$ et gagne $nb$ place$pluriel$ de plus de stockage, du coup il peut garder aussi $object$.
-        find_no_item:
+        find_stockage_object:
+            0: $player$ trouve $object_find$ et gagne $nb$ place$pluriel$ de plus de stockage, du coup il peut garder aussi $object$.
+        find_no_object:
             0: $player$ à fouillé toute la zone sans absolument rien trouvé.
             1: $player$ pensait avoir trouvé quelque chose mais en fait il n'en ai rien
             2: $player$ n'a rien trouvé d'intéressant ici

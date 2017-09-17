@@ -1,158 +1,124 @@
-Bienvenue à nos 10 joueurs qui sont : Player-test, Cédric, Justin, Loïc, Elliot, Delphine, Rose, Claire, Léa, Olivia.
-Player-test ramasse un Téléphone caché dans un arbre.
-Cédric trouve une M16 en fouillant un fourré.
-Justin trouve une SSG 97 dans un batiment en ruine.
-Loïc trouve un Anti douleur en fouillant un fourré.
-Elliot trouve un Petit sac à dos et gagne 1 place de plus de stockage.
-Delphine à fouillé toute la zone sans absolument rien trouvé.
-Rose trouve une SSG 97 en fouillant un fourré.
-Claire trouve un Ballon de basket dans un batiment en ruine.
-Léa à fouillé toute la zone sans absolument rien trouvé.
-Olivia trouve un Beretta dans un batiment en ruine.
-Jour 1 - Aucun mort !
-Player-test pensait avoir trouvé quelque chose mais en fait il n'en ai rien
-Cédric n'a rien trouvé d'intéressant ici
-Action inconnu
-Action inconnu
-Action inconnu
-Delphine trouve une Kalachnikov en fouillant un buisson.
-Rose à fouillé toute la zone sans absolument rien trouvé.
-Claire pensait avoir trouvé quelque chose mais en fait il n'en ai rien
-Léa trouve un Ours en peluche en fouillant un buisson.
-Olivia n'a rien trouvé d'intéressant ici
-Jour 2 - Aucun mort !
-Action inconnu
-Cédric à fouillé toute la zone sans absolument rien trouvé.
-Action inconnu
-Action inconnu
-Action inconnu
-Action inconnu
-Rose pensait avoir trouvé quelque chose mais en fait il n'en ai rien
-Action inconnu
-Action inconnu
-Action inconnu
-Jour 3 - Aucun mort !
-Player-test pensait avoir trouvé quelque chose mais en fait il n'en ai rien
-Cédric pensait avoir trouvé quelque chose mais en fait il n'en ai rien
-Action inconnu
-Action inconnu
-Action inconnu
-Action inconnu
-Action inconnu
-Claire pensait avoir trouvé quelque chose mais en fait il n'en ai rien
-Action inconnu
-Action inconnu
-Jour 4 - Aucun mort !
-Action inconnu
-Action inconnu
-Justin n'a rien trouvé d'intéressant ici
-Action inconnu
-Action inconnu
-Delphine à fouillé toute la zone sans absolument rien trouvé.
-Action inconnu
-Claire pensait avoir trouvé quelque chose mais en fait il n'en ai rien
-Action inconnu
-Olivia pensait avoir trouvé quelque chose mais en fait il n'en ai rien
-Jour 5 - Aucun mort !
-Action inconnu
-Action inconnu
-Action inconnu
-Action inconnu
-Action inconnu
-Action inconnu
-Action inconnu
-Action inconnu
-Léa n'a rien trouvé d'intéressant ici
-Olivia à fouillé toute la zone sans absolument rien trouvé.
-Jour 6 - Aucun mort !
-Action inconnu
-Action inconnu
-Justin n'a rien trouvé d'intéressant ici
-Action inconnu
-Elliot pensait avoir trouvé quelque chose mais en fait il n'en ai rien
-Action inconnu
-Action inconnu
-Action inconnu
-Action inconnu
-Action inconnu
-Jour 7 - Aucun mort !
-Action inconnu
-Action inconnu
-Action inconnu
-Action inconnu
-Elliot pensait avoir trouvé quelque chose mais en fait il n'en ai rien
-Action inconnu
-Action inconnu
-Claire n'a rien trouvé d'intéressant ici
-Action inconnu
-Action inconnu
-Jour 8 - Aucun mort !
-Action inconnu
-Action inconnu
-Justin n'a rien trouvé d'intéressant ici
-Action inconnu
-Action inconnu
-Action inconnu
-Action inconnu
-Action inconnu
-Léa à fouillé toute la zone sans absolument rien trouvé.
-Action inconnu
-Jour 9 - Aucun mort !
-Player-test à fouillé toute la zone sans absolument rien trouvé.
-Action inconnu
-Justin pensait avoir trouvé quelque chose mais en fait il n'en ai rien
-Action inconnu
-Action inconnu
-Action inconnu
-Action inconnu
-Action inconnu
-Léa n'a rien trouvé d'intéressant ici
-Action inconnu
-Jour 10 - Aucun mort !
-Action inconnu
-Action inconnu
-Action inconnu
-Loïc pensait avoir trouvé quelque chose mais en fait il n'en ai rien
-Action inconnu
-Action inconnu
-Action inconnu
-Action inconnu
-Action inconnu
-Action inconnu
-Jour 11 - Aucun mort !
-Player-test n'a rien trouvé d'intéressant ici
-Action inconnu
-Action inconnu
-Action inconnu
-Action inconnu
-Action inconnu
-Action inconnu
-Action inconnu
-Action inconnu
-Action inconnu
-Jour 12 - Aucun mort !
-Player-test n'a rien trouvé d'intéressant ici
-Action inconnu
-Justin n'a rien trouvé d'intéressant ici
-Action inconnu
-Elliot à fouillé toute la zone sans absolument rien trouvé.
-Action inconnu
-Action inconnu
-Action inconnu
-Léa n'a rien trouvé d'intéressant ici
-Action inconnu
-Jour 13 - Aucun mort !
-Action inconnu
-Action inconnu
-Action inconnu
-Loïc pensait avoir trouvé quelque chose mais en fait il n'en ai rien
-Action inconnu
-Action inconnu
-Rose pensait avoir trouvé quelque chose mais en fait il n'en ai rien
-Action inconnu
-Action inconnu
-Action inconnu
-Jour 14 - Aucun mort !
-Jour 15 - Bravo à Player-test qui vient de gagner !
+Bienvenue à nos 10 joueurs qui sont : Chrome, Coralie, Michaël, Léanne, Jacob, Anthony, Maya, Alex, Anthony, Laurence.
+Chrome à tué Jacob.
+Coralie à tué Laurence.
+Michaël trouve une FABARM en fouillant un fourré.
+Léanne à tué Anthony.
+Maya se déplace discretement dans les fourés.
+Alex se déplace discretement dans les fourés.
+Anthony se ballade dans la plaine.
+Jour 1 - 3 morts - Jacob, Laurence, Anthony.
+Chrome à tué Michaël.
+Coralie à tué Chrome.
+Léanne à tué Maya.
+Alex à décidé de ce suicider en ce jettant dans le vide.
+Anthony à tué Léanne.
+Jour 2 - 5 morts - Michaël, Chrome, Maya, Alex, Léanne.
+Coralie se noie en tentant de traverser une rivière en crue.
+Jour 3 - Bravo à Anthony qui vient de gagner !
+-----------------------------------
+
+Bienvenue à nos 10 joueurs qui sont : Player-test, Noah, Olivier, Emma, Maxime, Jérémy, Anaïs, Alexis, Marilou, Gabrielle.
+Player-test marche tranquillement.
+Noah à tué Maxime.
+Olivier court en petites foulées.
+Emma se ballade dans la plaine.
+Jérémy se ballade dans la plaine.
+Anaïs court en petites foulées.
+Alexis court en petites foulées.
+Marilou à tué Gabrielle.
+Jour 1 - 2 morts - Maxime, Gabrielle.
+Player-test à tué Olivier.
+Noah à tué Alexis.
+Emma se ballade dans la plaine.
+Jérémy à tué Marilou.
+Anaïs ce déplace de façon chaotique complètement paniqué.
+Jour 2 - 3 morts - Olivier, Alexis, Marilou.
+Player-test à tué Jérémy.
+Noah se ballade dans la foret.
+Emma à tué Noah.
+Anaïs à tué Emma.
+Jour 3 - 3 morts - Jérémy, Noah, Emma.
+Player-test à tué Anaïs.
+Jour 4 - Bravo à Player-test qui vient de gagner !
+-----------------------------------
+
+Bienvenue à nos 10 joueurs qui sont : Player-test, Léanne, Élodie, Elizabeth, Ève, Mia, Rosalie, Vincent, Émilie, Alice.
+Player-test se déplace discretement dans les fourés.
+Léanne tombe par hasard sur une Barre de céréales en regardant le sol.
+Élodie se ballade dans la plaine.
+Elizabeth trouve une Grande trousse de secours dans un batiment en ruine.
+Ève à tué Alice.
+Mia marche tranquillement.
+Rosalie à tué Émilie.
+Vincent se ballade dans la foret.
+Jour 1 - 2 morts - Alice, Émilie.
+Player-test se ballade dans la plaine.
+Léanne à décidé de ce suicider en ce jettant dans le vide.
+Élodie à fait une chute fatale en tombant sur la tête.
+Elizabeth à tué Ève.
+Mia à décidé de ce suicider en ce jettant dans le vide.
+Rosalie à fait une chute fatale en tombant sur la tête.
+Vincent marche tranquillement.
+Jour 2 - 5 morts - Léanne, Élodie, Ève, Mia, Rosalie.
+Player-test à tué Vincent.
+Elizabeth se déplace discretement dans les fourés.
+Jour 3 - Seulement Vincent est mort aujourd'hui.
+Player-test se noie en tentant de traverser une rivière en crue.
+Jour 4 - Bravo à Elizabeth qui vient de gagner !
+-----------------------------------
+
+Bienvenue à nos 10 joueurs qui sont : Player-test, Mathieu, Rosalie, Charles, Maélie, Benjamin, Arianne, Maélie, Tristan, Loïc.
+Player-test se déplace discretement dans les fourés.
+Mathieu à tué Player-test.
+Rosalie trouve une Kalachnikov dans un batiment en ruine.
+Charles trouve une Kalachnikov dans un batiment en ruine.
+Maélie ce déplace de façon chaotique complètement paniqué.
+Benjamin se ballade dans la foret.
+Arianne tombe par hasard sur un Beretta en regardant le sol.
+Maélie court en petites foulées.
+Tristan pensait avoir trouvé quelque chose mais en fait il n'en ai rien
+Loïc tombe par hasard sur un Téléphone en regardant le sol.
+Jour 1 - Seulement Player-test est mort aujourd'hui.
+Mathieu à tué Charles.
+Rosalie à tué Maélie.
+Maélie trouve un Beretta en fouillant un buisson.
+Benjamin à tué Tristan.
+Arianne à tué Benjamin.
+Loïc à fait une chute fatale en tombant sur la tête.
+Jour 2 - 5 morts - Charles, Maélie, Tristan, Benjamin, Loïc.
+Mathieu à tué Arianne.
+Rosalie à tué Maélie.
+Jour 3 - 2 morts - Arianne, Maélie.
+Mathieu à tué Rosalie.
+Jour 4 - Bravo à Mathieu qui vient de gagner !
+-----------------------------------
+
+Bienvenue à nos 10 joueurs qui sont : Player-test, Gabriel, Olivier, Sofia, Delphine, Florence, Justin, Samuel, Nathan, Alicia.
+Player-test ce déplace de façon chaotique complètement paniqué.
+Gabriel à tué Player-test.
+Olivier à fouillé toute la zone sans absolument rien trouvé.
+Sofia marche tranquillement.
+Delphine ce déplace de façon chaotique complètement paniqué.
+Florence se ballade dans la foret.
+Justin se ballade dans la foret.
+Samuel court en petites foulées.
+Nathan ce déplace de façon chaotique complètement paniqué.
+Alicia marche tranquillement.
+Jour 1 - Seulement Player-test est mort aujourd'hui.
+Gabriel à tué Samuel.
+Olivier à décidé de ce suicider en ce jettant dans le vide.
+Sofia à tué Alicia.
+Delphine se déplace discretement dans les fourés.
+Florence marche rapidement de façon déterminé.
+Justin marche rapidement de façon déterminé.
+Nathan à tué Sofia.
+Jour 2 - 4 morts - Samuel, Olivier, Alicia, Sofia.
+Gabriel à tué Nathan.
+Delphine à tué Gabriel.
+Florence à tué Justin.
+Jour 3 - 3 morts - Nathan, Gabriel, Justin.
+Delphine pensait avoir trouvé quelque chose mais en fait il n'en ai rien
+Florence à fait une chute fatale en tombant sur la tête.
+Jour 4 - Bravo à Delphine qui vient de gagner !
 -----------------------------------
 

@@ -107,15 +107,16 @@ class LogService extends AppService {
 	 * @param Object $object
 	 * @return string
 	 */
-	public function findLog($action, Player $player, Lobby $lobby, Object $object = null)
+	public function findLog($action, Player $player, Lobby $lobby, array $tabObjects = [])
 	{
 		$strLog = $this->getRandomLog($action);
 		
 		switch($action) {
-			case self::ACTION_FIND_NO_ITEM:
+			case self::ACTION_FIND_NO_OBJECT:
 				$strLog = str_replace('$player$', $player->getName(), $strLog);
 			break;
-			case self::ACTION_FIND_STOCKAGE_NO_ITEM:
+			case self::ACTION_FIND_STOCKAGE_NO_OBJECT:
+				$object = $tabObjects[0];
 				
 				$nb = ($object->getValue() - 1);
 				$pluriel = '';
@@ -128,11 +129,45 @@ class LogService extends AppService {
 				$strLog = str_replace('$object$', $object->getPronoun() . ' ' . $object->getName(), $strLog);
 				$strLog = str_replace('$nb$', $nb, $strLog);
 				$strLog = str_replace('$pluriel$', $pluriel, $strLog);
+			
+			break;
+			case self::ACTION_FIND_STOCKAGE_OBJECT:
+				$object_find = $tabObjects[0];
+				unset($tabObjects[0]);
 				
+				$nb = ($object_find->getValue() - 1);
+				$pluriel = '';
+				if($nb == 2)
+				{
+					$pluriel = 's';
+				}
+				
+				$str_objects = '';
+				foreach( $tabObjects as $object )
+				{
+					$str_objects .= $object->getPronoun() . ' ' . $object->getName() . ', ';
+				}
+				$str_objects = substr($str_objects, 0, - 2);
+				
+				$strLog = str_replace('$player$', $player->getName(), $strLog);
+				$strLog = str_replace('$object_find$', $object_find->getPronoun() . ' ' . $object_find->getName(), $strLog);
+				$strLog = str_replace('$object$', $str_objects, $strLog);
+				$strLog = str_replace('$nb$', $nb, $strLog);
+				$strLog = str_replace('$pluriel$', $pluriel, $strLog);
+			
 			break;
 			case self::ACTION_FIND:
+			case self::ACTION_FIND_LET_OBJECT:
+				$object = $tabObjects[0];
 				$strLog = str_replace('$player$', $player->getName(), $strLog);
 				$strLog = str_replace('$object$', $object->getPronoun() . ' ' . $object->getName(), $strLog);
+			break;
+			case self::ACTION_FIND_EXCHANGE_OBJECT:
+				$object = $tabObjects[0];
+				$object_let = $tabObjects[1];
+				$strLog = str_replace('$player$', $player->getName(), $strLog);
+				$strLog = str_replace('$object_find$', $object->getPronoun() . ' ' . $object->getName(), $strLog);
+				$strLog = str_replace('$object_let$', $object_let->getPronoun() . ' ' . $object_let->getName(), $strLog);
 			break;
 			default:
 				;
