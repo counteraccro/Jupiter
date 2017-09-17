@@ -9,6 +9,7 @@ class AppService {
 	const ACTION_FIND_NO_ITEM = 'find_no_item';
 	const ACTION_SELF_KILL = 'self_kill';
 	const ACTION_PRESENTATION = 'presentation';
+	const ACTION_FIND_STOCKAGE_NO_ITEM = 'find_stockage_no_item';
 	
 	const LOG_DAY = 'log_day';
 	const LOG_DAY_NO_KILL = 'no_kill';

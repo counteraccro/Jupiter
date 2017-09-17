@@ -67,27 +67,27 @@ class LobbyPlayer
     private $lastActions;
     
     /**
-     * @ORM\OneToOne(targetEntity="AppBundle\Entity\Player", cascade={"persist"})
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Player", cascade={"persist"})
      */
     private $playerFollow;
     
     /**
-     * @ORM\OneToOne(targetEntity="AppBundle\Entity\Player", cascade={"persist"})
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Player", cascade={"persist"})
      */
     private $teammate;
     
     /**
-     * @ORM\OneToOne(targetEntity="AppBundle\Entity\Object", cascade={"persist"})
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Object", cascade={"persist"})
      */
     private $object_1;
     
     /**
-     * @ORM\OneToOne(targetEntity="AppBundle\Entity\Object", cascade={"persist"})
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Object", cascade={"persist"})
      */
     private $object_2;
     
     /**
-     * @ORM\OneToOne(targetEntity="AppBundle\Entity\Object", cascade={"persist"})
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Object", cascade={"persist"})
      */
     private $object_3;
 

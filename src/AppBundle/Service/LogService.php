@@ -99,13 +99,44 @@ class LogService extends AppService {
 		return $this->writeLog($strLog);
 	}
 
+	/**
+	 * Log for the action fin
+	 * @param string $action
+	 * @param Player $player
+	 * @param Lobby $lobby
+	 * @param Object $object
+	 * @return string
+	 */
 	public function findLog($action, Player $player, Lobby $lobby, Object $object = null)
 	{
 		$strLog = $this->getRandomLog($action);
 		
-		if($action == self::ACTION_FIND_NO_ITEM)
-		{
-			$strLog = str_replace('$player$', $player->getName(), $strLog);
+		switch($action) {
+			case self::ACTION_FIND_NO_ITEM:
+				$strLog = str_replace('$player$', $player->getName(), $strLog);
+			break;
+			case self::ACTION_FIND_STOCKAGE_NO_ITEM:
+				
+				$nb = ($object->getValue() - 1);
+				$pluriel = '';
+				if($nb == 2)
+				{
+					$pluriel = 's';
+				}
+				
+				$strLog = str_replace('$player$', $player->getName(), $strLog);
+				$strLog = str_replace('$object$', $object->getPronoun() . ' ' . $object->getName(), $strLog);
+				$strLog = str_replace('$nb$', $nb, $strLog);
+				$strLog = str_replace('$pluriel$', $pluriel, $strLog);
+				
+			break;
+			case self::ACTION_FIND:
+				$strLog = str_replace('$player$', $player->getName(), $strLog);
+				$strLog = str_replace('$object$', $object->getPronoun() . ' ' . $object->getName(), $strLog);
+			break;
+			default:
+				;
+			break;
 		}
 		
 		$this->createLogEntity($player, $lobby, $strLog, 1);

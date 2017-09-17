@@ -33,9 +33,9 @@ parameters:
             2: $player$ estime que $object_find$ est plus intéressant que $object_let$, il laisse donc $object_let$ sur place.
             3: $player$ trouve $object_find$ et décide de jetter $object_let$ par manque de place.
         find_stockage_no_item:
-            0: $player$ trouve $object_find$ et gagne $nb place$pluriel$ de plus de stockage.
+            0: $player$ trouve $object$ et gagne $nb$ place$pluriel$ de plus de stockage.
         find_stockage_item:
-            0: $player$ trouve $object_find$ et gagne $nb place$pluriel$ de plus de stockage, du coup il peut garder aussi $object$.
+            0: $player$ trouve $object$ et gagne $nb$ place$pluriel$ de plus de stockage, du coup il peut garder aussi $object$.
         find_no_item:
             0: $player$ à fouillé toute la zone sans absolument rien trouvé.
             1: $player$ pensait avoir trouvé quelque chose mais en fait il n'en ai rien

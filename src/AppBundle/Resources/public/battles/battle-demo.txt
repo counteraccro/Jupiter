@@ -1,24 +1,158 @@
-Bienvenue à nos 10 joueurs qui sont : Chrome, Maya, Alex, Alice, Olivier, Émile, Malik, Michaël, Alicia, Amélie.
-Chrome court en petites foulées.
-Maya ce déplace de façon chaotique complètement paniqué.
-Alex se ballade dans la foret.
-Action non reconnu
-Olivier se ballade dans la foret.
-Émile se ballade dans la plaine.
-Malik se déplace discretement dans les fourés.
-Action non reconnu
-Alicia à tué Alice.
-Amélie court en petites foulées.
-Jour 1 - Seulement Alice est mort aujourd'hui.
-Chrome à tué Michaël.
-Maya à tué Malik.
-Alex à tué Maya.
-Olivier à tué Émile.
-Alicia à tué Chrome.
-Amélie se noie en tentant de traverser une rivière en crue.
-Jour 2 - 6 morts - Michaël, Malik, Maya, Émile, Chrome, Amélie.
-Alex à tué Olivier.
-Alicia à fait une chute fatale en tombant sur la tête.
-Jour 3 - Bravo à Alex qui vient de gagner !
+Bienvenue à nos 10 joueurs qui sont : Player-test, Cédric, Justin, Loïc, Elliot, Delphine, Rose, Claire, Léa, Olivia.
+Player-test ramasse un Téléphone caché dans un arbre.
+Cédric trouve une M16 en fouillant un fourré.
+Justin trouve une SSG 97 dans un batiment en ruine.
+Loïc trouve un Anti douleur en fouillant un fourré.
+Elliot trouve un Petit sac à dos et gagne 1 place de plus de stockage.
+Delphine à fouillé toute la zone sans absolument rien trouvé.
+Rose trouve une SSG 97 en fouillant un fourré.
+Claire trouve un Ballon de basket dans un batiment en ruine.
+Léa à fouillé toute la zone sans absolument rien trouvé.
+Olivia trouve un Beretta dans un batiment en ruine.
+Jour 1 - Aucun mort !
+Player-test pensait avoir trouvé quelque chose mais en fait il n'en ai rien
+Cédric n'a rien trouvé d'intéressant ici
+Action inconnu
+Action inconnu
+Action inconnu
+Delphine trouve une Kalachnikov en fouillant un buisson.
+Rose à fouillé toute la zone sans absolument rien trouvé.
+Claire pensait avoir trouvé quelque chose mais en fait il n'en ai rien
+Léa trouve un Ours en peluche en fouillant un buisson.
+Olivia n'a rien trouvé d'intéressant ici
+Jour 2 - Aucun mort !
+Action inconnu
+Cédric à fouillé toute la zone sans absolument rien trouvé.
+Action inconnu
+Action inconnu
+Action inconnu
+Action inconnu
+Rose pensait avoir trouvé quelque chose mais en fait il n'en ai rien
+Action inconnu
+Action inconnu
+Action inconnu
+Jour 3 - Aucun mort !
+Player-test pensait avoir trouvé quelque chose mais en fait il n'en ai rien
+Cédric pensait avoir trouvé quelque chose mais en fait il n'en ai rien
+Action inconnu
+Action inconnu
+Action inconnu
+Action inconnu
+Action inconnu
+Claire pensait avoir trouvé quelque chose mais en fait il n'en ai rien
+Action inconnu
+Action inconnu
+Jour 4 - Aucun mort !
+Action inconnu
+Action inconnu
+Justin n'a rien trouvé d'intéressant ici
+Action inconnu
+Action inconnu
+Delphine à fouillé toute la zone sans absolument rien trouvé.
+Action inconnu
+Claire pensait avoir trouvé quelque chose mais en fait il n'en ai rien
+Action inconnu
+Olivia pensait avoir trouvé quelque chose mais en fait il n'en ai rien
+Jour 5 - Aucun mort !
+Action inconnu
+Action inconnu
+Action inconnu
+Action inconnu
+Action inconnu
+Action inconnu
+Action inconnu
+Action inconnu
+Léa n'a rien trouvé d'intéressant ici
+Olivia à fouillé toute la zone sans absolument rien trouvé.
+Jour 6 - Aucun mort !
+Action inconnu
+Action inconnu
+Justin n'a rien trouvé d'intéressant ici
+Action inconnu
+Elliot pensait avoir trouvé quelque chose mais en fait il n'en ai rien
+Action inconnu
+Action inconnu
+Action inconnu
+Action inconnu
+Action inconnu
+Jour 7 - Aucun mort !
+Action inconnu
+Action inconnu
+Action inconnu
+Action inconnu
+Elliot pensait avoir trouvé quelque chose mais en fait il n'en ai rien
+Action inconnu
+Action inconnu
+Claire n'a rien trouvé d'intéressant ici
+Action inconnu
+Action inconnu
+Jour 8 - Aucun mort !
+Action inconnu
+Action inconnu
+Justin n'a rien trouvé d'intéressant ici
+Action inconnu
+Action inconnu
+Action inconnu
+Action inconnu
+Action inconnu
+Léa à fouillé toute la zone sans absolument rien trouvé.
+Action inconnu
+Jour 9 - Aucun mort !
+Player-test à fouillé toute la zone sans absolument rien trouvé.
+Action inconnu
+Justin pensait avoir trouvé quelque chose mais en fait il n'en ai rien
+Action inconnu
+Action inconnu
+Action inconnu
+Action inconnu
+Action inconnu
+Léa n'a rien trouvé d'intéressant ici
+Action inconnu
+Jour 10 - Aucun mort !
+Action inconnu
+Action inconnu
+Action inconnu
+Loïc pensait avoir trouvé quelque chose mais en fait il n'en ai rien
+Action inconnu
+Action inconnu
+Action inconnu
+Action inconnu
+Action inconnu
+Action inconnu
+Jour 11 - Aucun mort !
+Player-test n'a rien trouvé d'intéressant ici
+Action inconnu
+Action inconnu
+Action inconnu
+Action inconnu
+Action inconnu
+Action inconnu
+Action inconnu
+Action inconnu
+Action inconnu
+Jour 12 - Aucun mort !
+Player-test n'a rien trouvé d'intéressant ici
+Action inconnu
+Justin n'a rien trouvé d'intéressant ici
+Action inconnu
+Elliot à fouillé toute la zone sans absolument rien trouvé.
+Action inconnu
+Action inconnu
+Action inconnu
+Léa n'a rien trouvé d'intéressant ici
+Action inconnu
+Jour 13 - Aucun mort !
+Action inconnu
+Action inconnu
+Action inconnu
+Loïc pensait avoir trouvé quelque chose mais en fait il n'en ai rien
+Action inconnu
+Action inconnu
+Rose pensait avoir trouvé quelque chose mais en fait il n'en ai rien
+Action inconnu
+Action inconnu
+Action inconnu
+Jour 14 - Aucun mort !
+Jour 15 - Bravo à Player-test qui vient de gagner !
 -----------------------------------
 
