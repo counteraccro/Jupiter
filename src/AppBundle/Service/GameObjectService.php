@@ -9,7 +9,7 @@ use AppBundle\Entity\Lobby;
 
 class GameObjectService extends AppService {
 	
-	const OBJECT_SEAT = 'SEAT';
+	const OBJECT_BACKPACK = 'BACKPACK';
 	
 	/**
 	 *
@@ -63,12 +63,12 @@ class GameObjectService extends AppService {
 		//1st case the player has no object on him
 		if(is_null($lobbyPlayer->getObject1()))
 		{
-			//It finds a storage object
 			$lobbyPlayer->setObject1($object);
 			$this->doctrine->getManager()->persist($lobbyPlayer);
 			$this->doctrine->getManager()->flush();
 			
-			if($object->getType() == self::OBJECT_SEAT)
+			//It finds a storage object
+			if($object->getType() == self::BACKPACK)
 			{
 				$this->logService->findLog(self::ACTION_FIND_STOCKAGE_NO_ITEM, $lobbyPlayer->getPlayer(), $lobby, $object);
 			}
@@ -78,6 +78,59 @@ class GameObjectService extends AppService {
 			}
 			return true;
 		}
+		
+		//2nd case it already has an object and has no extra place
+		if(is_null($lobbyPlayer->getObject2()) && $lobbyPlayer->getObject1()->getType() != self::OBJECT_BACKPACK)
+		{
+			//3rd case, he finds a bag and so now has an extra space
+			if($object->getType() == self::OBJECT_BACKPACK)
+			{
+				//4eme cas, il trouve un sac et donc possède maintenant un espace supplémentaire
+			}
+			else
+			{
+				//2eme cas, il possede déjà un objet et n'a pas de place supplémentaire
+			}
+			return true;
+		}
+		
+		// 4th case, it already has an object and an additional space
+		if(is_null($lobbyPlayer->getObject2()) && $lobbyPlayer->getObject1()->getType() == self::OBJECT_BACKPACK)
+		{
+			//3eme cas, il possede déjà un objet et à un espace supplémentaire
+			
+			return true;
+		}
+		
+		//5th case it already has 2 object and has no extra place
+		if(is_null($lobbyPlayer->getObject3()) && $lobbyPlayer->getObject1()->getType() != self::OBJECT_BACKPACK)
+		{
+			//6th case, he finds a bag and so now has an extra space
+			if($object->getType() == self::OBJECT_BACKPACK)
+			{
+				//4eme cas, il trouve un sac et donc possède maintenant un espace supplémentaire
+			}
+			else
+			{
+				//2eme cas, il possede déjà un objet et n'a pas de place supplémentaire
+			}
+			return true;
+		}
+		
+		//6th case it already has 2 object and to an additional place
+		if(is_null($lobbyPlayer->getObject3()) && $lobbyPlayer->getObject1()->getType() == self::OBJECT_BACKPACK)
+		{
+			//3eme cas, il possede déjà un objet et à un espace supplémentaire
+			
+			return true;
+		}
+		// dernier cas, tout les places sont prise
+		else
+		{
+			
+		}
+		
+		
 		
 		$this->logService->errorLog('Action inconnu');
 	}
