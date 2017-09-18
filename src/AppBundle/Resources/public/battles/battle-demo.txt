@@ -122,3 +122,29 @@ Florence à fait une chute fatale en tombant sur la tête.
 Jour 4 - Bravo à Delphine qui vient de gagner !
 -----------------------------------
 
+Bienvenue à nos 10 joueurs qui sont : Player-test, Elliot, Delphine, Aurélie, Mathieu, Daphnée, Charlotte, Gabrielle, Mégan, Emma.
+Player-test à tué Charlotte.
+Elliot à fait une chute fatale en tombant sur la tête.
+Delphine tombe par hasard sur une Canette de soda en regardant le sol.
+Aurélie se ballade dans la foret.
+Mathieu se déplace discretement dans les fourés.
+Daphnée marche rapidement de façon déterminé.
+Gabrielle trouve une Pomme en fouillant un buisson.
+Mégan se ballade dans la plaine.
+Emma à tué Mathieu.
+Jour 1 - 3 morts - Charlotte, Elliot, Mathieu.
+Player-test à tué Gabrielle.
+Delphine à tué Aurélie.
+Daphnée marche tranquillement.
+Mégan à tué Emma.
+Jour 2 - 3 morts - Gabrielle, Aurélie, Emma.
+Player-test trouve une Pomme en fouillant un buisson.
+Delphine à tué Player-test.
+Daphnée marche tranquillement.
+Mégan à tué Daphnée.
+Jour 3 - 2 morts - Player-test, Daphnée.
+Delphine marche tranquillement.
+Mégan à tué Delphine.
+Jour 4 - Bravo à Mégan qui vient de gagner !
+-----------------------------------
+
