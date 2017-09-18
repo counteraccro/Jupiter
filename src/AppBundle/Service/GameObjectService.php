@@ -28,7 +28,7 @@ class GameObjectService extends AppService {
 	 * @var LogService
 	 */
 	private $logService;
-
+	
 	/**
 	 *
 	 * @param Doctrine $doctrine
@@ -41,7 +41,7 @@ class GameObjectService extends AppService {
 		$this->container = $container;
 		$this->logService = $logService;
 	}
-
+	
 	/**
 	 * Action find object
 	 * @param LobbyPlayer $lobbyPlayer
@@ -108,7 +108,7 @@ class GameObjectService extends AppService {
 					{
 						$this->logService->findLog(self::ACTION_FIND_LET_OBJECT , $lobbyPlayer->getPlayer(), $lobby, array($object));
 					}
-				} 
+				}
 				else
 				{
 					$this->logService->findLog(self::ACTION_FIND_LET_OBJECT , $lobbyPlayer->getPlayer(), $lobby, array($object));
