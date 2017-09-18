@@ -166,7 +166,7 @@ class GameService extends AppService {
 	 */
 	private function choiceAction(LobbyPlayer $lobbyPlayer)
 	{
-		$rand = rand(1, 100) * $this->nbDays;
+		$rand = mt_rand(1, 100) * $this->nbDays;
 		
 		$r1 = range(1, 10);
 		$r2 = range(10, 20);

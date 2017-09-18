@@ -48,7 +48,7 @@ class GameObjectService extends AppService {
 	 */
 	public function findObjectAction(LobbyPlayer $lobbyPlayer, Lobby $lobby)
 	{
-		$rand = rand(1, 100);
+		$rand = mt_rand(1, 100);
 		
 		// possibility of finding nothing
 		if($rand <= 20)
@@ -95,7 +95,7 @@ class GameObjectService extends AppService {
 				//we verify the interest of the object
 				if($object->getCategoryObject()->getPriority() >= $lobbyPlayer->getObject1()->getCategoryObject()->getPriority())
 				{
-					$rand = rand(1, 100);
+					$rand = mt_rand(1, 100);
 					
 					//80% chance to exchange it if the interest is greater
 					if($rand > 20)
