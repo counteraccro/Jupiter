@@ -18,7 +18,6 @@ class AppService {
 	const ACTION_INVENTORY_BACKPACK = 'inventory_backpack';
 	const ACTION_INVENTORY_BACKPACK_NO_OBJECT = 'inventory_backpack_no_object';
 	const ACTION_INVENTORY_NO_OBJECT = 'inventory_no_object';
-	
 	const LOG_DAY = 'log_day';
 	const LOG_DAY_NO_KILL = 'no_kill';
 	const LOG_DAY_KILL = 'kill';
@@ -26,7 +25,7 @@ class AppService {
 	const LOG_DAY_WINNER = 'winner';
 	
 	/**
-	 * Maximum number of days of game duration 
+	 * Maximum number of days of game duration
 	 * @var integer
 	 */
 	const MAX_DAY_GAME = 15;

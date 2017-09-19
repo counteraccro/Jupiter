@@ -175,7 +175,7 @@ class LogService extends AppService {
 				$strLog = str_replace('$player$', $player->getName(), $strLog);
 				$strLog = str_replace('$backpack$', $backpack->getName(), $strLog);
 				$strLog = str_replace('$object$', $object->getPronoun() . ' ' . $object->getName(), $strLog);
-				break;
+			break;
 			default:
 				;
 			break;
@@ -363,7 +363,7 @@ class LogService extends AppService {
 		}
 		else
 		{
-			return [ ];
+			return [];
 		}
 	}
 
@@ -374,7 +374,7 @@ class LogService extends AppService {
 	 */
 	private function formatTabLog($logs)
 	{
-		$result = [ ];
+		$result = [];
 		$jour = 1;
 		foreach( $logs as $log )
 		{

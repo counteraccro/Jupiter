@@ -43,7 +43,7 @@ class GameService extends AppService {
 	 * Array containing the trigger values of the conditions of the actions
 	 * @var array
 	 */
-	private $randomActionsConditions = [ ];
+	private $randomActionsConditions = [];
 	
 	/**
 	 *
@@ -61,8 +61,7 @@ class GameService extends AppService {
 	 *
 	 * @var array
 	 */
-	private $statistiques = [
-			'total_kill' => 0
+	private $statistiques = ['total_kill' => 0 
 	];
 
 	/**

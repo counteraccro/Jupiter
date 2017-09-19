@@ -69,15 +69,13 @@ class GameObjectService extends AppService {
 			// It finds a storage object
 			if($object->getType() == self::OBJECT_BACKPACK)
 			{
-				$this->logService->findLog(self::ACTION_FIND_BACKPACK_NO_OBJECT, $lobbyPlayer->getPlayer(), $lobby, array (
-						$object 
+				$this->logService->findLog(self::ACTION_FIND_BACKPACK_NO_OBJECT, $lobbyPlayer->getPlayer(), $lobby, array($object 
 				));
 			}
 			// It finds a classic object
 			else
 			{
-				$this->logService->findLog(self::ACTION_FIND, $lobbyPlayer->getPlayer(), $lobby, array (
-						$object 
+				$this->logService->findLog(self::ACTION_FIND, $lobbyPlayer->getPlayer(), $lobby, array($object 
 				));
 			}
 			return true;
@@ -91,9 +89,7 @@ class GameObjectService extends AppService {
 			{
 				$lobbyPlayer->setObject2($lobbyPlayer->getObject1());
 				$lobbyPlayer->setObject1($object);
-				$this->logService->findLog(self::ACTION_FIND_BACKPACK_OBJECT, $lobbyPlayer->getPlayer(), $lobby, array (
-						$object,
-						$lobbyPlayer->getObject2() 
+				$this->logService->findLog(self::ACTION_FIND_BACKPACK_OBJECT, $lobbyPlayer->getPlayer(), $lobby, array($object,$lobbyPlayer->getObject2() 
 				));
 			}
 			else
@@ -108,22 +104,18 @@ class GameObjectService extends AppService {
 					{
 						$object_let = $lobbyPlayer->getObject1();
 						$lobbyPlayer->setObject1($object);
-						$this->logService->findLog(self::ACTION_FIND_EXCHANGE_OBJECT, $lobbyPlayer->getPlayer(), $lobby, array (
-								$object,
-								$object_let 
+						$this->logService->findLog(self::ACTION_FIND_EXCHANGE_OBJECT, $lobbyPlayer->getPlayer(), $lobby, array($object,$object_let 
 						));
 					}
 					else
 					{
-						$this->logService->findLog(self::ACTION_FIND_LET_OBJECT, $lobbyPlayer->getPlayer(), $lobby, array (
-								$object 
+						$this->logService->findLog(self::ACTION_FIND_LET_OBJECT, $lobbyPlayer->getPlayer(), $lobby, array($object 
 						));
 					}
 				}
 				else
 				{
-					$this->logService->findLog(self::ACTION_FIND_LET_OBJECT, $lobbyPlayer->getPlayer(), $lobby, array (
-							$object 
+					$this->logService->findLog(self::ACTION_FIND_LET_OBJECT, $lobbyPlayer->getPlayer(), $lobby, array($object 
 					));
 				}
 			}
@@ -137,9 +129,7 @@ class GameObjectService extends AppService {
 		if(is_null($lobbyPlayer->getObject2()) && $lobbyPlayer->getObject1()->getType() == self::OBJECT_BACKPACK)
 		{
 			$lobbyPlayer->setObject2($object);
-			$this->logService->findLog(self::ACTION_FIND_WITH_BACKPACK, $lobbyPlayer->getPlayer(), $lobby, array (
-					$lobbyPlayer->getObject1(),
-					$object 
+			$this->logService->findLog(self::ACTION_FIND_WITH_BACKPACK, $lobbyPlayer->getPlayer(), $lobby, array($lobbyPlayer->getObject1(),$object 
 			));
 			
 			$this->doctrine->getManager()->persist($lobbyPlayer);
@@ -148,13 +138,11 @@ class GameObjectService extends AppService {
 			return true;
 		}
 		
-		// 4th case, it already has an object and an additional space
+		// 5th case, it already has an object and an additional space for item 3
 		if(is_null($lobbyPlayer->getObject3()) && $lobbyPlayer->getObject1()->getType() == self::OBJECT_BACKPACK)
 		{
 			$lobbyPlayer->setObject3($object);
-			$this->logService->findLog(self::ACTION_FIND_WITH_BACKPACK, $lobbyPlayer->getPlayer(), $lobby, array (
-					$lobbyPlayer->getObject1(),
-					$object
+			$this->logService->findLog(self::ACTION_FIND_WITH_BACKPACK, $lobbyPlayer->getPlayer(), $lobby, array($lobbyPlayer->getObject1(),$object 
 			));
 			
 			$this->doctrine->getManager()->persist($lobbyPlayer);
@@ -165,9 +153,7 @@ class GameObjectService extends AppService {
 		else
 		{
 			
-			$tabObject = array (
-					2 => $lobbyPlayer->getObject2(),
-					3 => $lobbyPlayer->getObject3() 
+			$tabObject = array(2 => $lobbyPlayer->getObject2(),3 => $lobbyPlayer->getObject3() 
 			);
 			
 			foreach( $tabObject as $key => $object_ )
@@ -183,9 +169,7 @@ class GameObjectService extends AppService {
 						$getObject = 'getObject' . $key;
 						$object_let = $lobbyPlayer->{$getObject}();
 						$lobbyPlayer->{$getObject}($object);
-						$this->logService->findLog(self::ACTION_FIND_EXCHANGE_OBJECT, $lobbyPlayer->getPlayer(), $lobby, array (
-								$object,
-								$object_let 
+						$this->logService->findLog(self::ACTION_FIND_EXCHANGE_OBJECT, $lobbyPlayer->getPlayer(), $lobby, array($object,$object_let 
 						));
 						
 						$this->doctrine->getManager()->persist($lobbyPlayer);
@@ -193,16 +177,14 @@ class GameObjectService extends AppService {
 					}
 					else
 					{
-						$this->logService->findLog(self::ACTION_FIND_LET_OBJECT, $lobbyPlayer->getPlayer(), $lobby, array (
-								$object 
+						$this->logService->findLog(self::ACTION_FIND_LET_OBJECT, $lobbyPlayer->getPlayer(), $lobby, array($object 
 						));
 					}
 					return true;
 				}
 			}
 			
-			$this->logService->findLog(self::ACTION_FIND_LET_OBJECT, $lobbyPlayer->getPlayer(), $lobby, array (
-					$object 
+			$this->logService->findLog(self::ACTION_FIND_LET_OBJECT, $lobbyPlayer->getPlayer(), $lobby, array($object 
 			));
 			return true;
 		}
