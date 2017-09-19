@@ -22,6 +22,12 @@ parameters:
             2: $player$ trouve $object$ dans un batiment en ruine.
             3: $player$ tombe par hasard sur $object$ en regardant le sol.
             4: $player$ ramasse $object$ caché dans un arbre.
+        find_with_backpack:
+            0: $player$ trouve $object$ en fouillant un fourré et le range dans son $backpack$.
+            1: $player$ trouve $object$ en fouillant un buisson et le range dans son $backpack$.
+            2: $player$ trouve $object$ dans un batiment en ruine et le range dans son $backpack$.
+            3: $player$ tombe par hasard sur $object$ en regardant le sol et le range dans son $backpack$.
+            4: $player$ ramasse $object$ caché dans un arbre et le range dans son $backpack$.
         find_let_object:
             0: $player$ ramasse $object$ mais décide de ne pas le prendre, ce n'est pas intéressant pour lui.
             1: $player$ prend $object$ dans sa main mais le laisse tomber au sol.
@@ -32,14 +38,29 @@ parameters:
             1: $player$ ramasse $object_find$ et laisse $object_let$ à la place.
             2: $player$ estime que $object_find$ est plus intéressant que $object_let$, il laisse donc $object_let$ sur place.
             3: $player$ trouve $object_find$ et décide de jetter $object_let$ par manque de place.
-        find_stockage_no_object:
+        find_backpack_no_object:
             0: $player$ trouve $object$ et gagne $nb$ place$pluriel$ de plus de stockage.
-        find_stockage_object:
+        find_backpack_object:
             0: $player$ trouve $object_find$ et gagne $nb$ place$pluriel$ de plus de stockage, du coup il peut garder aussi $object$.
         find_no_object:
             0: $player$ à fouillé toute la zone sans absolument rien trouvé.
-            1: $player$ pensait avoir trouvé quelque chose mais en fait il n'en ai rien
-            2: $player$ n'a rien trouvé d'intéressant ici
+            1: $player$ pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
+            2: $player$ n'a rien trouvé d'intéressant ici.
+        inventory:
+            0: "$player$ fait l'inventaire de ce qu'il possède : juste $object$."
+            1: $player$ décide de faire une pause et de regarder ce qu'il a, c'est à dire $object$.
+            2: "$player$ s'arrete et regarde ce qu'il possède : $object$."
+        inventory_backpack:
+            0: $player$ décide de vider son $backpack$ pour faire l'inventaire de ce qu'il possède, c'est à dire $object$.
+            1: $player$ fouille son $backpack$ et sort $object$.
+            2: "$player$ inspect son $backpack$ et liste ses trouvailles : $objetc$."
+        inventory_backpack_no_item:
+            0: $player$ fouille son $backpack$ mais celui ci est vide
+            1: $player$ semble chercher quelque chose dans son $backpack$ qui est vide
+        inventory_no_item:
+            0: $player$ fouille ses poches mais n'a absolument rien....
+            1: $player$ semble regarder s'il n'a pas quelque chose dans ses poches, mais elles sont vides.
+            2: $player$ fait l'inventaire de ses possessions... rien.
         log_day:
             no_kill: Jour $day$ - Aucun mort !
             kill: Jour $day$ - Seulement $player$ est mort aujourd'hui.

@@ -220,7 +220,7 @@ class GameService extends AppService {
 		$key = array_rand($this->randomActionsConditions[$action_number]);
 		$action = $this->randomActionsConditions[$action_number][$key];
 		
-		//$action = self::ACTION_FIND;
+		$action = self::ACTION_FIND;
 		
 		switch($action) {
 			case self::ACTION_MOVING:

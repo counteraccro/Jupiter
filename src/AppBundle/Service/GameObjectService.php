@@ -8,7 +8,6 @@ use AppBundle\Entity\LobbyPlayer;
 use AppBundle\Entity\Lobby;
 
 class GameObjectService extends AppService {
-	
 	const OBJECT_BACKPACK = 'BACKPACK';
 	
 	/**
@@ -28,7 +27,7 @@ class GameObjectService extends AppService {
 	 * @var LogService
 	 */
 	private $logService;
-	
+
 	/**
 	 *
 	 * @param Doctrine $doctrine
@@ -41,7 +40,7 @@ class GameObjectService extends AppService {
 		$this->container = $container;
 		$this->logService = $logService;
 	}
-	
+
 	/**
 	 * Action find object
 	 * @param LobbyPlayer $lobbyPlayer
@@ -60,58 +59,72 @@ class GameObjectService extends AppService {
 		// search for a random object
 		$object = $this->doctrine->getRepository("AppBundle:Object")->getRandomObject();
 		
-		//1st case the player has no object on him
+		// 1st case the player has no object on him
 		if(is_null($lobbyPlayer->getObject1()))
 		{
 			$lobbyPlayer->setObject1($object);
 			$this->doctrine->getManager()->persist($lobbyPlayer);
 			$this->doctrine->getManager()->flush();
 			
-			//It finds a storage object
+			// It finds a storage object
 			if($object->getType() == self::OBJECT_BACKPACK)
 			{
-				$this->logService->findLog(self::ACTION_FIND_STOCKAGE_NO_OBJECT, $lobbyPlayer->getPlayer(), $lobby, array($object));
+				$this->logService->findLog(self::ACTION_FIND_BACKPACK_NO_OBJECT, $lobbyPlayer->getPlayer(), $lobby, array (
+						$object 
+				));
 			}
 			// It finds a classic object
-			else {
-				$this->logService->findLog(self::ACTION_FIND, $lobbyPlayer->getPlayer(), $lobby, array($object));
+			else
+			{
+				$this->logService->findLog(self::ACTION_FIND, $lobbyPlayer->getPlayer(), $lobby, array (
+						$object 
+				));
 			}
 			return true;
 		}
 		
-		//2nd case it already has an object and has no extra place
+		// 2nd case it already has an object and has no extra place
 		if(is_null($lobbyPlayer->getObject2()) && $lobbyPlayer->getObject1()->getType() != self::OBJECT_BACKPACK)
 		{
-			//3rd case, he finds a bag and so now has an extra space
+			// 3rd case, he finds a bag and so now has an extra space
 			if($object->getType() == self::OBJECT_BACKPACK)
 			{
 				$lobbyPlayer->setObject2($lobbyPlayer->getObject1());
 				$lobbyPlayer->setObject1($object);
-				$this->logService->findLog(self::ACTION_FIND_STOCKAGE_OBJECT, $lobbyPlayer->getPlayer(), $lobby, array($object, $lobbyPlayer->getObject2()));
-				
+				$this->logService->findLog(self::ACTION_FIND_BACKPACK_OBJECT, $lobbyPlayer->getPlayer(), $lobby, array (
+						$object,
+						$lobbyPlayer->getObject2() 
+				));
 			}
 			else
 			{
-				//we verify the interest of the object
+				// we verify the interest of the object
 				if($object->getCategoryObject()->getPriority() >= $lobbyPlayer->getObject1()->getCategoryObject()->getPriority())
 				{
 					$rand = mt_rand(1, 100);
 					
-					//80% chance to exchange it if the interest is greater
+					// 80% chance to exchange it if the interest is greater
 					if($rand > 20)
 					{
 						$object_let = $lobbyPlayer->getObject1();
 						$lobbyPlayer->setObject1($object);
-						$this->logService->findLog(self::ACTION_FIND_EXCHANGE_OBJECT , $lobbyPlayer->getPlayer(), $lobby, array($object, $object_let));
+						$this->logService->findLog(self::ACTION_FIND_EXCHANGE_OBJECT, $lobbyPlayer->getPlayer(), $lobby, array (
+								$object,
+								$object_let 
+						));
 					}
 					else
 					{
-						$this->logService->findLog(self::ACTION_FIND_LET_OBJECT , $lobbyPlayer->getPlayer(), $lobby, array($object));
+						$this->logService->findLog(self::ACTION_FIND_LET_OBJECT, $lobbyPlayer->getPlayer(), $lobby, array (
+								$object 
+						));
 					}
 				}
 				else
 				{
-					$this->logService->findLog(self::ACTION_FIND_LET_OBJECT , $lobbyPlayer->getPlayer(), $lobby, array($object));
+					$this->logService->findLog(self::ACTION_FIND_LET_OBJECT, $lobbyPlayer->getPlayer(), $lobby, array (
+							$object 
+					));
 				}
 			}
 			
@@ -124,7 +137,10 @@ class GameObjectService extends AppService {
 		if(is_null($lobbyPlayer->getObject2()) && $lobbyPlayer->getObject1()->getType() == self::OBJECT_BACKPACK)
 		{
 			$lobbyPlayer->setObject2($object);
-			$this->logService->findLog(self::ACTION_FIND, $lobbyPlayer->getPlayer(), $lobby, array($object));
+			$this->logService->findLog(self::ACTION_FIND_WITH_BACKPACK, $lobbyPlayer->getPlayer(), $lobby, array (
+					$lobbyPlayer->getObject1(),
+					$object 
+			));
 			
 			$this->doctrine->getManager()->persist($lobbyPlayer);
 			$this->doctrine->getManager()->flush();
@@ -132,39 +148,65 @@ class GameObjectService extends AppService {
 			return true;
 		}
 		
-		//5th case it already has 2 object and has no extra place
-		if(is_null($lobbyPlayer->getObject3()) && $lobbyPlayer->getObject1()->getType() == self::OBJECT_BACKPACK && $lobbyPlayer->getObject1()->getValue() == 2)
-		{
-			//6th case, he finds a bag and so now has an extra space
-			if($object->getType() == self::OBJECT_BACKPACK && $object->getValue() == 3)
-			{
-				$lobbyPlayer->setObject($object);
-				$this->logService->findLog(self::ACTION_FIND_STOCKAGE_OBJECT, $lobbyPlayer->getPlayer(), $lobby, array($object, $lobbyPlayer->getObject2()));
-			}
-			else
-			{
-				$this->logService->findLog(self::ACTION_FIND_LET_OBJECT , $lobbyPlayer->getPlayer(), $lobby, array($object));
-			}
-			return true;
-		}
-		
-		//6th case it already has 2 object and to an additional place
-		if(is_null($lobbyPlayer->getObject3()) && $lobbyPlayer->getObject1()->getType() == self::OBJECT_BACKPACK && $lobbyPlayer->getObject1()->getValue() == 3)
+		// 4th case, it already has an object and an additional space
+		if(is_null($lobbyPlayer->getObject3()) && $lobbyPlayer->getObject1()->getType() == self::OBJECT_BACKPACK)
 		{
 			$lobbyPlayer->setObject3($object);
-			$this->logService->findLog(self::ACTION_FIND, $lobbyPlayer->getPlayer(), $lobby, array($object));
+			$this->logService->findLog(self::ACTION_FIND_WITH_BACKPACK, $lobbyPlayer->getPlayer(), $lobby, array (
+					$lobbyPlayer->getObject1(),
+					$object
+			));
 			
 			$this->doctrine->getManager()->persist($lobbyPlayer);
 			$this->doctrine->getManager()->flush();
 			
 			return true;
 		}
-		// last case, all places are taken
 		else
 		{
-			$this->logService->findLog(self::ACTION_FIND_LET_OBJECT , $lobbyPlayer->getPlayer(), $lobby, array($object));
+			
+			$tabObject = array (
+					2 => $lobbyPlayer->getObject2(),
+					3 => $lobbyPlayer->getObject3() 
+			);
+			
+			foreach( $tabObject as $key => $object_ )
+			{
+				// we verify the interest of the object
+				if($object->getCategoryObject()->getPriority() >= $object_->getCategoryObject()->getPriority())
+				{
+					$rand = mt_rand(1, 100);
+					
+					// 80% chance to exchange it if the interest is greater
+					if($rand > 20)
+					{
+						$getObject = 'getObject' . $key;
+						$object_let = $lobbyPlayer->{$getObject}();
+						$lobbyPlayer->{$getObject}($object);
+						$this->logService->findLog(self::ACTION_FIND_EXCHANGE_OBJECT, $lobbyPlayer->getPlayer(), $lobby, array (
+								$object,
+								$object_let 
+						));
+						
+						$this->doctrine->getManager()->persist($lobbyPlayer);
+						$this->doctrine->getManager()->flush();
+					}
+					else
+					{
+						$this->logService->findLog(self::ACTION_FIND_LET_OBJECT, $lobbyPlayer->getPlayer(), $lobby, array (
+								$object 
+						));
+					}
+					return true;
+				}
+			}
+			
+			$this->logService->findLog(self::ACTION_FIND_LET_OBJECT, $lobbyPlayer->getPlayer(), $lobby, array (
+					$object 
+			));
 			return true;
 		}
 		
+		$this->logService->errorLog('Error in ' . __METHOD__ . ' Object : ' . $lobbyPlayer->getObject1()->getName());
 	}
 }

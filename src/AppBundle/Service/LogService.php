@@ -115,7 +115,7 @@ class LogService extends AppService {
 			case self::ACTION_FIND_NO_OBJECT:
 				$strLog = str_replace('$player$', $player->getName(), $strLog);
 			break;
-			case self::ACTION_FIND_STOCKAGE_NO_OBJECT:
+			case self::ACTION_FIND_BACKPACK_NO_OBJECT:
 				$object = $tabObjects[0];
 				
 				$nb = ($object->getValue() - 1);
@@ -131,7 +131,7 @@ class LogService extends AppService {
 				$strLog = str_replace('$pluriel$', $pluriel, $strLog);
 			
 			break;
-			case self::ACTION_FIND_STOCKAGE_OBJECT:
+			case self::ACTION_FIND_BACKPACK_OBJECT:
 				$object_find = $tabObjects[0];
 				unset($tabObjects[0]);
 				
@@ -169,6 +169,13 @@ class LogService extends AppService {
 				$strLog = str_replace('$object_find$', $object->getPronoun() . ' ' . $object->getName(), $strLog);
 				$strLog = str_replace('$object_let$', $object_let->getPronoun() . ' ' . $object_let->getName(), $strLog);
 			break;
+			case self::ACTION_FIND_WITH_BACKPACK:
+				$backpack = $tabObjects[0];
+				$object = $tabObjects[1];
+				$strLog = str_replace('$player$', $player->getName(), $strLog);
+				$strLog = str_replace('$backpack$', $backpack->getName(), $strLog);
+				$strLog = str_replace('$object$', $object->getPronoun() . ' ' . $object->getName(), $strLog);
+				break;
 			default:
 				;
 			break;

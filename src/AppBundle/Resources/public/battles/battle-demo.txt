@@ -1,27 +1,158 @@
-Bienvenue à nos 10 joueurs qui sont : Player-test, Ludovic, Clara, Adam, Ève, Tristan, Elizabeth, Justine, Adam, Dylan.
-Player-test marche rapidement de façon déterminé.
-Ludovic se ballade dans la foret.
-Clara se ballade dans la plaine.
-Adam marche tranquillement.
-Ève trouve un Petit sac à dos et gagne 1 place de plus de stockage.
-Tristan trouve un Glock dans un batiment en ruine.
-Elizabeth ce déplace de façon chaotique complètement paniqué.
-Justine se ballade dans la plaine.
-Adam à tué Player-test.
-Dylan se déplace discretement dans les fourés.
-Jour 1 - Seulement Player-test est mort aujourd'hui.
-Ludovic se ballade dans la foret.
-Clara marche tranquillement.
-Adam à tué Adam.
-Ève se noie en tentant de traverser une rivière en crue.
-Tristan trouve un Revolver .38 et décide de jetter un Glock par manque de place.
-Elizabeth à tué Ludovic.
-Justine à tué Elizabeth.
-Dylan à tué Clara.
-Jour 2 - 5 morts - Adam, Ève, Ludovic, Elizabeth, Clara.
-Adam à tué Tristan.
-Justine à tué Adam.
-Dylan à fait une chute fatale en tombant sur la tête.
-Jour 3 - Bravo à Justine qui vient de gagner !
+Bienvenue à nos 10 joueurs qui sont : Player-test, Victor, Édouard, Élodie, Elizabeth, Louis, Tommy, Noah, Mégan, Jérémy.
+Player-test trouve un Sachet de bonbon en fouillant un fourré.
+Victor pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
+Édouard trouve un Anti douleur dans un batiment en ruine.
+Élodie ramasse un Ballon de foot caché dans un arbre.
+Elizabeth ramasse un Glock caché dans un arbre.
+Louis à fouillé toute la zone sans absolument rien trouvé.
+Tommy trouve un Glock dans un batiment en ruine.
+Noah à fouillé toute la zone sans absolument rien trouvé.
+Mégan trouve une M16 dans un batiment en ruine.
+Jérémy trouve une Pomme en fouillant un fourré.
+Jour 1 - Aucun mort !
+Player-test ramasse une Canette de soda et laisse un Sachet de bonbon à la place.
+Victor ramasse une M16 caché dans un arbre.
+Édouard ramasse une Barre de céréales mais décide de ne pas le prendre, ce n'est pas intéressant pour lui.
+Élodie estime que une FABARM est plus intéressant que un Ballon de foot, il laisse donc un Ballon de foot sur place.
+Elizabeth trouve une FABARM et décide de jetter un Glock par manque de place.
+Louis trouve un Anti douleur dans un batiment en ruine.
+Tommy n'a rien trouvé d'intéressant ici.
+Noah tombe par hasard sur une Casserole en regardant le sol.
+Mégan ramasse une SSG 97 et laisse une M16 à la place.
+Jérémy ramasse une SSG 97 et laisse une Pomme à la place.
+Jour 2 - Aucun mort !
+Player-test trouve une MKA et décide de jetter une Canette de soda par manque de place.
+Victor ramasse un Revolver .38 mais décide de ne pas le prendre, ce n'est pas intéressant pour lui.
+Édouard n'a rien trouvé d'intéressant ici.
+Élodie estime que une SKS est plus intéressant que une FABARM, il laisse donc une FABARM sur place.
+Elizabeth prend un Ours en peluche dans sa main mais le laisse tomber au sol.
+Louis à fouillé toute la zone sans absolument rien trouvé.
+Tommy estime que une SSG 97 est plus intéressant que un Glock, il laisse donc un Glock sur place.
+Noah trouve un Sac de sport et gagne 2 places de plus de stockage, du coup il peut garder aussi une Casserole.
+Mégan prend un Revolver .38 dans sa main mais le laisse tomber au sol.
+Jérémy prend un Glock dans sa main mais le laisse tomber au sol.
+Jour 3 - Aucun mort !
+Player-test à fouillé toute la zone sans absolument rien trouvé.
+Victor fait le choix de garder une FABARM qu'il vient de trouver et de laisser une M16 à la place
+Édouard ramasse une Petite trousse de secours et laisse un Anti douleur à la place.
+Élodie regarde un Téléphone et décide finalement de ne pas le prendre.
+Elizabeth ramasse un UZI SMG mais décide de ne pas le prendre, ce n'est pas intéressant pour lui.
+Louis ramasse un Ours en peluche mais décide de ne pas le prendre, ce n'est pas intéressant pour lui.
+Tommy regarde un Ours en peluche et décide finalement de ne pas le prendre.
+Noah à fouillé toute la zone sans absolument rien trouvé.
+Mégan ramasse un Beretta mais décide de ne pas le prendre, ce n'est pas intéressant pour lui.
+Jérémy regarde un Téléphone et décide finalement de ne pas le prendre.
+Jour 4 - Aucun mort !
+Player-test n'a rien trouvé d'intéressant ici.
+Victor prend une Boite de conserve dans sa main mais le laisse tomber au sol.
+Édouard regarde un Revolver .38 mais n'y prête aucune attention.
+Élodie fait le choix de garder une MKA qu'il vient de trouver et de laisser une SKS à la place
+Elizabeth regarde une Boite de conserve mais n'y prête aucune attention.
+Louis pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
+Tommy regarde une Canette de soda et décide finalement de ne pas le prendre.
+Noah trouve un Sachet de bonbon en fouillant un buisson et le range dans son Sac de sport.
+Mégan ramasse une FABARM et laisse une SSG 97 à la place.
+Jérémy estime que une FABARM est plus intéressant que une SSG 97, il laisse donc une SSG 97 sur place.
+Jour 5 - Aucun mort !
+Player-test ramasse une FABARM et laisse une MKA à la place.
+Victor ramasse une SKS mais décide de ne pas le prendre, ce n'est pas intéressant pour lui.
+Édouard ramasse un Ballon de foot mais décide de ne pas le prendre, ce n'est pas intéressant pour lui.
+Élodie regarde une Casserole et décide finalement de ne pas le prendre.
+Elizabeth estime que une FABARM est plus intéressant que une FABARM, il laisse donc une FABARM sur place.
+Louis trouve un Sac à dos et gagne 2 places de plus de stockage, du coup il peut garder aussi un Anti douleur.
+Tommy estime que une Kalachnikov est plus intéressant que une SSG 97, il laisse donc une SSG 97 sur place.
+Noah pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
+Mégan prend une Casserole dans sa main mais le laisse tomber au sol.
+Jérémy prend un Sachet de bonbon dans sa main mais le laisse tomber au sol.
+Jour 6 - Aucun mort !
+Player-test regarde une Casserole mais n'y prête aucune attention.
+Victor prend une SKS dans sa main mais le laisse tomber au sol.
+Édouard ramasse un Sachet de bonbon mais décide de ne pas le prendre, ce n'est pas intéressant pour lui.
+Élodie trouve une Kalachnikov et décide de jetter une MKA par manque de place.
+Elizabeth prend un UZI SMG dans sa main mais le laisse tomber au sol.
+Louis trouve un Sac à dos en fouillant un fourré et le range dans son Sac à dos.
+Tommy fait le choix de garder une Petite trousse de secours qu'il vient de trouver et de laisser une Kalachnikov à la place
+Noah estime que une Petite trousse de secours est plus intéressant que une Casserole, il laisse donc une Casserole sur place.
+Mégan ramasse un Glock mais décide de ne pas le prendre, ce n'est pas intéressant pour lui.
+Jérémy prend un Sachet de bonbon dans sa main mais le laisse tomber au sol.
+Jour 7 - Aucun mort !
+Player-test prend une Casserole dans sa main mais le laisse tomber au sol.
+Victor estime que une Grande trousse de secours est plus intéressant que une FABARM, il laisse donc une FABARM sur place.
+Édouard à fouillé toute la zone sans absolument rien trouvé.
+Élodie pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
+Elizabeth ramasse une Canette de soda mais décide de ne pas le prendre, ce n'est pas intéressant pour lui.
+Louis à fouillé toute la zone sans absolument rien trouvé.
+Tommy n'a rien trouvé d'intéressant ici.
+Noah estime que une Petite trousse de secours est plus intéressant que une Casserole, il laisse donc une Casserole sur place.
+Mégan regarde une Canette de soda et décide finalement de ne pas le prendre.
+Jérémy trouve un Anti douleur et décide de jetter une FABARM par manque de place.
+Jour 8 - Aucun mort !
+Player-test ramasse une SKS mais décide de ne pas le prendre, ce n'est pas intéressant pour lui.
+Victor ramasse un Revolver .38 mais décide de ne pas le prendre, ce n'est pas intéressant pour lui.
+Édouard pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
+Élodie regarde un UZI SMG et décide finalement de ne pas le prendre.
+Elizabeth regarde un UZI SMG et décide finalement de ne pas le prendre.
+Louis estime que un Sac à dos est plus intéressant que un Anti douleur, il laisse donc un Anti douleur sur place.
+Tommy trouve un Sac de sport et gagne 2 places de plus de stockage, du coup il peut garder aussi une Petite trousse de secours.
+Noah regarde un Sac à dos et décide finalement de ne pas le prendre.
+Mégan ramasse une FABARM et laisse une FABARM à la place.
+Jérémy regarde une Barre de céréales et décide finalement de ne pas le prendre.
+Jour 9 - Aucun mort !
+Player-test prend une Boite de conserve dans sa main mais le laisse tomber au sol.
+Victor ramasse une Barre de céréales mais décide de ne pas le prendre, ce n'est pas intéressant pour lui.
+Édouard trouve un Sac de sport et gagne 2 places de plus de stockage, du coup il peut garder aussi une Petite trousse de secours.
+Élodie estime que une Kalachnikov est plus intéressant que une Kalachnikov, il laisse donc une Kalachnikov sur place.
+Elizabeth regarde un Ballon de basket mais n'y prête aucune attention.
+Louis à fouillé toute la zone sans absolument rien trouvé.
+Tommy pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
+Noah prend une M16 dans sa main mais le laisse tomber au sol.
+Mégan prend une Barre de céréales dans sa main mais le laisse tomber au sol.
+Jérémy à fouillé toute la zone sans absolument rien trouvé.
+Jour 10 - Aucun mort !
+Player-test fait le choix de garder une SSG 97 qu'il vient de trouver et de laisser une FABARM à la place
+Victor regarde une SSG 97 et décide finalement de ne pas le prendre.
+Édouard trouve un Téléphone en fouillant un fourré et le range dans son Sac de sport.
+Élodie regarde un Ours en peluche et décide finalement de ne pas le prendre.
+Elizabeth ramasse un Revolver .38 mais décide de ne pas le prendre, ce n'est pas intéressant pour lui.
+Louis regarde une Pomme mais n'y prête aucune attention.
+Tommy trouve un Ballon de foot en fouillant un fourré et le range dans son Sac de sport.
+Noah ramasse un UZI SMG mais décide de ne pas le prendre, ce n'est pas intéressant pour lui.
+Mégan trouve un Sac de sport et gagne 2 places de plus de stockage, du coup il peut garder aussi une FABARM.
+Jérémy prend un Revolver .38 dans sa main mais le laisse tomber au sol.
+Jour 11 - Aucun mort !
+Player-test regarde une Casserole mais n'y prête aucune attention.
+Victor n'a rien trouvé d'intéressant ici.
+Édouard regarde une Grande trousse de secours et décide finalement de ne pas le prendre.
+Élodie ramasse un Anti douleur et laisse une Kalachnikov à la place.
+Elizabeth ramasse une FABARM et laisse une FABARM à la place.
+Louis prend un Ballon de basket dans sa main mais le laisse tomber au sol.
+Tommy à fouillé toute la zone sans absolument rien trouvé.
+Noah trouve un Ballon de basket et décide de jetter une Casserole par manque de place.
+Mégan ramasse une SKS caché dans un arbre et le range dans son Sac de sport.
+Jérémy prend une Kalachnikov dans sa main mais le laisse tomber au sol.
+Jour 12 - Aucun mort !
+Player-test estime que une Grande trousse de secours est plus intéressant que une SSG 97, il laisse donc une SSG 97 sur place.
+Victor prend une SKS dans sa main mais le laisse tomber au sol.
+Édouard trouve un Sac à dos et décide de jetter une Petite trousse de secours par manque de place.
+Élodie n'a rien trouvé d'intéressant ici.
+Elizabeth prend un Revolver .38 dans sa main mais le laisse tomber au sol.
+Louis regarde un Glock et décide finalement de ne pas le prendre.
+Tommy ramasse un Ballon de foot et laisse un Ballon de foot à la place.
+Noah ramasse un Ours en peluche mais décide de ne pas le prendre, ce n'est pas intéressant pour lui.
+Mégan regarde une Grande trousse de secours mais n'y prête aucune attention.
+Jérémy regarde une SSG 97 et décide finalement de ne pas le prendre.
+Jour 13 - Aucun mort !
+Player-test regarde une Pomme et décide finalement de ne pas le prendre.
+Victor regarde une SSG 97 et décide finalement de ne pas le prendre.
+Édouard fait le choix de garder une M16 qu'il vient de trouver et de laisser un Téléphone à la place
+Élodie regarde une Barre de céréales et décide finalement de ne pas le prendre.
+Elizabeth prend un Beretta dans sa main mais le laisse tomber au sol.
+Louis estime que une Grande trousse de secours est plus intéressant que un Anti douleur, il laisse donc un Anti douleur sur place.
+Tommy fait le choix de garder un Ballon de basket qu'il vient de trouver et de laisser un Ballon de foot à la place
+Noah estime que un Revolver .38 est plus intéressant que une Casserole, il laisse donc une Casserole sur place.
+Mégan ramasse une Petite trousse de secours et laisse une FABARM à la place.
+Jérémy prend une SSG 97 dans sa main mais le laisse tomber au sol.
+Jour 14 - Aucun mort !
+Jour 15 - Bravo à Player-test qui vient de gagner !
 -----------------------------------
 

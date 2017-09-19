@@ -155,14 +155,14 @@ parameters:
             setCategoryObject: Divers
             setPronoun: un
         petit_sac_dos:
-            setName: Petit sac à dos
-            setValue: 2
+            setName: Sac à dos
+            setValue: 3
             setUnit: '%'
             setType: BACKPACK
             setCategoryObject: Stockage
             setPronoun: un
         grand_sac_dos:
-            setName: Grand sac à dos
+            setName: Sac de sport
             setValue: 3
             setUnit: '%'
             setType: BACKPACK
