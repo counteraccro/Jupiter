@@ -187,6 +187,69 @@ class LogService extends AppService {
 	}
 
 	/**
+	 * Log for the action inventory
+	 * @param string $action
+	 * @param Player $player
+	 * @param Lobby $lobby
+	 * @param array $tabObjects
+	 * @return string
+	 */
+	public function inventoryLog($action, Player $player, Lobby $lobby, array $tabObjects = null)
+	{
+		$strLog = '';
+		
+		$strLog = $this->getRandomLog($action);
+		
+		switch($action) {
+			case self::ACTION_INVENTORY_NO_OBJECT:
+				$strLog = str_replace('$player$', $player->getName(), $strLog);
+			break;
+			case self::ACTION_INVENTORY:
+				$strLog = str_replace('$player$', $player->getName(), $strLog);
+				$strLog = str_replace('$object$', $tabObjects[0]->getPronoun() . ' ' . $tabObjects[0]->getName(), $strLog);
+			break;
+			case self::ACTION_INVENTORY_BACKPACK_NO_OBJECT:
+				$strLog = str_replace('$player$', $player->getName(), $strLog);
+				$strLog = str_replace('$backpack$', $tabObjects[0]->getName(), $strLog);
+			break;
+			case self::ACTION_INVENTORY_BACKPACK:
+				$strLog = str_replace('$player$', $player->getName(), $strLog);
+				$strLog = str_replace('$backpack$', $tabObjects[0]->getName(), $strLog);
+				
+				unset($tabObjects[0]);
+				$str_objects = '';
+				$nb = 0;
+				foreach( $tabObjects as $object )
+				{
+					
+					if(! is_null($object))
+					{
+						$and = '';
+						if($nb == 1)
+						{
+							$and = ' et ';
+						}
+						
+						$str_objects .= $and . $object->getPronoun() . ' ' . $object->getName();
+						
+						$nb ++;
+					}
+				}
+				$strLog = str_replace('$object$', $str_objects, $strLog);
+			
+			break;
+			
+			default:
+				;
+			break;
+		}
+		
+		$this->createLogEntity($player, $lobby, $strLog, 1);
+		
+		return $this->writeLog($strLog);
+	}
+
+	/**
 	 * Generate log for daily statistiques
 	 * @param array $stats
 	 * @param int $nbDays

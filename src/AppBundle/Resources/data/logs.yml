@@ -22,15 +22,19 @@ parameters:
             2: $player$ trouve $object$ dans un batiment en ruine.
             3: $player$ tombe par hasard sur $object$ en regardant le sol.
             4: $player$ ramasse $object$ caché dans un arbre.
+            5: $player$ ramasse $object$ dans une vielle maison.
+            6: $player$ trouve $object$ dans une armurie.
         find_with_backpack:
             0: $player$ trouve $object$ en fouillant un fourré et le range dans son $backpack$.
             1: $player$ trouve $object$ en fouillant un buisson et le range dans son $backpack$.
             2: $player$ trouve $object$ dans un batiment en ruine et le range dans son $backpack$.
             3: $player$ tombe par hasard sur $object$ en regardant le sol et le range dans son $backpack$.
             4: $player$ ramasse $object$ caché dans un arbre et le range dans son $backpack$.
+            5: $player$ ramasse $object$ dans une vielle maison et le range dans son $backpack$.
+            6: $player$ trouve $object$ dans une armurie et le range dans son $backpack$.
         find_let_object:
-            0: $player$ ramasse $object$ mais décide de ne pas le prendre, ce n'est pas intéressant pour lui.
-            1: $player$ prend $object$ dans sa main mais le laisse tomber au sol.
+            0: $player$ ramasse $object$ mais décide de ne pas le prendre, pas très intéressant.
+            1: $player$ prend $object$ dans sa main mais finalement le laisse tomber au sol.
             2: $player$ regarde $object$ et décide finalement de ne pas le prendre.
             3: $player$ regarde $object$ mais n'y prête aucune attention.
         find_exchange_object:
@@ -53,11 +57,11 @@ parameters:
         inventory_backpack:
             0: $player$ décide de vider son $backpack$ pour faire l'inventaire de ce qu'il possède, c'est à dire $object$.
             1: $player$ fouille son $backpack$ et sort $object$.
-            2: "$player$ inspect son $backpack$ et liste ses trouvailles : $objetc$."
-        inventory_backpack_no_item:
+            2: "$player$ inspect son $backpack$ et liste ses trouvailles : $object$."
+        inventory_backpack_no_object:
             0: $player$ fouille son $backpack$ mais celui ci est vide
             1: $player$ semble chercher quelque chose dans son $backpack$ qui est vide
-        inventory_no_item:
+        inventory_no_object:
             0: $player$ fouille ses poches mais n'a absolument rien....
             1: $player$ semble regarder s'il n'a pas quelque chose dans ses poches, mais elles sont vides.
             2: $player$ fait l'inventaire de ses possessions... rien.

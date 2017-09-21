@@ -191,4 +191,39 @@ class GameObjectService extends AppService {
 		
 		$this->logService->errorLog('Error in ' . __METHOD__ . ' Object : ' . $lobbyPlayer->getObject1()->getName());
 	}
+	
+	/**
+	 * Action inventory
+	 * @param LobbyPlayer $lobbyPlayer
+	 * @param Lobby $lobby
+	 * @return boolean
+	 */
+	public function inventoryAction(LobbyPlayer $lobbyPlayer, Lobby $lobby)
+	{
+		//The player has no objects
+		if(is_null($lobbyPlayer->getObject1()))
+		{
+			$this->logService->inventoryLog(self::ACTION_INVENTORY_NO_OBJECT, $lobbyPlayer->getPlayer(), $lobby);
+			return true;
+		}
+		
+		if($lobbyPlayer->getObject1()->getType() != self::OBJECT_BACKPACK)
+		{
+			$this->logService->inventoryLog(self::ACTION_INVENTORY, $lobbyPlayer->getPlayer(), $lobby, array($lobbyPlayer->getObject1()));
+			return true;
+		}
+		
+		if($lobbyPlayer->getObject1()->getType() == self::OBJECT_BACKPACK && is_null($lobbyPlayer->getObject2()))
+		{
+			$this->logService->inventoryLog(self::ACTION_INVENTORY_BACKPACK_NO_OBJECT, $lobbyPlayer->getPlayer(), $lobby, array($lobbyPlayer->getObject1()));
+			return true;
+		}
+		else {
+			$this->logService->inventoryLog(self::ACTION_INVENTORY_BACKPACK, $lobbyPlayer->getPlayer(), $lobby, array($lobbyPlayer->getObject1(), $lobbyPlayer->getObject2(), $lobbyPlayer->getObject3()));
+			return true;
+		}
+		
+		
+		$this->logService->errorLog('Action non prise en compte');
+	}
 }

@@ -219,7 +219,7 @@ class GameService extends AppService {
 		$key = array_rand($this->randomActionsConditions[$action_number]);
 		$action = $this->randomActionsConditions[$action_number][$key];
 		
-		$action = self::ACTION_FIND;
+		$action = $this->debugAction();
 		
 		switch($action) {
 			case self::ACTION_MOVING:
@@ -231,10 +231,27 @@ class GameService extends AppService {
 			case self::ACTION_FIND:
 				$this->gameObjectService->findObjectAction($lobbyPlayer, $this->lobby);
 			break;
+			case self::ACTION_INVENTORY:
+				$this->gameObjectService->inventoryAction($lobbyPlayer, $this->lobby);
+			break;
 			default:
 				$log = 'Action ' . $action . ' inconnu';
 				$this->logService->errorLog($log);
 			break;
 		}
+	}
+	
+	/**
+	 * Only for debug
+	 * @return string
+	 */
+	private function debugAction()
+	{
+		if(rand(1, 2) == 2)
+		{
+			return self::ACTION_FIND;
+		}
+		return self::ACTION_INVENTORY;
+		
 	}
 }

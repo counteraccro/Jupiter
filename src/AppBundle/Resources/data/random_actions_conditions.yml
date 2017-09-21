@@ -3,25 +3,35 @@ parameters:
         1:
             0: moving
             1: find
+            2: inventory
         2:
             0: moving
             1: find
+            2: inventory
         3:
             0: moving
             1: find
+            2: inventory
         4:
             0: moving
             1: find
+            2: inventory
         5:
             0: moving
+            1: inventory
         6:
             0: moving
+            1: inventory
         7:
             0: moving
+            1: inventory
         8:
             0: moving
             1: kill
+            2: inventory
         9:
             0: kill
+            1: inventory
         10:
-            0: kill               
+            0: kill
+            1: inventory          
