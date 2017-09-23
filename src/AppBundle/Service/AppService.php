@@ -18,6 +18,8 @@ class AppService {
 	const ACTION_INVENTORY_BACKPACK = 'inventory_backpack';
 	const ACTION_INVENTORY_BACKPACK_NO_OBJECT = 'inventory_backpack_no_object';
 	const ACTION_INVENTORY_NO_OBJECT = 'inventory_no_object';
+	const ACTION_WTF = 'wtf';
+	const ACTION_VARIOUS = 'various';
 	const LOG_DAY = 'log_day';
 	const LOG_DAY_NO_KILL = 'no_kill';
 	const LOG_DAY_KILL = 'kill';
@@ -34,5 +36,5 @@ class AppService {
 	 * debug mode
 	 * @var string
 	 */
-	protected $debug = true;
+	protected $debug = false;
 }

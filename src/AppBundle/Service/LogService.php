@@ -56,21 +56,19 @@ class LogService extends AppService {
 		$this->logsArray = $this->container->getParameter('Logs');
 		$this->folder_path = dirname(__DIR__) . '/Resources/public/battles/';
 	}
-
+	
 	/**
-	 * Generate log for action moving
+	 * Simple log only with player variable
+	 * @param string $action
 	 * @param Player $player
 	 * @param Lobby $lobby
-	 * @return mixed
+	 * @return string
 	 */
-	public function movingLog(Player $player, Lobby $lobby)
+	public function simpleLog($action, Player $player, Lobby $lobby)
 	{
-		$strLog = $this->getRandomLog(self::ACTION_MOVING);
-		
+		$strLog = $this->getRandomLog($action);	
 		$strLog = str_replace('$player$', $player->getName(), $strLog);
-		
 		$this->createLogEntity($player, $lobby, $strLog, 1);
-		
 		return $this->writeLog($strLog);
 	}
 

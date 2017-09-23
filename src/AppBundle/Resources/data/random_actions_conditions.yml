@@ -4,34 +4,51 @@ parameters:
             0: moving
             1: find
             2: inventory
+            3: wtf
+            4: various
         2:
             0: moving
             1: find
             2: inventory
+            3: wtf
+            4: various
         3:
             0: moving
             1: find
             2: inventory
+            3: wtf
+            4: various
         4:
             0: moving
             1: find
             2: inventory
+            3: wtf
+            4: various
         5:
             0: moving
             1: inventory
+            2: wtf
+            3: various
         6:
             0: moving
             1: inventory
+            2: wtf
+            3: various
         7:
             0: moving
             1: inventory
+            2: wtf
+            3: various
         8:
             0: moving
             1: kill
             2: inventory
+            3: wtf
         9:
             0: kill
             1: inventory
+            2: wtf
         10:
             0: kill
-            1: inventory          
+            1: inventory
+            2: wtf

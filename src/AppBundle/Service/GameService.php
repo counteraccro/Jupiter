@@ -219,12 +219,21 @@ class GameService extends AppService {
 		$key = array_rand($this->randomActionsConditions[$action_number]);
 		$action = $this->randomActionsConditions[$action_number][$key];
 		
-		$action = $this->debugAction();
+		if($this->debug)
+		{
+			$action = $this->debugAction();
+		}
 		
 		switch($action) {
 			case self::ACTION_MOVING:
-				$this->logService->movingLog($lobbyPlayer->getPlayer(), $this->lobby);
+				$this->logService->simpleLog(self::ACTION_MOVING, $lobbyPlayer->getPlayer(), $this->lobby);
 			break;
+			case self::ACTION_WTF:
+				$this->logService->simpleLog(self::ACTION_WTF, $lobbyPlayer->getPlayer(), $this->lobby);
+				break;
+			case self::ACTION_VARIOUS:
+				$this->logService->simpleLog(self::ACTION_VARIOUS, $lobbyPlayer->getPlayer(), $this->lobby);
+				break;
 			case self::ACTION_KILL:
 				$this->statistiques = $this->gamePlayerService->killAction($lobbyPlayer, $this->lobby, $this->statistiques, $this->nbDays);
 			break;
@@ -249,9 +258,9 @@ class GameService extends AppService {
 	{
 		if(rand(1, 2) == 2)
 		{
-			return self::ACTION_FIND;
+			return self::ACTION_WTF;
 		}
-		return self::ACTION_INVENTORY;
+		return self::ACTION_VARIOUS;
 		
 	}
 }

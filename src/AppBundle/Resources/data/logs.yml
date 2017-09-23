@@ -65,6 +65,24 @@ parameters:
             0: $player$ fouille ses poches mais n'a absolument rien....
             1: $player$ semble regarder s'il n'a pas quelque chose dans ses poches, mais elles sont vides.
             2: $player$ fait l'inventaire de ses possessions... rien.
+        wtf:
+            0: $player$ répète son discours de gagnant au cas ou il serait victorieux.
+            1: $player$ essaye de trouver la position de mort la plus photogénique pour l'identification des morts.
+            2: $player$ viens de se rappeler qu'il à oublier d'éteindre une lumière chez lui...
+            3: $player$ ce met en PLS et attend que le temps passe.
+            4: $player$ fait du tourisme tranquillement.
+            5: $player$ est pris d'un énorme fou rire en lisant un vieux magazine.
+            6: $player$ à une envie soudaine de chocolat.
+            7: $player$ à une envie soudaine de choux de bruxelle.
+            8: $player$ à une envie soudaine de pizza.
+            9: $player$ à une envie soudaine de casser des Q.
+            10: $player$ récite à l'envers l'alphabet grecs en breton.
+            11: $player$ cherche un petit coin pour soulager son énorme envie
+        various:
+            0: $player$ décide de s'alonger dans l'herbe pour ce reposer.
+            1: $player$ regarde avec admiration le ciel.
+            2: $player$ cherche une cachette sûre pour ce reposer.
+            3: $player$ à mal au ventre, il n'aurai pas du reprendre de la saucisse hier soir
         log_day:
             no_kill: Jour $day$ - Aucun mort !
             kill: Jour $day$ - Seulement $player$ est mort aujourd'hui.
