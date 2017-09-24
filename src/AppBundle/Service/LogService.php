@@ -71,6 +71,23 @@ class LogService extends AppService {
 		$this->createLogEntity($player, $lobby, $strLog, 1);
 		return $this->writeLog($strLog);
 	}
+	
+	/**
+	 * Action use log
+	 * @param string $action
+	 * @param Player $player
+	 * @param Lobby $lobby
+	 * @param Object $object
+	 * @return string
+	 */
+	public function useLog($action, Player $player, Lobby $lobby, Object $object)
+	{
+		$strLog = $this->getRandomLog($action);
+		$strLog = str_replace('$player$', $player->getName(), $strLog);
+		$strLog = str_replace('$object$', $object->getName(), $strLog);
+		$this->createLogEntity($player, $lobby, $strLog, 1);
+		return $this->writeLog($strLog);
+	}
 
 	/**
 	 * Generate log for action kill
@@ -253,7 +270,7 @@ class LogService extends AppService {
 	 * @param int $nbDays
 	 * @return mixed
 	 */
-	public function StatDayLog(array $stats, $nbDays)
+	public function statDayLog(array $stats, $nbDays)
 	{
 		$nbKill = 0;
 		
@@ -300,7 +317,7 @@ class LogService extends AppService {
 	 * @param int $nbDays
 	 * @return mixed
 	 */
-	public function Winnerlog(Player $player, $nbDays)
+	public function winnerLog(Player $player, $nbDays)
 	{
 		$strLog = $this->logsArray[self::LOG_DAY][self::LOG_DAY_WINNER];
 		$strLog = str_replace('$player$', $player->getName(), $strLog);
@@ -319,7 +336,7 @@ class LogService extends AppService {
 	 * @param Lobby $lobby
 	 * @return string
 	 */
-	public function Presentationlog(Lobby $lobby)
+	public function presentationLog(Lobby $lobby)
 	{
 		$strLog = $this->getRandomLog(self::ACTION_PRESENTATION);
 		

@@ -29,26 +29,32 @@ parameters:
             1: inventory
             2: wtf
             3: various
+            4: use
         6:
             0: moving
             1: inventory
             2: wtf
             3: various
+            4: use
         7:
             0: moving
             1: inventory
             2: wtf
             3: various
+            4: use
         8:
             0: moving
             1: kill
             2: inventory
             3: wtf
+            4: use
         9:
             0: kill
             1: inventory
             2: wtf
+            3: use
         10:
             0: kill
             1: inventory
             2: wtf
+            3: use

@@ -78,11 +78,38 @@ parameters:
             9: $player$ à une envie soudaine de casser des Q.
             10: $player$ récite à l'envers l'alphabet grecs en breton.
             11: $player$ cherche un petit coin pour soulager son énorme envie
+            12: $player$ fini sa grille de sudoku
         various:
             0: $player$ décide de s'alonger dans l'herbe pour ce reposer.
             1: $player$ regarde avec admiration le ciel.
             2: $player$ cherche une cachette sûre pour ce reposer.
-            3: $player$ à mal au ventre, il n'aurai pas du reprendre de la saucisse hier soir
+            3: $player$ à mal au ventre, il n'aurai pas du reprendre de la saucisse hier soir.
+        use_no_object:
+            0: $player$ aurai bien aimé faire quelque chose mais il n'a rien.
+            1: $player$ à faim mais n'a rien à ce mettre sous la dent.
+            2: $player$ s'ennuit, il serait temps d'aller fouiller son environnement.
+        use_object_various:
+            0: $player$ s'amuse avec l'objet $object$ et fini par le jetter.
+            1: $player$ essaye de comprendre à quoi sert l'objet $object$ avant de laisser tomber.
+        use_object_gun:
+            0: $player$ s'amuse à s'entrainer avec son pistolet $object$.
+            1: $player$ vide un chargeur de son arme $object$ dans un fouré après avoir vu quelque chose bougé.
+            2: $player$ à tellement peur qu'il tire partout avec son $object$.
+            3: $player$ démonte minutieusement son $object$ pour l'inspecter.
+        use_object_rifle:
+            0: $player$ tire une rafale par erreur en regardant sa $object.
+            1: $player$ tire une rafale par erreur en nettoyant sa $object.
+            2: $player$ panique et tire tout autour de lui avec sa $object.
+            3: $player$ s'amuse à s'entrainer avec $object$
+        use_object_care:
+            0: $player$ utilise $object$ pour ce soigner.
+            1: $player$ prend $object$ pour récupérer un peu de vie.
+        use_object_food:
+            0: $player$ décide de faire une petite pause et de manger $object$.
+            1: $player$ fait une petite halte pour manger $object$.
+        use_object_sharp:
+            0: $player$ manque de se coupé en contemplant $object$.
+            1: $player$ éguise frénétiquement $object$.
         log_day:
             no_kill: Jour $day$ - Aucun mort !
             kill: Jour $day$ - Seulement $player$ est mort aujourd'hui.

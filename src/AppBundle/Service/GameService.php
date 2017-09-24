@@ -89,7 +89,7 @@ class GameService extends AppService {
 	public function generateGame(Lobby $lobby)
 	{
 		$this->lobby = $lobby;
-		$this->logService->Presentationlog($this->lobby);
+		$this->logService->presentationLog($this->lobby);
 		$this->_generateGame();
 		$this->doctrine->getManager()->flush();
 	}
@@ -127,7 +127,7 @@ class GameService extends AppService {
 			return true;
 		}
 		
-		$this->logService->StatDayLog($this->statistiques, $this->nbDays);
+		$this->logService->statDayLog($this->statistiques, $this->nbDays);
 		
 		$this->nbDays ++;
 		$this->_generateGame();
@@ -147,7 +147,7 @@ class GameService extends AppService {
 			{
 				if(! $lobbyPlayerWinner->getIsDead())
 				{
-					$this->logService->Winnerlog($lobbyPlayerWinner->getPlayer(), $this->nbDays);
+					$this->logService->winnerLog($lobbyPlayerWinner->getPlayer(), $this->nbDays);
 					$endLoop = true;
 					break;
 				}
@@ -243,6 +243,9 @@ class GameService extends AppService {
 			case self::ACTION_INVENTORY:
 				$this->gameObjectService->inventoryAction($lobbyPlayer, $this->lobby);
 			break;
+			case self::ACTION_USE:
+				$this->gameObjectService->useAction($lobbyPlayer, $this->lobby);
+				break;
 			default:
 				$log = 'Action ' . $action . ' inconnu';
 				$this->logService->errorLog($log);
@@ -258,9 +261,9 @@ class GameService extends AppService {
 	{
 		if(rand(1, 2) == 2)
 		{
-			return self::ACTION_WTF;
+			return self::ACTION_FIND;
 		}
-		return self::ACTION_VARIOUS;
+		return self::ACTION_USE;
 		
 	}
 }

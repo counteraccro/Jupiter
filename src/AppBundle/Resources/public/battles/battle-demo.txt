@@ -1,0 +1,158 @@
+Bienvenue à nos 10 joueurs qui sont : Player-test, Tommy, Thomas, Loïc, Justine, Daphnée, Adam, Mégan, Jonathan, Coralie.
+Player-test à faim mais n'a rien à ce mettre sous la dent.
+Tommy trouve une SSG 97 dans un batiment en ruine.
+Thomas ramasse une Petite trousse de secours dans une vielle maison.
+Loïc ramasse un UZI SMG dans une vielle maison.
+Justine tombe par hasard sur une Kalachnikov en regardant le sol.
+Daphnée tombe par hasard sur un UZI SMG en regardant le sol.
+Adam aurai bien aimé faire quelque chose mais il n'a rien.
+Mégan à faim mais n'a rien à ce mettre sous la dent.
+Jonathan aurai bien aimé faire quelque chose mais il n'a rien.
+Coralie s'ennuit, il serait temps d'aller fouiller son environnement.
+Jour 1 - Aucun mort !
+Player-test ramasse une Grande trousse de secours caché dans un arbre.
+Tommy essaye de comprendre à quoi sert l'objet SSG 97 avant de laisser tomber.
+Thomas regarde une SKS mais n'y prête aucune attention.
+Loïc essaye de comprendre à quoi sert l'objet UZI SMG avant de laisser tomber.
+Justine ramasse une Canette de soda mais décide de ne pas le prendre, pas très intéressant.
+Daphnée essaye de comprendre à quoi sert l'objet UZI SMG avant de laisser tomber.
+Adam à faim mais n'a rien à ce mettre sous la dent.
+Mégan trouve une SSG 97 dans une armurie.
+Jonathan aurai bien aimé faire quelque chose mais il n'a rien.
+Coralie n'a rien trouvé d'intéressant ici.
+Jour 2 - Aucun mort !
+Player-test ramasse un UZI SMG mais décide de ne pas le prendre, pas très intéressant.
+Tommy s'amuse avec l'objet SSG 97 et fini par le jetter.
+Thomas regarde un Anti douleur et décide finalement de ne pas le prendre.
+Loïc prend une Boite de conserve dans sa main mais finalement le laisse tomber au sol.
+Justine ramasse une Barre de céréales mais décide de ne pas le prendre, pas très intéressant.
+Daphnée essaye de comprendre à quoi sert l'objet UZI SMG avant de laisser tomber.
+Adam aurai bien aimé faire quelque chose mais il n'a rien.
+Mégan essaye de comprendre à quoi sert l'objet SSG 97 avant de laisser tomber.
+Jonathan s'ennuit, il serait temps d'aller fouiller son environnement.
+Coralie à faim mais n'a rien à ce mettre sous la dent.
+Jour 3 - Aucun mort !
+Player-test essaye de comprendre à quoi sert l'objet Grande trousse de secours avant de laisser tomber.
+Tommy trouve un Sac à dos et gagne 2 places de plus de stockage, du coup il peut garder aussi une SSG 97.
+Thomas essaye de comprendre à quoi sert l'objet Petite trousse de secours avant de laisser tomber.
+Loïc regarde une Barre de céréales mais n'y prête aucune attention.
+Justine prend un Ballon de basket dans sa main mais finalement le laisse tomber au sol.
+Daphnée essaye de comprendre à quoi sert l'objet UZI SMG avant de laisser tomber.
+Adam s'ennuit, il serait temps d'aller fouiller son environnement.
+Mégan essaye de comprendre à quoi sert l'objet SSG 97 avant de laisser tomber.
+Jonathan aurai bien aimé faire quelque chose mais il n'a rien.
+Coralie pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
+Jour 4 - Aucun mort !
+Player-test s'amuse avec l'objet Grande trousse de secours et fini par le jetter.
+Tommy trouve une SKS en fouillant un fourré et le range dans son Sac à dos.
+Thomas s'amuse avec l'objet Petite trousse de secours et fini par le jetter.
+Loïc trouve une SSG 97 et décide de jetter un UZI SMG par manque de place.
+Justine regarde un UZI SMG mais n'y prête aucune attention.
+Daphnée regarde une Casserole mais n'y prête aucune attention.
+Adam ramasse une Pomme dans une vielle maison.
+Mégan s'amuse avec l'objet SSG 97 et fini par le jetter.
+Jonathan trouve un Beretta dans une armurie.
+Coralie s'ennuit, il serait temps d'aller fouiller son environnement.
+Jour 5 - Aucun mort !
+Player-test prend une Pomme dans sa main mais finalement le laisse tomber au sol.
+Tommy prend une Canette de soda dans sa main mais finalement le laisse tomber au sol.
+Thomas s'amuse avec l'objet Petite trousse de secours et fini par le jetter.
+Loïc essaye de comprendre à quoi sert l'objet SSG 97 avant de laisser tomber.
+Justine essaye de comprendre à quoi sert l'objet Kalachnikov avant de laisser tomber.
+Daphnée ramasse une Kalachnikov et laisse un UZI SMG à la place.
+Adam essaye de comprendre à quoi sert l'objet Pomme avant de laisser tomber.
+Mégan s'amuse avec l'objet SSG 97 et fini par le jetter.
+Jonathan s'amuse avec l'objet Beretta et fini par le jetter.
+Coralie s'ennuit, il serait temps d'aller fouiller son environnement.
+Jour 6 - Aucun mort !
+Player-test s'amuse avec l'objet Grande trousse de secours et fini par le jetter.
+Tommy essaye de comprendre à quoi sert l'objet Sac à dos avant de laisser tomber.
+Thomas essaye de comprendre à quoi sert l'objet Petite trousse de secours avant de laisser tomber.
+Loïc ramasse une Boite de conserve mais décide de ne pas le prendre, pas très intéressant.
+Justine ramasse un Glock mais décide de ne pas le prendre, pas très intéressant.
+Daphnée prend un Téléphone dans sa main mais finalement le laisse tomber au sol.
+Adam ramasse un Revolver .38 et laisse une Pomme à la place.
+Mégan ramasse un Téléphone mais décide de ne pas le prendre, pas très intéressant.
+Jonathan n'a rien trouvé d'intéressant ici.
+Coralie s'ennuit, il serait temps d'aller fouiller son environnement.
+Jour 7 - Aucun mort !
+Player-test regarde une Canette de soda et décide finalement de ne pas le prendre.
+Tommy fait le choix de garder une SKS qu'il vient de trouver et de laisser une SSG 97 à la place
+Thomas s'amuse avec l'objet Petite trousse de secours et fini par le jetter.
+Loïc s'amuse avec l'objet SSG 97 et fini par le jetter.
+Justine s'amuse avec l'objet Kalachnikov et fini par le jetter.
+Daphnée s'amuse avec l'objet Kalachnikov et fini par le jetter.
+Adam essaye de comprendre à quoi sert l'objet Revolver .38 avant de laisser tomber.
+Mégan regarde un Ballon de basket et décide finalement de ne pas le prendre.
+Jonathan n'a rien trouvé d'intéressant ici.
+Coralie s'ennuit, il serait temps d'aller fouiller son environnement.
+Jour 8 - Aucun mort !
+Player-test prend un Beretta dans sa main mais finalement le laisse tomber au sol.
+Tommy essaye de comprendre à quoi sert l'objet Sac à dos avant de laisser tomber.
+Thomas prend une Pomme dans sa main mais finalement le laisse tomber au sol.
+Loïc prend une Boite de conserve dans sa main mais finalement le laisse tomber au sol.
+Justine s'amuse avec l'objet Kalachnikov et fini par le jetter.
+Daphnée s'amuse avec l'objet Kalachnikov et fini par le jetter.
+Adam trouve une Grande trousse de secours et décide de jetter un Revolver .38 par manque de place.
+Mégan essaye de comprendre à quoi sert l'objet SSG 97 avant de laisser tomber.
+Jonathan s'amuse avec l'objet Beretta et fini par le jetter.
+Coralie trouve un Sac à dos et gagne 2 places de plus de stockage.
+Jour 9 - Aucun mort !
+Player-test regarde un Revolver .38 mais n'y prête aucune attention.
+Tommy essaye de comprendre à quoi sert l'objet Sac à dos avant de laisser tomber.
+Thomas essaye de comprendre à quoi sert l'objet Petite trousse de secours avant de laisser tomber.
+Loïc essaye de comprendre à quoi sert l'objet SSG 97 avant de laisser tomber.
+Justine essaye de comprendre à quoi sert l'objet Kalachnikov avant de laisser tomber.
+Daphnée trouve un Sac de sport et gagne 2 places de plus de stockage, du coup il peut garder aussi une Kalachnikov.
+Adam regarde un Glock mais n'y prête aucune attention.
+Mégan regarde un Ballon de foot mais n'y prête aucune attention.
+Jonathan s'amuse avec l'objet Beretta et fini par le jetter.
+Coralie s'amuse avec l'objet Sac à dos et fini par le jetter.
+Jour 10 - Aucun mort !
+Player-test n'a rien trouvé d'intéressant ici.
+Tommy s'amuse avec l'objet Sac à dos et fini par le jetter.
+Thomas essaye de comprendre à quoi sert l'objet Petite trousse de secours avant de laisser tomber.
+Loïc ramasse un Ours en peluche mais décide de ne pas le prendre, pas très intéressant.
+Justine ramasse une Barre de céréales mais décide de ne pas le prendre, pas très intéressant.
+Daphnée ramasse un Revolver .38 caché dans un arbre et le range dans son Sac de sport.
+Adam prend un Beretta dans sa main mais finalement le laisse tomber au sol.
+Mégan pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
+Jonathan trouve une M16 et décide de jetter un Beretta par manque de place.
+Coralie trouve une Canette de soda dans un batiment en ruine et le range dans son Sac à dos.
+Jour 11 - Aucun mort !
+Player-test s'amuse avec l'objet Grande trousse de secours et fini par le jetter.
+Tommy regarde un Téléphone et décide finalement de ne pas le prendre.
+Thomas s'amuse avec l'objet Petite trousse de secours et fini par le jetter.
+Loïc s'amuse avec l'objet SSG 97 et fini par le jetter.
+Justine s'amuse avec l'objet Kalachnikov et fini par le jetter.
+Daphnée trouve une FABARM et décide de jetter une Kalachnikov par manque de place.
+Adam regarde un Ballon de basket mais n'y prête aucune attention.
+Mégan ramasse un Revolver .38 mais décide de ne pas le prendre, pas très intéressant.
+Jonathan regarde un Ballon de basket mais n'y prête aucune attention.
+Coralie pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
+Jour 12 - Aucun mort !
+Player-test essaye de comprendre à quoi sert l'objet Grande trousse de secours avant de laisser tomber.
+Tommy n'a rien trouvé d'intéressant ici.
+Thomas s'amuse avec l'objet Petite trousse de secours et fini par le jetter.
+Loïc n'a rien trouvé d'intéressant ici.
+Justine essaye de comprendre à quoi sert l'objet Kalachnikov avant de laisser tomber.
+Daphnée essaye de comprendre à quoi sert l'objet Sac de sport avant de laisser tomber.
+Adam pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
+Mégan essaye de comprendre à quoi sert l'objet SSG 97 avant de laisser tomber.
+Jonathan essaye de comprendre à quoi sert l'objet M16 avant de laisser tomber.
+Coralie trouve un Anti douleur dans une armurie et le range dans son Sac à dos.
+Jour 13 - Aucun mort !
+Player-test ramasse un Ballon de foot mais décide de ne pas le prendre, pas très intéressant.
+Tommy s'amuse avec l'objet Sac à dos et fini par le jetter.
+Thomas n'a rien trouvé d'intéressant ici.
+Loïc pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
+Justine s'amuse avec l'objet Kalachnikov et fini par le jetter.
+Daphnée ramasse une SKS et laisse une Kalachnikov à la place.
+Adam essaye de comprendre à quoi sert l'objet Grande trousse de secours avant de laisser tomber.
+Mégan trouve une Kalachnikov et décide de jetter une SSG 97 par manque de place.
+Jonathan trouve un Sac à dos et gagne 2 places de plus de stockage, du coup il peut garder aussi une M16.
+Coralie s'amuse avec l'objet Sac à dos et fini par le jetter.
+Jour 14 - Aucun mort !
+Jour 15 - Bravo à Player-test qui vient de gagner !
+-----------------------------------
+
