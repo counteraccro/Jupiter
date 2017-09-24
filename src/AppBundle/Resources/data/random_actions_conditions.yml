@@ -30,18 +30,21 @@ parameters:
             2: wtf
             3: various
             4: use
+            5: find
         6:
             0: moving
             1: inventory
             2: wtf
             3: various
             4: use
+            6: find
         7:
             0: moving
             1: inventory
             2: wtf
             3: various
             4: use
+            5: find
         8:
             0: moving
             1: kill
@@ -53,8 +56,12 @@ parameters:
             1: inventory
             2: wtf
             3: use
+            4: kill
+            5: kill
         10:
             0: kill
             1: inventory
             2: wtf
             3: use
+            4: kill
+            5: kill
