@@ -126,6 +126,13 @@ parameters:
             setType: FUN
             setCategoryObject: Divers
             setPronoun: un
+        Cure_dent:
+            setName: Cure dent
+            setValue: 0
+            setUnit: '%'
+            setType: FUN
+            setCategoryObject: Divers
+            setPronoun: un
         Ballon_basket:
             setName: Ballon de basket
             setValue: 0
@@ -181,4 +188,25 @@ parameters:
             setUnit: '%'
             setType: HP
             setCategoryObject: Soins
+            setPronoun: une
+        Couteau_de_chasse:
+            setName: Couteau de chasse
+            setValue: 80
+            setUnit: '%'
+            setType: DPS
+            setCategoryObject: Armes_tranchantes
+            setPronoun: un
+        Katana:
+            setName: Katana
+            setValue: 100
+            setUnit: '%'
+            setType: DPS
+            setCategoryObject: Armes_tranchantes
+            setPronoun: un
+        Machette:
+            setName: Machette
+            setValue: 100
+            setUnit: '%'
+            setType: DPS
+            setCategoryObject: Armes_tranchantes
             setPronoun: une
