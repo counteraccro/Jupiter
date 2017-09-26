@@ -1,157 +1,157 @@
-Bienvenue à nos 10 joueurs qui sont : Player-test, Tommy, Thomas, Loïc, Justine, Daphnée, Adam, Mégan, Jonathan, Coralie.
-Player-test à faim mais n'a rien à ce mettre sous la dent.
-Tommy trouve une SSG 97 dans un batiment en ruine.
-Thomas ramasse une Petite trousse de secours dans une vielle maison.
-Loïc ramasse un UZI SMG dans une vielle maison.
-Justine tombe par hasard sur une Kalachnikov en regardant le sol.
-Daphnée tombe par hasard sur un UZI SMG en regardant le sol.
-Adam aurai bien aimé faire quelque chose mais il n'a rien.
-Mégan à faim mais n'a rien à ce mettre sous la dent.
-Jonathan aurai bien aimé faire quelque chose mais il n'a rien.
-Coralie s'ennuit, il serait temps d'aller fouiller son environnement.
+Bienvenue à nos 10 joueurs qui sont : Player-test, Aurélie, Audrey, Christopher, Laurence, Nathan, Vincent, Noémie, Gabrielle, Thomas.
+Player-test ramasse une M16 caché dans un arbre.
+Aurélie à faim mais n'a rien à ce mettre sous la dent.
+Audrey à faim mais n'a rien à ce mettre sous la dent.
+Christopher ramasse une MKA caché dans un arbre.
+Laurence pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
+Nathan à faim mais n'a rien à ce mettre sous la dent.
+Vincent trouve une Boite de conserve en fouillant un fourré.
+Noémie aurai bien aimé faire quelque chose mais il n'a rien.
+Gabrielle trouve un Desert Eagle dans un batiment en ruine.
+Thomas s'ennuit, il serait temps d'aller fouiller son environnement.
 Jour 1 - Aucun mort !
-Player-test ramasse une Grande trousse de secours caché dans un arbre.
-Tommy essaye de comprendre à quoi sert l'objet SSG 97 avant de laisser tomber.
-Thomas regarde une SKS mais n'y prête aucune attention.
-Loïc essaye de comprendre à quoi sert l'objet UZI SMG avant de laisser tomber.
-Justine ramasse une Canette de soda mais décide de ne pas le prendre, pas très intéressant.
-Daphnée essaye de comprendre à quoi sert l'objet UZI SMG avant de laisser tomber.
-Adam à faim mais n'a rien à ce mettre sous la dent.
-Mégan trouve une SSG 97 dans une armurie.
-Jonathan aurai bien aimé faire quelque chose mais il n'a rien.
-Coralie n'a rien trouvé d'intéressant ici.
+Player-test tire une rafale par erreur en regardant sa M16.
+Aurélie aurai bien aimé faire quelque chose mais il n'a rien.
+Audrey à faim mais n'a rien à ce mettre sous la dent.
+Christopher regarde un UZI SMG mais n'y prête aucune attention.
+Laurence pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
+Nathan ramasse une Canette de soda dans une vielle maison.
+Vincent ramasse un Desert Eagle et laisse une Boite de conserve à la place.
+Noémie à faim mais n'a rien à ce mettre sous la dent.
+Gabrielle vide un chargeur de son arme Desert Eagle dans un fouré après avoir vu quelque chose bougé.
+Thomas s'ennuit, il serait temps d'aller fouiller son environnement.
 Jour 2 - Aucun mort !
-Player-test ramasse un UZI SMG mais décide de ne pas le prendre, pas très intéressant.
-Tommy s'amuse avec l'objet SSG 97 et fini par le jetter.
-Thomas regarde un Anti douleur et décide finalement de ne pas le prendre.
-Loïc prend une Boite de conserve dans sa main mais finalement le laisse tomber au sol.
-Justine ramasse une Barre de céréales mais décide de ne pas le prendre, pas très intéressant.
-Daphnée essaye de comprendre à quoi sert l'objet UZI SMG avant de laisser tomber.
-Adam aurai bien aimé faire quelque chose mais il n'a rien.
-Mégan essaye de comprendre à quoi sert l'objet SSG 97 avant de laisser tomber.
-Jonathan s'ennuit, il serait temps d'aller fouiller son environnement.
-Coralie à faim mais n'a rien à ce mettre sous la dent.
+Player-test tire une rafale par erreur en nettoyant sa M16.
+Aurélie ramasse un UZI SMG dans une vielle maison.
+Audrey trouve une FABARM en fouillant un buisson.
+Christopher estime que une Kalachnikov est plus intéressant que une MKA, il laisse donc une MKA sur place.
+Laurence s'ennuit, il serait temps d'aller fouiller son environnement.
+Nathan décide de faire une petite pause et de manger Canette de soda.
+Vincent s'amuse à s'entrainer avec son pistolet Desert Eagle.
+Noémie s'ennuit, il serait temps d'aller fouiller son environnement.
+Gabrielle s'amuse à s'entrainer avec son pistolet Desert Eagle.
+Thomas s'ennuit, il serait temps d'aller fouiller son environnement.
 Jour 3 - Aucun mort !
-Player-test essaye de comprendre à quoi sert l'objet Grande trousse de secours avant de laisser tomber.
-Tommy trouve un Sac à dos et gagne 2 places de plus de stockage, du coup il peut garder aussi une SSG 97.
-Thomas essaye de comprendre à quoi sert l'objet Petite trousse de secours avant de laisser tomber.
-Loïc regarde une Barre de céréales mais n'y prête aucune attention.
-Justine prend un Ballon de basket dans sa main mais finalement le laisse tomber au sol.
-Daphnée essaye de comprendre à quoi sert l'objet UZI SMG avant de laisser tomber.
-Adam s'ennuit, il serait temps d'aller fouiller son environnement.
-Mégan essaye de comprendre à quoi sert l'objet SSG 97 avant de laisser tomber.
-Jonathan aurai bien aimé faire quelque chose mais il n'a rien.
-Coralie pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
+Player-test regarde un Sachet de bonbon et décide finalement de ne pas le prendre.
+Aurélie démonte minutieusement son UZI SMG pour l'inspecter.
+Audrey tire une rafale par erreur en nettoyant sa FABARM.
+Christopher ramasse une SKS mais décide de ne pas le prendre, pas très intéressant.
+Laurence trouve un Beretta dans un batiment en ruine.
+Nathan estime que une Pomme est plus intéressant que une Canette de soda, il laisse donc une Canette de soda sur place.
+Vincent démonte minutieusement son Desert Eagle pour l'inspecter.
+Noémie à faim mais n'a rien à ce mettre sous la dent.
+Gabrielle vide un chargeur de son arme Desert Eagle dans un fouré après avoir vu quelque chose bougé.
+Thomas trouve un Cure dent dans un batiment en ruine.
 Jour 4 - Aucun mort !
-Player-test s'amuse avec l'objet Grande trousse de secours et fini par le jetter.
-Tommy trouve une SKS en fouillant un fourré et le range dans son Sac à dos.
-Thomas s'amuse avec l'objet Petite trousse de secours et fini par le jetter.
-Loïc trouve une SSG 97 et décide de jetter un UZI SMG par manque de place.
-Justine regarde un UZI SMG mais n'y prête aucune attention.
-Daphnée regarde une Casserole mais n'y prête aucune attention.
-Adam ramasse une Pomme dans une vielle maison.
-Mégan s'amuse avec l'objet SSG 97 et fini par le jetter.
-Jonathan trouve un Beretta dans une armurie.
-Coralie s'ennuit, il serait temps d'aller fouiller son environnement.
+Player-test ramasse une Casserole mais décide de ne pas le prendre, pas très intéressant.
+Aurélie trouve une Grande trousse de secours et décide de jetter un UZI SMG par manque de place.
+Audrey panique et tire tout autour de lui avec sa FABARM.
+Christopher ramasse un Cure dent mais décide de ne pas le prendre, pas très intéressant.
+Laurence à tellement peur qu'il tire partout avec son Beretta.
+Nathan décide de faire une petite pause et de manger Pomme.
+Vincent s'amuse à s'entrainer avec son pistolet Desert Eagle.
+Noémie aurai bien aimé faire quelque chose mais il n'a rien.
+Gabrielle vide un chargeur de son arme Desert Eagle dans un fouré après avoir vu quelque chose bougé.
+Thomas s'amuse avec l'objet Cure dent et fini par le jetter.
 Jour 5 - Aucun mort !
-Player-test prend une Pomme dans sa main mais finalement le laisse tomber au sol.
-Tommy prend une Canette de soda dans sa main mais finalement le laisse tomber au sol.
-Thomas s'amuse avec l'objet Petite trousse de secours et fini par le jetter.
-Loïc essaye de comprendre à quoi sert l'objet SSG 97 avant de laisser tomber.
-Justine essaye de comprendre à quoi sert l'objet Kalachnikov avant de laisser tomber.
-Daphnée ramasse une Kalachnikov et laisse un UZI SMG à la place.
-Adam essaye de comprendre à quoi sert l'objet Pomme avant de laisser tomber.
-Mégan s'amuse avec l'objet SSG 97 et fini par le jetter.
-Jonathan s'amuse avec l'objet Beretta et fini par le jetter.
-Coralie s'ennuit, il serait temps d'aller fouiller son environnement.
+Player-test tire une rafale par erreur en regardant sa M16.
+Aurélie utilise Grande trousse de secours pour ce soigner.
+Audrey tire une rafale par erreur en regardant sa FABARM.
+Christopher tire une rafale par erreur en regardant sa Kalachnikov.
+Laurence trouve une Grande trousse de secours et décide de jetter un Beretta par manque de place.
+Nathan à fouillé toute la zone sans absolument rien trouvé.
+Vincent fait le choix de garder une SSG 97 qu'il vient de trouver et de laisser un Desert Eagle à la place
+Noémie trouve une M16 dans une armurie.
+Gabrielle démonte minutieusement son Desert Eagle pour l'inspecter.
+Thomas fait le choix de garder une MKA qu'il vient de trouver et de laisser un Cure dent à la place
 Jour 6 - Aucun mort !
-Player-test s'amuse avec l'objet Grande trousse de secours et fini par le jetter.
-Tommy essaye de comprendre à quoi sert l'objet Sac à dos avant de laisser tomber.
-Thomas essaye de comprendre à quoi sert l'objet Petite trousse de secours avant de laisser tomber.
-Loïc ramasse une Boite de conserve mais décide de ne pas le prendre, pas très intéressant.
-Justine ramasse un Glock mais décide de ne pas le prendre, pas très intéressant.
-Daphnée prend un Téléphone dans sa main mais finalement le laisse tomber au sol.
-Adam ramasse un Revolver .38 et laisse une Pomme à la place.
-Mégan ramasse un Téléphone mais décide de ne pas le prendre, pas très intéressant.
-Jonathan n'a rien trouvé d'intéressant ici.
-Coralie s'ennuit, il serait temps d'aller fouiller son environnement.
+Player-test pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
+Aurélie prend Grande trousse de secours pour récupérer un peu de vie.
+Audrey ramasse une MKA et laisse une FABARM à la place.
+Christopher trouve un Sac à dos et gagne 2 places de plus de stockage, du coup il peut garder aussi une Kalachnikov.
+Laurence prend Grande trousse de secours pour récupérer un peu de vie.
+Nathan décide de faire une petite pause et de manger Pomme.
+Vincent regarde un Ballon de basket et décide finalement de ne pas le prendre.
+Noémie s'amuse à s'entrainer avec M16
+Gabrielle ramasse une Kalachnikov et laisse un Desert Eagle à la place.
+Thomas ramasse une Canette de soda mais décide de ne pas le prendre, pas très intéressant.
 Jour 7 - Aucun mort !
-Player-test regarde une Canette de soda et décide finalement de ne pas le prendre.
-Tommy fait le choix de garder une SKS qu'il vient de trouver et de laisser une SSG 97 à la place
-Thomas s'amuse avec l'objet Petite trousse de secours et fini par le jetter.
-Loïc s'amuse avec l'objet SSG 97 et fini par le jetter.
-Justine s'amuse avec l'objet Kalachnikov et fini par le jetter.
-Daphnée s'amuse avec l'objet Kalachnikov et fini par le jetter.
-Adam essaye de comprendre à quoi sert l'objet Revolver .38 avant de laisser tomber.
-Mégan regarde un Ballon de basket et décide finalement de ne pas le prendre.
-Jonathan n'a rien trouvé d'intéressant ici.
-Coralie s'ennuit, il serait temps d'aller fouiller son environnement.
-Jour 8 - Aucun mort !
-Player-test prend un Beretta dans sa main mais finalement le laisse tomber au sol.
-Tommy essaye de comprendre à quoi sert l'objet Sac à dos avant de laisser tomber.
-Thomas prend une Pomme dans sa main mais finalement le laisse tomber au sol.
-Loïc prend une Boite de conserve dans sa main mais finalement le laisse tomber au sol.
-Justine s'amuse avec l'objet Kalachnikov et fini par le jetter.
-Daphnée s'amuse avec l'objet Kalachnikov et fini par le jetter.
-Adam trouve une Grande trousse de secours et décide de jetter un Revolver .38 par manque de place.
-Mégan essaye de comprendre à quoi sert l'objet SSG 97 avant de laisser tomber.
-Jonathan s'amuse avec l'objet Beretta et fini par le jetter.
-Coralie trouve un Sac à dos et gagne 2 places de plus de stockage.
-Jour 9 - Aucun mort !
-Player-test regarde un Revolver .38 mais n'y prête aucune attention.
-Tommy essaye de comprendre à quoi sert l'objet Sac à dos avant de laisser tomber.
-Thomas essaye de comprendre à quoi sert l'objet Petite trousse de secours avant de laisser tomber.
-Loïc essaye de comprendre à quoi sert l'objet SSG 97 avant de laisser tomber.
-Justine essaye de comprendre à quoi sert l'objet Kalachnikov avant de laisser tomber.
-Daphnée trouve un Sac de sport et gagne 2 places de plus de stockage, du coup il peut garder aussi une Kalachnikov.
-Adam regarde un Glock mais n'y prête aucune attention.
-Mégan regarde un Ballon de foot mais n'y prête aucune attention.
-Jonathan s'amuse avec l'objet Beretta et fini par le jetter.
-Coralie s'amuse avec l'objet Sac à dos et fini par le jetter.
-Jour 10 - Aucun mort !
 Player-test n'a rien trouvé d'intéressant ici.
-Tommy s'amuse avec l'objet Sac à dos et fini par le jetter.
-Thomas essaye de comprendre à quoi sert l'objet Petite trousse de secours avant de laisser tomber.
-Loïc ramasse un Ours en peluche mais décide de ne pas le prendre, pas très intéressant.
-Justine ramasse une Barre de céréales mais décide de ne pas le prendre, pas très intéressant.
-Daphnée ramasse un Revolver .38 caché dans un arbre et le range dans son Sac de sport.
-Adam prend un Beretta dans sa main mais finalement le laisse tomber au sol.
-Mégan pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
-Jonathan trouve une M16 et décide de jetter un Beretta par manque de place.
-Coralie trouve une Canette de soda dans un batiment en ruine et le range dans son Sac à dos.
+Aurélie pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
+Audrey panique et tire tout autour de lui avec sa MKA.
+Christopher s'amuse à s'entrainer avec Kalachnikov
+Laurence regarde un Ballon de foot mais n'y prête aucune attention.
+Nathan décide de faire une petite pause et de manger Pomme.
+Vincent panique et tire tout autour de lui avec sa SSG 97.
+Noémie tire une rafale par erreur en nettoyant sa M16.
+Gabrielle tire une rafale par erreur en regardant sa Kalachnikov.
+Thomas à fouillé toute la zone sans absolument rien trouvé.
+Jour 8 - Aucun mort !
+Player-test regarde une Casserole et décide finalement de ne pas le prendre.
+Aurélie prend un Téléphone dans sa main mais finalement le laisse tomber au sol.
+Audrey tire une rafale par erreur en regardant sa MKA.
+Christopher ramasse un Sachet de bonbon caché dans un arbre et le range dans son Sac à dos.
+Laurence prend Grande trousse de secours pour récupérer un peu de vie.
+Nathan décide de faire une petite pause et de manger Pomme.
+Vincent tire une rafale par erreur en regardant sa SSG 97.
+Noémie tire une rafale par erreur en nettoyant sa M16.
+Gabrielle prend une SSG 97 dans sa main mais finalement le laisse tomber au sol.
+Thomas regarde un Revolver .38 et décide finalement de ne pas le prendre.
+Jour 9 - Aucun mort !
+Player-test ramasse un Cure dent mais décide de ne pas le prendre, pas très intéressant.
+Aurélie prend un Katana dans sa main mais finalement le laisse tomber au sol.
+Audrey trouve un Sac de sport et gagne 2 places de plus de stockage, du coup il peut garder aussi une MKA.
+Christopher regarde un Ballon de foot et décide finalement de ne pas le prendre.
+Laurence utilise Grande trousse de secours pour ce soigner.
+Nathan à fouillé toute la zone sans absolument rien trouvé.
+Vincent regarde un Téléphone et décide finalement de ne pas le prendre.
+Noémie regarde un Beretta et décide finalement de ne pas le prendre.
+Gabrielle regarde un Katana mais n'y prête aucune attention.
+Thomas tire une rafale par erreur en nettoyant sa MKA.
+Jour 10 - Aucun mort !
+Player-test tire une rafale par erreur en regardant sa M16.
+Aurélie ramasse un Beretta mais décide de ne pas le prendre, pas très intéressant.
+Audrey n'a rien trouvé d'intéressant ici.
+Christopher pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
+Laurence utilise Grande trousse de secours pour ce soigner.
+Nathan ramasse une Boite de conserve et laisse une Pomme à la place.
+Vincent tire une rafale par erreur en regardant sa SSG 97.
+Noémie tire une rafale par erreur en regardant sa M16.
+Gabrielle trouve un Sac à dos et gagne 2 places de plus de stockage, du coup il peut garder aussi une Kalachnikov.
+Thomas tire une rafale par erreur en nettoyant sa MKA.
 Jour 11 - Aucun mort !
-Player-test s'amuse avec l'objet Grande trousse de secours et fini par le jetter.
-Tommy regarde un Téléphone et décide finalement de ne pas le prendre.
-Thomas s'amuse avec l'objet Petite trousse de secours et fini par le jetter.
-Loïc s'amuse avec l'objet SSG 97 et fini par le jetter.
-Justine s'amuse avec l'objet Kalachnikov et fini par le jetter.
-Daphnée trouve une FABARM et décide de jetter une Kalachnikov par manque de place.
-Adam regarde un Ballon de basket mais n'y prête aucune attention.
-Mégan ramasse un Revolver .38 mais décide de ne pas le prendre, pas très intéressant.
-Jonathan regarde un Ballon de basket mais n'y prête aucune attention.
-Coralie pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
+Player-test tire une rafale par erreur en nettoyant sa M16.
+Aurélie ramasse un Glock mais décide de ne pas le prendre, pas très intéressant.
+Audrey trouve une Casserole en fouillant un fourré et le range dans son Sac de sport.
+Christopher panique et tire tout autour de lui avec sa Kalachnikov.
+Laurence regarde un UZI SMG et décide finalement de ne pas le prendre.
+Nathan fait une petite halte pour manger Boite de conserve.
+Vincent prend une Machette dans sa main mais finalement le laisse tomber au sol.
+Noémie panique et tire tout autour de lui avec sa M16.
+Gabrielle pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
+Thomas s'amuse à s'entrainer avec MKA
 Jour 12 - Aucun mort !
-Player-test essaye de comprendre à quoi sert l'objet Grande trousse de secours avant de laisser tomber.
-Tommy n'a rien trouvé d'intéressant ici.
-Thomas s'amuse avec l'objet Petite trousse de secours et fini par le jetter.
-Loïc n'a rien trouvé d'intéressant ici.
-Justine essaye de comprendre à quoi sert l'objet Kalachnikov avant de laisser tomber.
-Daphnée essaye de comprendre à quoi sert l'objet Sac de sport avant de laisser tomber.
-Adam pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
-Mégan essaye de comprendre à quoi sert l'objet SSG 97 avant de laisser tomber.
-Jonathan essaye de comprendre à quoi sert l'objet M16 avant de laisser tomber.
-Coralie trouve un Anti douleur dans une armurie et le range dans son Sac à dos.
+Player-test panique et tire tout autour de lui avec sa M16.
+Aurélie n'a rien trouvé d'intéressant ici.
+Audrey tire une rafale par erreur en nettoyant sa MKA.
+Christopher regarde une Boite de conserve et décide finalement de ne pas le prendre.
+Laurence prend Grande trousse de secours pour récupérer un peu de vie.
+Nathan fait une petite halte pour manger Boite de conserve.
+Vincent tire une rafale par erreur en nettoyant sa SSG 97.
+Noémie regarde un Ballon de basket mais n'y prête aucune attention.
+Gabrielle ramasse un Ballon de foot dans une vielle maison et le range dans son Sac à dos.
+Thomas trouve un Sac à dos et gagne 2 places de plus de stockage, du coup il peut garder aussi une MKA.
 Jour 13 - Aucun mort !
-Player-test ramasse un Ballon de foot mais décide de ne pas le prendre, pas très intéressant.
-Tommy s'amuse avec l'objet Sac à dos et fini par le jetter.
-Thomas n'a rien trouvé d'intéressant ici.
-Loïc pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
-Justine s'amuse avec l'objet Kalachnikov et fini par le jetter.
-Daphnée ramasse une SKS et laisse une Kalachnikov à la place.
-Adam essaye de comprendre à quoi sert l'objet Grande trousse de secours avant de laisser tomber.
-Mégan trouve une Kalachnikov et décide de jetter une SSG 97 par manque de place.
-Jonathan trouve un Sac à dos et gagne 2 places de plus de stockage, du coup il peut garder aussi une M16.
-Coralie s'amuse avec l'objet Sac à dos et fini par le jetter.
+Player-test tire une rafale par erreur en regardant sa M16.
+Aurélie ramasse une Machette mais décide de ne pas le prendre, pas très intéressant.
+Audrey fait le choix de garder un Sac de sport qu'il vient de trouver et de laisser une MKA à la place
+Christopher panique et tire tout autour de lui avec sa Kalachnikov.
+Laurence utilise Grande trousse de secours pour ce soigner.
+Nathan trouve une Grande trousse de secours et décide de jetter une Boite de conserve par manque de place.
+Vincent prend un UZI SMG dans sa main mais finalement le laisse tomber au sol.
+Noémie s'amuse à s'entrainer avec M16
+Gabrielle panique et tire tout autour de lui avec sa Kalachnikov.
+Thomas tire une rafale par erreur en regardant sa MKA.
 Jour 14 - Aucun mort !
 Jour 15 - Bravo à Player-test qui vient de gagner !
 -----------------------------------

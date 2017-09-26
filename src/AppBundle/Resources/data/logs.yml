@@ -97,9 +97,9 @@ parameters:
             2: $player$ à tellement peur qu'il tire partout avec son $object$.
             3: $player$ démonte minutieusement son $object$ pour l'inspecter.
         use_object_rifle:
-            0: $player$ tire une rafale par erreur en regardant sa $object.
-            1: $player$ tire une rafale par erreur en nettoyant sa $object.
-            2: $player$ panique et tire tout autour de lui avec sa $object.
+            0: $player$ tire une rafale par erreur en regardant sa $object$.
+            1: $player$ tire une rafale par erreur en nettoyant sa $object$.
+            2: $player$ panique et tire tout autour de lui avec sa $object$.
             3: $player$ s'amuse à s'entrainer avec $object$
         use_object_care:
             0: $player$ utilise $object$ pour ce soigner.

@@ -238,13 +238,39 @@ class GameObjectService extends AppService {
 	 */
 	public function useAction(LobbyPlayer $lobbyPlayer, Lobby $lobby)
 	{
+		// No object
 		if(is_null($lobbyPlayer->getObject1()))
 		{
 			$this->logService->simpleLog(self::ACTION_USE_NO_OBJECT, $lobbyPlayer->getPlayer(), $lobby);
 			return true;
 		}
 		
-		$this->logService->useLog(self::ACTION_USE_OBJECT_VARIOUS, $lobbyPlayer->getPlayer(), $lobby, $lobbyPlayer->getObject1());
+		// the player does not have a backpack
+		if($lobbyPlayer->getObject1()->getType() != self::OBJECT_BACKPACK)
+		{
+			$this->logService->useLog(self::ACTION_USE_OBJECT_ . $lobbyPlayer->getObject1()->getCategoryObject()->getIdStr(), $lobbyPlayer->getPlayer(), $lobby, $lobbyPlayer->getObject1());
+			return true;
+		}
+		
+		//The player only has one backpack
+		if(is_null($lobbyPlayer->getObject2()))
+		{
+			$this->logService->simpleLog(self::ACTION_USE_NO_OBJECT, $lobbyPlayer->getPlayer(), $lobby);
+			return true;
+		}
+		
+		// The player has a second object but not the third
+		if(! is_null($lobbyPlayer->getObject2()) && is_null($lobbyPlayer->getObject3()))
+		{
+			$this->logService->useLog(self::ACTION_USE_OBJECT_ . $lobbyPlayer->getObject2()->getCategoryObject()->getIdStr(), $lobbyPlayer->getPlayer(), $lobby, $lobbyPlayer->getObject2());
+			return true;
+		}
+		
+		// The player has 3 objects, one takes one at random except the bag
+		$tabObjects = [$lobbyPlayer->getObject2(),$lobbyPlayer->getObject3() 
+		];
+		$key = array_rand($tabObjects);
+		$this->logService->useLog(self::ACTION_USE_OBJECT_ . $tabObjects[$key]->getCategoryObject()->getIdStr(), $lobbyPlayer->getPlayer(), $lobby, $tabObjects[$key]);
 		
 		return true;
 	}

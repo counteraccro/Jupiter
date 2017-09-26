@@ -21,6 +21,7 @@ class AppService {
 	const ACTION_WTF = 'wtf';
 	const ACTION_VARIOUS = 'various';
 	const ACTION_USE = 'use';
+	const ACTION_USE_OBJECT_ = 'use_object_';
 	const ACTION_USE_OBJECT_VARIOUS = 'use_object_various';
 	const ACTION_USE_OBJECT_GUN = 'use_object_gun';
 	const ACTION_USE_OBJECT_RIFLE = 'use_object_rifle';

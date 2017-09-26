@@ -20,6 +20,13 @@ class CategoryObject
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
+    
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="id_str", type="string", length=30)
+     */
+    private $idStr;
 
     /**
      * @var string
@@ -139,5 +146,29 @@ class CategoryObject
     public function getPriority()
     {
         return $this->priority;
+    }
+
+    /**
+     * Set idStr
+     *
+     * @param string $idStr
+     *
+     * @return CategoryObject
+     */
+    public function setIdStr($idStr)
+    {
+        $this->idStr = $idStr;
+
+        return $this;
+    }
+
+    /**
+     * Get idStr
+     *
+     * @return string
+     */
+    public function getIdStr()
+    {
+        return $this->idStr;
     }
 }
