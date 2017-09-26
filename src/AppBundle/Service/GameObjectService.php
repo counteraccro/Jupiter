@@ -6,6 +6,7 @@ use Symfony\Component\DependencyInjection\Container;
 use Doctrine\Common\Persistence\ManagerRegistry as Doctrine;
 use AppBundle\Entity\LobbyPlayer;
 use AppBundle\Entity\Lobby;
+use AppBundle\Entity\Object;
 
 class GameObjectService extends AppService {
 	const OBJECT_BACKPACK = 'BACKPACK';
@@ -249,10 +250,11 @@ class GameObjectService extends AppService {
 		if($lobbyPlayer->getObject1()->getType() != self::OBJECT_BACKPACK)
 		{
 			$this->logService->useLog(self::ACTION_USE_OBJECT_ . $lobbyPlayer->getObject1()->getCategoryObject()->getIdStr(), $lobbyPlayer->getPlayer(), $lobby, $lobbyPlayer->getObject1());
+			$this->consumableObject($lobbyPlayer, 1);
 			return true;
 		}
 		
-		//The player only has one backpack
+		// The player only has one backpack
 		if(is_null($lobbyPlayer->getObject2()))
 		{
 			$this->logService->simpleLog(self::ACTION_USE_NO_OBJECT, $lobbyPlayer->getPlayer(), $lobby);
@@ -263,15 +265,39 @@ class GameObjectService extends AppService {
 		if(! is_null($lobbyPlayer->getObject2()) && is_null($lobbyPlayer->getObject3()))
 		{
 			$this->logService->useLog(self::ACTION_USE_OBJECT_ . $lobbyPlayer->getObject2()->getCategoryObject()->getIdStr(), $lobbyPlayer->getPlayer(), $lobby, $lobbyPlayer->getObject2());
+			$this->consumableObject($lobbyPlayer, 2);
 			return true;
 		}
 		
 		// The player has 3 objects, one takes one at random except the bag
-		$tabObjects = [$lobbyPlayer->getObject2(),$lobbyPlayer->getObject3() 
+		$tabObjects = [2 => $lobbyPlayer->getObject2(),3 => $lobbyPlayer->getObject3() 
 		];
 		$key = array_rand($tabObjects);
 		$this->logService->useLog(self::ACTION_USE_OBJECT_ . $tabObjects[$key]->getCategoryObject()->getIdStr(), $lobbyPlayer->getPlayer(), $lobby, $tabObjects[$key]);
-		
+		$this->consumableObject($lobbyPlayer, $key);
 		return true;
+	}
+
+	/**
+	 * check if the object is a consumable and destroy it if it is
+	 * @param LobbyPlayer $lobbyPlayer
+	 * @param int $number
+	 */
+	private function consumableObject(LobbyPlayer $lobbyPlayer, $number)
+	{
+		$getObject = 'getObject' . $number;
+		$setObject = 'setObject' . $number;
+		
+		if($lobbyPlayer->{$getObject}()->getCategoryObject()->getConsumable() == self::OBJECT_CONSUMABLE)
+		{
+			if($this->debug)
+			{
+				$this->logService->debugLog('Joueur ' . $lobbyPlayer->getPlayer()->getId() . ' - ' . $lobbyPlayer->{$getObject}()->getId() . ':' . $lobbyPlayer->{$getObject}()->getName() . ' détruit');
+			}
+			
+			$lobbyPlayer->{$setObject}(null);
+			$this->doctrine->getManager()->persist($lobbyPlayer);
+			$this->doctrine->getManager()->flush();
+		}
 	}
 }

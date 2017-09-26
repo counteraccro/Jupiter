@@ -4,32 +4,40 @@ parameters:
             setName: Soins
             setIdStr: care
             setPriority: 100
+            setConsumable: 1
         Nourritures:
             setName: Nourritures
             setIdStr: food
             setPriority: 75
+            setConsumable: 1
         Pistolets:
             setName: Pistolets
             setIdStr: gun
             setPriority: 90
+            setConsumable: 0
         Fusils_assaults:
             setName: Fusils d'assaults
             setIdStr: rifle
             setPriority: 95
+            setConsumable: 0
         Fusils_semi_auto:
             setName: Fusils semi-automatique
             setIdStr: rifle
             setPriority: 95
+            setConsumable: 0
         Armes_tranchantes:
             setName: Armes tranchantes
             setIdStr: sharp
             setPriority: 60
+            setConsumable: 0
         Stockage:
             setName: Stockage
             setIdStr: stokage
             setPriority: 100
+            setConsumable: 0
         Divers:
             setName: Divers
             setIdStr: various
             setPriority: 50
+            setConsumable: 1
         

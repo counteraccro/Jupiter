@@ -1,157 +1,163 @@
-Bienvenue à nos 10 joueurs qui sont : Player-test, Aurélie, Audrey, Christopher, Laurence, Nathan, Vincent, Noémie, Gabrielle, Thomas.
-Player-test ramasse une M16 caché dans un arbre.
-Aurélie à faim mais n'a rien à ce mettre sous la dent.
-Audrey à faim mais n'a rien à ce mettre sous la dent.
-Christopher ramasse une MKA caché dans un arbre.
-Laurence pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
-Nathan à faim mais n'a rien à ce mettre sous la dent.
-Vincent trouve une Boite de conserve en fouillant un fourré.
-Noémie aurai bien aimé faire quelque chose mais il n'a rien.
-Gabrielle trouve un Desert Eagle dans un batiment en ruine.
-Thomas s'ennuit, il serait temps d'aller fouiller son environnement.
+Bienvenue à nos 10 joueurs qui sont : Player-test, Marilou, Clara, Rose, Samuel, Dylan, Clara, Émilie, Sofia, Lucas.
+Player-test trouve une SSG 97 en fouillant un fourré.
+Marilou pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
+Clara ramasse un Glock dans une vielle maison.
+Rose aurai bien aimé faire quelque chose mais il n'a rien.
+Samuel trouve une Grande trousse de secours en fouillant un buisson.
+Dylan à faim mais n'a rien à ce mettre sous la dent.
+Clara ramasse une M16 dans une vielle maison.
+Émilie ramasse une Casserole caché dans un arbre.
+Sofia trouve un Beretta en fouillant un fourré.
+Lucas n'a rien trouvé d'intéressant ici.
 Jour 1 - Aucun mort !
-Player-test tire une rafale par erreur en regardant sa M16.
-Aurélie aurai bien aimé faire quelque chose mais il n'a rien.
-Audrey à faim mais n'a rien à ce mettre sous la dent.
-Christopher regarde un UZI SMG mais n'y prête aucune attention.
-Laurence pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
-Nathan ramasse une Canette de soda dans une vielle maison.
-Vincent ramasse un Desert Eagle et laisse une Boite de conserve à la place.
-Noémie à faim mais n'a rien à ce mettre sous la dent.
-Gabrielle vide un chargeur de son arme Desert Eagle dans un fouré après avoir vu quelque chose bougé.
-Thomas s'ennuit, il serait temps d'aller fouiller son environnement.
+Player-test s'amuse à s'entrainer avec SSG 97
+Marilou ramasse une Machette caché dans un arbre.
+Clara à tellement peur qu'il tire partout avec son Glock.
+Rose trouve un Ballon de basket en fouillant un buisson.
+Samuel trouve un Sac de sport et gagne 2 places de plus de stockage, du coup il peut garder aussi une Grande trousse de secours.
+Dylan ramasse une Pomme dans une vielle maison.
+Clara panique et tire tout autour de lui avec sa M16.
+Émilie ramasse un Desert Eagle et laisse une Casserole à la place.
+Sofia fait le choix de garder un Beretta qu'il vient de trouver et de laisser un Beretta à la place
+Lucas tombe par hasard sur un Revolver .38 en regardant le sol.
 Jour 2 - Aucun mort !
-Player-test tire une rafale par erreur en nettoyant sa M16.
-Aurélie ramasse un UZI SMG dans une vielle maison.
-Audrey trouve une FABARM en fouillant un buisson.
-Christopher estime que une Kalachnikov est plus intéressant que une MKA, il laisse donc une MKA sur place.
-Laurence s'ennuit, il serait temps d'aller fouiller son environnement.
-Nathan décide de faire une petite pause et de manger Canette de soda.
-Vincent s'amuse à s'entrainer avec son pistolet Desert Eagle.
-Noémie s'ennuit, il serait temps d'aller fouiller son environnement.
-Gabrielle s'amuse à s'entrainer avec son pistolet Desert Eagle.
-Thomas s'ennuit, il serait temps d'aller fouiller son environnement.
+Player-test tire une rafale par erreur en nettoyant sa SSG 97.
+Marilou manque de se coupé en contemplant Machette.
+Clara ramasse une Grande trousse de secours et laisse un Glock à la place.
+Rose essaye de comprendre à quoi sert l'objet Ballon de basket avant de laisser tomber.
+[DEBUG] Joueur 3361 - 486:Ballon de basket détruit
+Samuel tombe par hasard sur un Glock en regardant le sol et le range dans son Sac de sport.
+Dylan décide de faire une petite pause et de manger Pomme.
+[DEBUG] Joueur 3363 - 467:Pomme détruit
+Clara tire une rafale par erreur en regardant sa M16.
+Émilie s'amuse à s'entrainer avec son pistolet Desert Eagle.
+Sofia regarde une Barre de céréales et décide finalement de ne pas le prendre.
+Lucas s'amuse à s'entrainer avec son pistolet Revolver .38.
 Jour 3 - Aucun mort !
-Player-test regarde un Sachet de bonbon et décide finalement de ne pas le prendre.
-Aurélie démonte minutieusement son UZI SMG pour l'inspecter.
-Audrey tire une rafale par erreur en nettoyant sa FABARM.
-Christopher ramasse une SKS mais décide de ne pas le prendre, pas très intéressant.
-Laurence trouve un Beretta dans un batiment en ruine.
-Nathan estime que une Pomme est plus intéressant que une Canette de soda, il laisse donc une Canette de soda sur place.
-Vincent démonte minutieusement son Desert Eagle pour l'inspecter.
-Noémie à faim mais n'a rien à ce mettre sous la dent.
-Gabrielle vide un chargeur de son arme Desert Eagle dans un fouré après avoir vu quelque chose bougé.
-Thomas trouve un Cure dent dans un batiment en ruine.
+Player-test estime que une SSG 97 est plus intéressant que une SSG 97, il laisse donc une SSG 97 sur place.
+Marilou manque de se coupé en contemplant Machette.
+Clara regarde une MKA et décide finalement de ne pas le prendre.
+Rose s'ennuit, il serait temps d'aller fouiller son environnement.
+Samuel à tellement peur qu'il tire partout avec son Glock.
+Dylan ramasse un Katana dans une vielle maison.
+Clara ramasse un Ballon de basket mais décide de ne pas le prendre, pas très intéressant.
+Émilie vide un chargeur de son arme Desert Eagle dans un fouré après avoir vu quelque chose bougé.
+Sofia estime que un Revolver .38 est plus intéressant que un Beretta, il laisse donc un Beretta sur place.
+Lucas à tellement peur qu'il tire partout avec son Revolver .38.
 Jour 4 - Aucun mort !
-Player-test ramasse une Casserole mais décide de ne pas le prendre, pas très intéressant.
-Aurélie trouve une Grande trousse de secours et décide de jetter un UZI SMG par manque de place.
-Audrey panique et tire tout autour de lui avec sa FABARM.
-Christopher ramasse un Cure dent mais décide de ne pas le prendre, pas très intéressant.
-Laurence à tellement peur qu'il tire partout avec son Beretta.
-Nathan décide de faire une petite pause et de manger Pomme.
-Vincent s'amuse à s'entrainer avec son pistolet Desert Eagle.
-Noémie aurai bien aimé faire quelque chose mais il n'a rien.
-Gabrielle vide un chargeur de son arme Desert Eagle dans un fouré après avoir vu quelque chose bougé.
-Thomas s'amuse avec l'objet Cure dent et fini par le jetter.
+Player-test regarde une Kalachnikov mais n'y prête aucune attention.
+Marilou manque de se coupé en contemplant Machette.
+Clara pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
+Rose trouve une M16 dans un batiment en ruine.
+Samuel pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
+Dylan éguise frénétiquement Katana.
+Clara regarde une Casserole mais n'y prête aucune attention.
+Émilie à tellement peur qu'il tire partout avec son Desert Eagle.
+Sofia s'amuse à s'entrainer avec son pistolet Revolver .38.
+Lucas n'a rien trouvé d'intéressant ici.
 Jour 5 - Aucun mort !
-Player-test tire une rafale par erreur en regardant sa M16.
-Aurélie utilise Grande trousse de secours pour ce soigner.
-Audrey tire une rafale par erreur en regardant sa FABARM.
-Christopher tire une rafale par erreur en regardant sa Kalachnikov.
-Laurence trouve une Grande trousse de secours et décide de jetter un Beretta par manque de place.
-Nathan à fouillé toute la zone sans absolument rien trouvé.
-Vincent fait le choix de garder une SSG 97 qu'il vient de trouver et de laisser un Desert Eagle à la place
-Noémie trouve une M16 dans une armurie.
-Gabrielle démonte minutieusement son Desert Eagle pour l'inspecter.
-Thomas fait le choix de garder une MKA qu'il vient de trouver et de laisser un Cure dent à la place
+Player-test trouve un Sac à dos et gagne 2 places de plus de stockage, du coup il peut garder aussi une SSG 97.
+Marilou éguise frénétiquement Machette.
+Clara prend une Barre de céréales dans sa main mais finalement le laisse tomber au sol.
+Rose regarde un Ballon de foot et décide finalement de ne pas le prendre.
+Samuel utilise Grande trousse de secours pour ce soigner.
+[DEBUG] Joueur 3362 - 493:Grande trousse de secours détruit
+Dylan à fouillé toute la zone sans absolument rien trouvé.
+Clara ramasse une Grande trousse de secours et laisse une M16 à la place.
+Émilie à fouillé toute la zone sans absolument rien trouvé.
+Sofia s'amuse à s'entrainer avec son pistolet Revolver .38.
+Lucas s'amuse à s'entrainer avec son pistolet Revolver .38.
 Jour 6 - Aucun mort !
-Player-test pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
-Aurélie prend Grande trousse de secours pour récupérer un peu de vie.
-Audrey ramasse une MKA et laisse une FABARM à la place.
-Christopher trouve un Sac à dos et gagne 2 places de plus de stockage, du coup il peut garder aussi une Kalachnikov.
-Laurence prend Grande trousse de secours pour récupérer un peu de vie.
-Nathan décide de faire une petite pause et de manger Pomme.
-Vincent regarde un Ballon de basket et décide finalement de ne pas le prendre.
-Noémie s'amuse à s'entrainer avec M16
-Gabrielle ramasse une Kalachnikov et laisse un Desert Eagle à la place.
-Thomas ramasse une Canette de soda mais décide de ne pas le prendre, pas très intéressant.
+Player-test s'amuse à s'entrainer avec SSG 97
+Marilou prend un Anti douleur dans sa main mais finalement le laisse tomber au sol.
+Clara utilise Grande trousse de secours pour ce soigner.
+[DEBUG] Joueur 3360 - 493:Grande trousse de secours détruit
+Rose tire une rafale par erreur en regardant sa M16.
+Samuel trouve un Couteau de chasse dans une armurie et le range dans son Sac de sport.
+Dylan estime que une M16 est plus intéressant que un Katana, il laisse donc un Katana sur place.
+Clara regarde un Desert Eagle mais n'y prête aucune attention.
+Émilie s'amuse à s'entrainer avec son pistolet Desert Eagle.
+Sofia regarde une Barre de céréales mais n'y prête aucune attention.
+Lucas démonte minutieusement son Revolver .38 pour l'inspecter.
 Jour 7 - Aucun mort !
-Player-test n'a rien trouvé d'intéressant ici.
-Aurélie pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
-Audrey panique et tire tout autour de lui avec sa MKA.
-Christopher s'amuse à s'entrainer avec Kalachnikov
-Laurence regarde un Ballon de foot mais n'y prête aucune attention.
-Nathan décide de faire une petite pause et de manger Pomme.
-Vincent panique et tire tout autour de lui avec sa SSG 97.
-Noémie tire une rafale par erreur en nettoyant sa M16.
-Gabrielle tire une rafale par erreur en regardant sa Kalachnikov.
-Thomas à fouillé toute la zone sans absolument rien trouvé.
+Player-test panique et tire tout autour de lui avec sa SSG 97.
+Marilou manque de se coupé en contemplant Machette.
+Clara s'ennuit, il serait temps d'aller fouiller son environnement.
+Rose tire une rafale par erreur en nettoyant sa M16.
+Samuel fait le choix de garder une MKA qu'il vient de trouver et de laisser un Couteau de chasse à la place
+Dylan regarde un Cure dent et décide finalement de ne pas le prendre.
+Clara prend Grande trousse de secours pour récupérer un peu de vie.
+[DEBUG] Joueur 3364 - 493:Grande trousse de secours détruit
+Émilie pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
+Sofia prend une Casserole dans sa main mais finalement le laisse tomber au sol.
+Lucas démonte minutieusement son Revolver .38 pour l'inspecter.
 Jour 8 - Aucun mort !
-Player-test regarde une Casserole et décide finalement de ne pas le prendre.
-Aurélie prend un Téléphone dans sa main mais finalement le laisse tomber au sol.
-Audrey tire une rafale par erreur en regardant sa MKA.
-Christopher ramasse un Sachet de bonbon caché dans un arbre et le range dans son Sac à dos.
-Laurence prend Grande trousse de secours pour récupérer un peu de vie.
-Nathan décide de faire une petite pause et de manger Pomme.
-Vincent tire une rafale par erreur en regardant sa SSG 97.
-Noémie tire une rafale par erreur en nettoyant sa M16.
-Gabrielle prend une SSG 97 dans sa main mais finalement le laisse tomber au sol.
-Thomas regarde un Revolver .38 et décide finalement de ne pas le prendre.
+Player-test s'amuse à s'entrainer avec SSG 97
+Marilou manque de se coupé en contemplant Machette.
+Clara à faim mais n'a rien à ce mettre sous la dent.
+Rose tire une rafale par erreur en nettoyant sa M16.
+Samuel vide un chargeur de son arme Glock dans un fouré après avoir vu quelque chose bougé.
+Dylan prend un Ballon de basket dans sa main mais finalement le laisse tomber au sol.
+Clara s'ennuit, il serait temps d'aller fouiller son environnement.
+Émilie démonte minutieusement son Desert Eagle pour l'inspecter.
+Sofia vide un chargeur de son arme Revolver .38 dans un fouré après avoir vu quelque chose bougé.
+Lucas à tellement peur qu'il tire partout avec son Revolver .38.
 Jour 9 - Aucun mort !
-Player-test ramasse un Cure dent mais décide de ne pas le prendre, pas très intéressant.
-Aurélie prend un Katana dans sa main mais finalement le laisse tomber au sol.
-Audrey trouve un Sac de sport et gagne 2 places de plus de stockage, du coup il peut garder aussi une MKA.
-Christopher regarde un Ballon de foot et décide finalement de ne pas le prendre.
-Laurence utilise Grande trousse de secours pour ce soigner.
-Nathan à fouillé toute la zone sans absolument rien trouvé.
-Vincent regarde un Téléphone et décide finalement de ne pas le prendre.
-Noémie regarde un Beretta et décide finalement de ne pas le prendre.
-Gabrielle regarde un Katana mais n'y prête aucune attention.
-Thomas tire une rafale par erreur en nettoyant sa MKA.
+Player-test ramasse une Grande trousse de secours dans une vielle maison et le range dans son Sac à dos.
+Marilou trouve un Revolver .38 et décide de jetter une Machette par manque de place.
+Clara s'ennuit, il serait temps d'aller fouiller son environnement.
+Rose ramasse une Pomme mais décide de ne pas le prendre, pas très intéressant.
+Samuel manque de se coupé en contemplant Couteau de chasse.
+Dylan ramasse un Sachet de bonbon mais décide de ne pas le prendre, pas très intéressant.
+Clara trouve un Sac de sport et gagne 2 places de plus de stockage.
+Émilie regarde une Machette et décide finalement de ne pas le prendre.
+Sofia vide un chargeur de son arme Revolver .38 dans un fouré après avoir vu quelque chose bougé.
+Lucas n'a rien trouvé d'intéressant ici.
 Jour 10 - Aucun mort !
-Player-test tire une rafale par erreur en regardant sa M16.
-Aurélie ramasse un Beretta mais décide de ne pas le prendre, pas très intéressant.
-Audrey n'a rien trouvé d'intéressant ici.
-Christopher pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
-Laurence utilise Grande trousse de secours pour ce soigner.
-Nathan ramasse une Boite de conserve et laisse une Pomme à la place.
-Vincent tire une rafale par erreur en regardant sa SSG 97.
-Noémie tire une rafale par erreur en regardant sa M16.
-Gabrielle trouve un Sac à dos et gagne 2 places de plus de stockage, du coup il peut garder aussi une Kalachnikov.
-Thomas tire une rafale par erreur en nettoyant sa MKA.
+Player-test ramasse un Ballon de basket mais décide de ne pas le prendre, pas très intéressant.
+Marilou regarde une Canette de soda mais n'y prête aucune attention.
+Clara s'ennuit, il serait temps d'aller fouiller son environnement.
+Rose tire une rafale par erreur en regardant sa M16.
+Samuel à tellement peur qu'il tire partout avec son Glock.
+Dylan s'amuse à s'entrainer avec M16
+Clara à faim mais n'a rien à ce mettre sous la dent.
+Émilie vide un chargeur de son arme Desert Eagle dans un fouré après avoir vu quelque chose bougé.
+Sofia trouve un Sac à dos et gagne 2 places de plus de stockage, du coup il peut garder aussi un Revolver .38.
+Lucas démonte minutieusement son Revolver .38 pour l'inspecter.
 Jour 11 - Aucun mort !
-Player-test tire une rafale par erreur en nettoyant sa M16.
-Aurélie ramasse un Glock mais décide de ne pas le prendre, pas très intéressant.
-Audrey trouve une Casserole en fouillant un fourré et le range dans son Sac de sport.
-Christopher panique et tire tout autour de lui avec sa Kalachnikov.
-Laurence regarde un UZI SMG et décide finalement de ne pas le prendre.
-Nathan fait une petite halte pour manger Boite de conserve.
-Vincent prend une Machette dans sa main mais finalement le laisse tomber au sol.
-Noémie panique et tire tout autour de lui avec sa M16.
-Gabrielle pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
-Thomas s'amuse à s'entrainer avec MKA
+Player-test prend Grande trousse de secours pour récupérer un peu de vie.
+[DEBUG] Joueur 3358 - 493:Grande trousse de secours détruit
+Marilou vide un chargeur de son arme Revolver .38 dans un fouré après avoir vu quelque chose bougé.
+Clara s'ennuit, il serait temps d'aller fouiller son environnement.
+Rose tire une rafale par erreur en regardant sa M16.
+Samuel vide un chargeur de son arme Glock dans un fouré après avoir vu quelque chose bougé.
+Dylan regarde une Pomme mais n'y prête aucune attention.
+Clara tombe par hasard sur une FABARM en regardant le sol et le range dans son Sac de sport.
+Émilie à tellement peur qu'il tire partout avec son Desert Eagle.
+Sofia démonte minutieusement son Revolver .38 pour l'inspecter.
+Lucas à tellement peur qu'il tire partout avec son Revolver .38.
 Jour 12 - Aucun mort !
-Player-test panique et tire tout autour de lui avec sa M16.
-Aurélie n'a rien trouvé d'intéressant ici.
-Audrey tire une rafale par erreur en nettoyant sa MKA.
-Christopher regarde une Boite de conserve et décide finalement de ne pas le prendre.
-Laurence prend Grande trousse de secours pour récupérer un peu de vie.
-Nathan fait une petite halte pour manger Boite de conserve.
-Vincent tire une rafale par erreur en nettoyant sa SSG 97.
-Noémie regarde un Ballon de basket mais n'y prête aucune attention.
-Gabrielle ramasse un Ballon de foot dans une vielle maison et le range dans son Sac à dos.
-Thomas trouve un Sac à dos et gagne 2 places de plus de stockage, du coup il peut garder aussi une MKA.
+Player-test ramasse une Machette caché dans un arbre et le range dans son Sac à dos.
+Marilou démonte minutieusement son Revolver .38 pour l'inspecter.
+Clara à fouillé toute la zone sans absolument rien trouvé.
+Rose panique et tire tout autour de lui avec sa M16.
+Samuel manque de se coupé en contemplant Couteau de chasse.
+Dylan n'a rien trouvé d'intéressant ici.
+Clara ramasse un Beretta caché dans un arbre et le range dans son Sac de sport.
+Émilie vide un chargeur de son arme Desert Eagle dans un fouré après avoir vu quelque chose bougé.
+Sofia ramasse une Kalachnikov dans une vielle maison et le range dans son Sac à dos.
+Lucas ramasse un Couteau de chasse mais décide de ne pas le prendre, pas très intéressant.
 Jour 13 - Aucun mort !
-Player-test tire une rafale par erreur en regardant sa M16.
-Aurélie ramasse une Machette mais décide de ne pas le prendre, pas très intéressant.
-Audrey fait le choix de garder un Sac de sport qu'il vient de trouver et de laisser une MKA à la place
-Christopher panique et tire tout autour de lui avec sa Kalachnikov.
-Laurence utilise Grande trousse de secours pour ce soigner.
-Nathan trouve une Grande trousse de secours et décide de jetter une Boite de conserve par manque de place.
-Vincent prend un UZI SMG dans sa main mais finalement le laisse tomber au sol.
-Noémie s'amuse à s'entrainer avec M16
-Gabrielle panique et tire tout autour de lui avec sa Kalachnikov.
-Thomas tire une rafale par erreur en regardant sa MKA.
+Player-test regarde une SKS mais n'y prête aucune attention.
+Marilou démonte minutieusement son Revolver .38 pour l'inspecter.
+Clara trouve un Couteau de chasse dans une armurie.
+Rose tire une rafale par erreur en regardant sa M16.
+Samuel fait le choix de garder une Machette qu'il vient de trouver et de laisser un Couteau de chasse à la place
+Dylan pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
+Clara estime que un Glock est plus intéressant que un Beretta, il laisse donc un Beretta sur place.
+Émilie démonte minutieusement son Desert Eagle pour l'inspecter.
+Sofia tire une rafale par erreur en nettoyant sa Kalachnikov.
+Lucas fait le choix de garder une FABARM qu'il vient de trouver et de laisser un Revolver .38 à la place
 Jour 14 - Aucun mort !
 Jour 15 - Bravo à Player-test qui vient de gagner !
 -----------------------------------

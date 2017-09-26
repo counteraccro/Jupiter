@@ -34,6 +34,7 @@ class AppService {
 	const LOG_DAY_KILL = 'kill';
 	const LOG_DAY_KILLS = 'kills';
 	const LOG_DAY_WINNER = 'winner';
+	const OBJECT_CONSUMABLE = 1;
 	
 	/**
 	 * Maximum number of days of game duration
@@ -45,5 +46,5 @@ class AppService {
 	 * debug mode
 	 * @var string
 	 */
-	protected $debug = true;
+	protected $debug = false;
 }

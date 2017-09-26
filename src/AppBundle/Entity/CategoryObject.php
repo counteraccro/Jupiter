@@ -43,6 +43,13 @@ class CategoryObject
     private $priority;
     
     /**
+     * @var boolean
+     *
+     * @ORM\Column(name="consumable", type="boolean")
+     */
+    private $consumable;
+    
+    /**
      * @ORM\OneToMany(targetEntity="AppBundle\Entity\Object", mappedBy="object")
      */
     private $objects;
@@ -170,5 +177,31 @@ class CategoryObject
     public function getIdStr()
     {
         return $this->idStr;
+    }
+
+    
+
+    /**
+     * Set consumable
+     *
+     * @param boolean $consumable
+     *
+     * @return CategoryObject
+     */
+    public function setConsumable($consumable)
+    {
+        $this->consumable = $consumable;
+
+        return $this;
+    }
+
+    /**
+     * Get consumable
+     *
+     * @return boolean
+     */
+    public function getConsumable()
+    {
+        return $this->consumable;
     }
 }

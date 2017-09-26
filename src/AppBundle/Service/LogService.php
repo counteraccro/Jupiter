@@ -361,7 +361,16 @@ class LogService extends AppService {
 	{
 		$this->writeLog($str);
 	}
-
+	
+	/**
+	 * Write debug log
+	 * @param string $str
+	 */
+	public function debugLog($str)
+	{
+		$this->writeLog('[DEBUG] ' . $str);
+	}
+	
 	/**
 	 * get random log from array_log
 	 * @param string $key
