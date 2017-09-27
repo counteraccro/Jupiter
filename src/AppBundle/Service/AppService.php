@@ -46,5 +46,5 @@ class AppService {
 	 * debug mode
 	 * @var string
 	 */
-	protected $debug = false;
+	protected $debug = true;
 }

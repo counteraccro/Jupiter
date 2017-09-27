@@ -263,7 +263,7 @@ class GameService extends AppService {
 		{
 			return self::ACTION_FIND;
 		}
-		return self::ACTION_USE;
+		return self::ACTION_INVENTORY;
 		
 	}
 }

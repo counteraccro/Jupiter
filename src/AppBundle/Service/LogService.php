@@ -56,7 +56,7 @@ class LogService extends AppService {
 		$this->logsArray = $this->container->getParameter('Logs');
 		$this->folder_path = dirname(__DIR__) . '/Resources/public/battles/';
 	}
-	
+
 	/**
 	 * Simple log only with player variable
 	 * @param string $action
@@ -66,12 +66,12 @@ class LogService extends AppService {
 	 */
 	public function simpleLog($action, Player $player, Lobby $lobby)
 	{
-		$strLog = $this->getRandomLog($action);	
-		$strLog = str_replace('$player$', $player->getName(), $strLog);
+		$strLog = $this->getRandomLog($action);
+		$strLog = $this->generateFinalLog($strLog, ['$player$' => $player->getName()]);
 		$this->createLogEntity($player, $lobby, $strLog, 1);
 		return $this->writeLog($strLog);
 	}
-	
+
 	/**
 	 * Action use log
 	 * @param string $action
@@ -83,8 +83,7 @@ class LogService extends AppService {
 	public function useLog($action, Player $player, Lobby $lobby, Object $object)
 	{
 		$strLog = $this->getRandomLog($action);
-		$strLog = str_replace('$player$', $player->getName(), $strLog);
-		$strLog = str_replace('$object$', $object->getName(), $strLog);
+		$strLog = $this->generateFinalLog($strLog, ['$player$' => $player->getName(), '$object$' => $object->getName()]);
 		$this->createLogEntity($player, $lobby, $strLog, 1);
 		return $this->writeLog($strLog);
 	}
@@ -98,19 +97,16 @@ class LogService extends AppService {
 	public function killLog(Player $player, Player $playerKill, Lobby $lobby, $action = self::ACTION_KILL)
 	{
 		$strLog = $this->getRandomLog($action);
-		
 		if($action == self::ACTION_KILL)
 		{
-			$strLog = str_replace('$player$', $player->getName(), $strLog);
-			$strLog = str_replace('$player_kill$', $playerKill->getName(), $strLog);
+			$strLog = $this->generateFinalLog($strLog, ['$player$' => $player->getName(), '$player_kill$' => $playerKill->getName()]);
 		}
 		else if($action == self::ACTION_SELF_KILL)
 		{
-			$strLog = str_replace('$player$', $player->getName(), $strLog);
+			$strLog = $this->generateFinalLog($strLog, ['$player$' => $player->getName()]);
 		}
 		
 		$this->createLogEntity($player, $lobby, $strLog, 1);
-		
 		return $this->writeLog($strLog);
 	}
 
@@ -125,10 +121,9 @@ class LogService extends AppService {
 	public function findLog($action, Player $player, Lobby $lobby, array $tabObjects = [])
 	{
 		$strLog = $this->getRandomLog($action);
-		
 		switch($action) {
 			case self::ACTION_FIND_NO_OBJECT:
-				$strLog = str_replace('$player$', $player->getName(), $strLog);
+				$strLog = $this->generateFinalLog($strLog, ['$player$' => $player->getName()]);
 			break;
 			case self::ACTION_FIND_BACKPACK_NO_OBJECT:
 				$object = $tabObjects[0];
@@ -140,10 +135,8 @@ class LogService extends AppService {
 					$pluriel = 's';
 				}
 				
-				$strLog = str_replace('$player$', $player->getName(), $strLog);
-				$strLog = str_replace('$object$', $object->getPronoun() . ' ' . $object->getName(), $strLog);
-				$strLog = str_replace('$nb$', $nb, $strLog);
-				$strLog = str_replace('$pluriel$', $pluriel, $strLog);
+				$params = ['$player$' => $player->getName(), '$object$' => $object->getPronoun() . ' ' . $object->getName(), '$nb$' => $nb, '$pluriel$' => $pluriel];
+				$strLog = $this->generateFinalLog($strLog, $params);
 			
 			break;
 			case self::ACTION_FIND_BACKPACK_OBJECT:
@@ -164,40 +157,37 @@ class LogService extends AppService {
 				}
 				$str_objects = substr($str_objects, 0, - 2);
 				
-				$strLog = str_replace('$player$', $player->getName(), $strLog);
-				$strLog = str_replace('$object_find$', $object_find->getPronoun() . ' ' . $object_find->getName(), $strLog);
-				$strLog = str_replace('$object$', $str_objects, $strLog);
-				$strLog = str_replace('$nb$', $nb, $strLog);
-				$strLog = str_replace('$pluriel$', $pluriel, $strLog);
+				$params = ['$player$' => $player->getName(), '$object_find$' => $object_find->getPronoun() . ' ' . $object_find->getName(), '$object$' => $object->getPronoun() . ' ' . $object->getName(), '$nb$' => $nb, '$pluriel$' => $pluriel];
+				$strLog = $this->generateFinalLog($strLog, $params);
 			
 			break;
 			case self::ACTION_FIND:
 			case self::ACTION_FIND_LET_OBJECT:
 				$object = $tabObjects[0];
-				$strLog = str_replace('$player$', $player->getName(), $strLog);
-				$strLog = str_replace('$object$', $object->getPronoun() . ' ' . $object->getName(), $strLog);
+				$params = ['$player$' => $player->getName(), '$object$' => $object->getPronoun() . ' ' . $object->getName()];
+				$strLog = $this->generateFinalLog($strLog, $params);
+			
 			break;
 			case self::ACTION_FIND_EXCHANGE_OBJECT:
 				$object = $tabObjects[0];
 				$object_let = $tabObjects[1];
-				$strLog = str_replace('$player$', $player->getName(), $strLog);
-				$strLog = str_replace('$object_find$', $object->getPronoun() . ' ' . $object->getName(), $strLog);
-				$strLog = str_replace('$object_let$', $object_let->getPronoun() . ' ' . $object_let->getName(), $strLog);
+				
+				$params = ['$player$' => $player->getName(), '$object_find$' => $object->getPronoun() . ' ' . $object->getName(), '$object_let$' => $object_let->getPronoun() . ' ' . $object_let->getName()];
+				$strLog = $this->generateFinalLog($strLog, $params);
+			
 			break;
 			case self::ACTION_FIND_WITH_BACKPACK:
 				$backpack = $tabObjects[0];
 				$object = $tabObjects[1];
-				$strLog = str_replace('$player$', $player->getName(), $strLog);
-				$strLog = str_replace('$backpack$', $backpack->getName(), $strLog);
-				$strLog = str_replace('$object$', $object->getPronoun() . ' ' . $object->getName(), $strLog);
+				
+				$params = ['$player$' => $player->getName(), '$object$' => $object->getPronoun() . ' ' . $object->getName(), '$backpack$' => $backpack->getName()];
+				$strLog = $this->generateFinalLog($strLog, $params);
 			break;
 			default:
 				;
 			break;
 		}
-		
 		$this->createLogEntity($player, $lobby, $strLog, 1);
-		
 		return $this->writeLog($strLog);
 	}
 
@@ -211,32 +201,26 @@ class LogService extends AppService {
 	 */
 	public function inventoryLog($action, Player $player, Lobby $lobby, array $tabObjects = null)
 	{
-		$strLog = '';
-		
 		$strLog = $this->getRandomLog($action);
-		
 		switch($action) {
 			case self::ACTION_INVENTORY_NO_OBJECT:
-				$strLog = str_replace('$player$', $player->getName(), $strLog);
+				$strLog = $this->generateFinalLog($strLog, ['$player$' => $player->getName()]);
 			break;
 			case self::ACTION_INVENTORY:
-				$strLog = str_replace('$player$', $player->getName(), $strLog);
-				$strLog = str_replace('$object$', $tabObjects[0]->getPronoun() . ' ' . $tabObjects[0]->getName(), $strLog);
+				$strLog = $this->generateFinalLog($strLog, ['$player$' => $player->getName(), '$object$' => $tabObjects[0]->getPronoun() . ' ' . $tabObjects[0]->getName()]);
 			break;
 			case self::ACTION_INVENTORY_BACKPACK_NO_OBJECT:
-				$strLog = str_replace('$player$', $player->getName(), $strLog);
-				$strLog = str_replace('$backpack$', $tabObjects[0]->getName(), $strLog);
+				$strLog = $this->generateFinalLog($strLog, ['$player$' => $player->getName(), '$backpack$' => $tabObjects[0]->getName()]);
 			break;
 			case self::ACTION_INVENTORY_BACKPACK:
-				$strLog = str_replace('$player$', $player->getName(), $strLog);
-				$strLog = str_replace('$backpack$', $tabObjects[0]->getName(), $strLog);
+				
+				$obj = $tabObjects[0];
 				
 				unset($tabObjects[0]);
 				$str_objects = '';
 				$nb = 0;
 				foreach( $tabObjects as $object )
 				{
-					
 					if(! is_null($object))
 					{
 						$and = '';
@@ -250,17 +234,13 @@ class LogService extends AppService {
 						$nb ++;
 					}
 				}
-				$strLog = str_replace('$object$', $str_objects, $strLog);
-			
+				$strLog = $this->generateFinalLog($strLog, ['$player$' => $player->getName(), '$backpack$' => $obj->getName(), '$object$' => $str_objects]);
 			break;
-			
 			default:
 				;
 			break;
 		}
-		
 		$this->createLogEntity($player, $lobby, $strLog, 1);
-		
 		return $this->writeLog($strLog);
 	}
 
@@ -273,7 +253,6 @@ class LogService extends AppService {
 	public function statDayLog(array $stats, $nbDays)
 	{
 		$nbKill = 0;
-		
 		if(isset($stats['days'][$nbDays]['kill']))
 		{
 			$nbKill = count($stats['days'][$nbDays]['kill']);
@@ -291,23 +270,19 @@ class LogService extends AppService {
 			if($nbKill == 1)
 			{
 				$strLog = $this->logsArray[self::LOG_DAY][self::LOG_DAY_KILL];
-				$strLog = str_replace('$player$', $names, $strLog);
-				$strLog = str_replace('$day$', $nbDays, $strLog);
+				$strLog = $this->generateFinalLog($strLog, ['$player$' => $names, '$day$' => $nbDays]);
 			}
 			else
 			{
 				$strLog = $this->logsArray[self::LOG_DAY][self::LOG_DAY_KILLS];
-				$strLog = str_replace('$players$', $names, $strLog);
-				$strLog = str_replace('$nb_deads$', $nbKill, $strLog);
-				$strLog = str_replace('$day$', $nbDays, $strLog);
+				$strLog = $this->generateFinalLog($strLog, ['$players$' => $names, '$day$' => $nbDays, '$nb_deads$' => $nbKill]);
 			}
 		}
 		else
 		{
 			$strLog = $this->logsArray[self::LOG_DAY][self::LOG_DAY_NO_KILL];
-			$strLog = str_replace('$day$', $nbDays, $strLog);
+			$strLog = $this->generateFinalLog($strLog, ['$day$' => $nbDays]);
 		}
-		
 		return $this->writeLog($strLog);
 	}
 
@@ -320,14 +295,11 @@ class LogService extends AppService {
 	public function winnerLog(Player $player, $nbDays)
 	{
 		$strLog = $this->logsArray[self::LOG_DAY][self::LOG_DAY_WINNER];
-		$strLog = str_replace('$player$', $player->getName(), $strLog);
-		$strLog = str_replace('$day$', $nbDays, $strLog);
-		
+		$strLog = $this->generateFinalLog($strLog, ['$player$' => $player->getName(), '$day$' => $nbDays]);
 		if($this->debug)
 		{
 			$strLog .= "\n-----------------------------------\n";
 		}
-		
 		return $this->writeLog($strLog);
 	}
 
@@ -339,17 +311,13 @@ class LogService extends AppService {
 	public function presentationLog(Lobby $lobby)
 	{
 		$strLog = $this->getRandomLog(self::ACTION_PRESENTATION);
-		
 		$players = '';
 		foreach( $lobby->getLobbyPlayers() as $lobbyPLayer )
 		{
 			$players .= $lobbyPLayer->getPlayer()->getName() . ', ';
 		}
 		$players = substr($players, 0, - 2);
-		
-		$strLog = str_replace('$players$', $players, $strLog);
-		$strLog = str_replace('$nb$', $lobby->getLobbyPlayers()->count(), $strLog);
-		
+		$strLog = $this->generateFinalLog($strLog, ['$players$' => $players, '$nb$' => $lobby->getLobbyPlayers()->count()]);
 		return $this->writeLog($strLog);
 	}
 
@@ -361,7 +329,7 @@ class LogService extends AppService {
 	{
 		$this->writeLog($str);
 	}
-	
+
 	/**
 	 * Write debug log
 	 * @param string $str
@@ -370,9 +338,24 @@ class LogService extends AppService {
 	{
 		$this->writeLog('[DEBUG] ' . $str);
 	}
-	
+
 	/**
-	 * get random log from array_log
+	 * Generates the final log according to the parameter array
+	 * @param string $strLog
+	 * @param array $params
+	 * @return string
+	 */
+	private function generateFinalLog($strLog, array $params = [])
+	{
+		foreach( $params as $key => $value )
+		{
+			$strLog = str_replace($key, $value, $strLog);
+		}
+		return $strLog;
+	}
+
+	/**
+	 * return a log random from a key
 	 * @param string $key
 	 * @return string
 	 */
@@ -393,7 +376,6 @@ class LogService extends AppService {
 	{
 		$log = new Log();
 		$log->setPlayer($player)->setLobby($lobby)->setLabel($strLog)->setType(1);
-		
 		$this->doctrine->getManager()->persist($log);
 	}
 
@@ -407,7 +389,6 @@ class LogService extends AppService {
 		$fileLog = fopen($this->folder_path . $this->getFileName(), 'a+');
 		fputs($fileLog, $strLog . "\n");
 		fclose($fileLog);
-		
 		return $strLog;
 	}
 
@@ -442,7 +423,6 @@ class LogService extends AppService {
 	public function readLog($lobby_id)
 	{
 		$file = $this->folder_path . $this->getFileName();
-		
 		if(file_exists($file))
 		{
 			$logs = file($file);
@@ -475,7 +455,6 @@ class LogService extends AppService {
 				$result['logs'][$jour][] = $log;
 			}
 		}
-		
 		return $result;
 	}
 }

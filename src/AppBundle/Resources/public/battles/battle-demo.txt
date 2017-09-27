@@ -1,163 +1,157 @@
-Bienvenue à nos 10 joueurs qui sont : Player-test, Marilou, Clara, Rose, Samuel, Dylan, Clara, Émilie, Sofia, Lucas.
-Player-test trouve une SSG 97 en fouillant un fourré.
-Marilou pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
-Clara ramasse un Glock dans une vielle maison.
-Rose aurai bien aimé faire quelque chose mais il n'a rien.
-Samuel trouve une Grande trousse de secours en fouillant un buisson.
-Dylan à faim mais n'a rien à ce mettre sous la dent.
-Clara ramasse une M16 dans une vielle maison.
-Émilie ramasse une Casserole caché dans un arbre.
-Sofia trouve un Beretta en fouillant un fourré.
-Lucas n'a rien trouvé d'intéressant ici.
+Bienvenue à nos 10 joueurs qui sont : Player-test, Léanne, Sofia, Noémie, Mia, Émilie, Emy, Audrey, Anaïs, Alexia.
+Player-test fait l'inventaire de ses possessions... rien.
+Léanne semble regarder s'il n'a pas quelque chose dans ses poches, mais elles sont vides.
+Sofia n'a rien trouvé d'intéressant ici.
+Noémie fouille ses poches mais n'a absolument rien....
+Mia fait l'inventaire de ses possessions... rien.
+Émilie fouille ses poches mais n'a absolument rien....
+Emy semble regarder s'il n'a pas quelque chose dans ses poches, mais elles sont vides.
+Audrey fouille ses poches mais n'a absolument rien....
+Anaïs semble regarder s'il n'a pas quelque chose dans ses poches, mais elles sont vides.
+Alexia tombe par hasard sur une Pomme en regardant le sol.
 Jour 1 - Aucun mort !
-Player-test s'amuse à s'entrainer avec SSG 97
-Marilou ramasse une Machette caché dans un arbre.
-Clara à tellement peur qu'il tire partout avec son Glock.
-Rose trouve un Ballon de basket en fouillant un buisson.
-Samuel trouve un Sac de sport et gagne 2 places de plus de stockage, du coup il peut garder aussi une Grande trousse de secours.
-Dylan ramasse une Pomme dans une vielle maison.
-Clara panique et tire tout autour de lui avec sa M16.
-Émilie ramasse un Desert Eagle et laisse une Casserole à la place.
-Sofia fait le choix de garder un Beretta qu'il vient de trouver et de laisser un Beretta à la place
-Lucas tombe par hasard sur un Revolver .38 en regardant le sol.
-Jour 2 - Aucun mort !
-Player-test tire une rafale par erreur en nettoyant sa SSG 97.
-Marilou manque de se coupé en contemplant Machette.
-Clara ramasse une Grande trousse de secours et laisse un Glock à la place.
-Rose essaye de comprendre à quoi sert l'objet Ballon de basket avant de laisser tomber.
-[DEBUG] Joueur 3361 - 486:Ballon de basket détruit
-Samuel tombe par hasard sur un Glock en regardant le sol et le range dans son Sac de sport.
-Dylan décide de faire une petite pause et de manger Pomme.
-[DEBUG] Joueur 3363 - 467:Pomme détruit
-Clara tire une rafale par erreur en regardant sa M16.
-Émilie s'amuse à s'entrainer avec son pistolet Desert Eagle.
-Sofia regarde une Barre de céréales et décide finalement de ne pas le prendre.
-Lucas s'amuse à s'entrainer avec son pistolet Revolver .38.
-Jour 3 - Aucun mort !
-Player-test estime que une SSG 97 est plus intéressant que une SSG 97, il laisse donc une SSG 97 sur place.
-Marilou manque de se coupé en contemplant Machette.
-Clara regarde une MKA et décide finalement de ne pas le prendre.
-Rose s'ennuit, il serait temps d'aller fouiller son environnement.
-Samuel à tellement peur qu'il tire partout avec son Glock.
-Dylan ramasse un Katana dans une vielle maison.
-Clara ramasse un Ballon de basket mais décide de ne pas le prendre, pas très intéressant.
-Émilie vide un chargeur de son arme Desert Eagle dans un fouré après avoir vu quelque chose bougé.
-Sofia estime que un Revolver .38 est plus intéressant que un Beretta, il laisse donc un Beretta sur place.
-Lucas à tellement peur qu'il tire partout avec son Revolver .38.
-Jour 4 - Aucun mort !
-Player-test regarde une Kalachnikov mais n'y prête aucune attention.
-Marilou manque de se coupé en contemplant Machette.
-Clara pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
-Rose trouve une M16 dans un batiment en ruine.
-Samuel pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
-Dylan éguise frénétiquement Katana.
-Clara regarde une Casserole mais n'y prête aucune attention.
-Émilie à tellement peur qu'il tire partout avec son Desert Eagle.
-Sofia s'amuse à s'entrainer avec son pistolet Revolver .38.
-Lucas n'a rien trouvé d'intéressant ici.
-Jour 5 - Aucun mort !
-Player-test trouve un Sac à dos et gagne 2 places de plus de stockage, du coup il peut garder aussi une SSG 97.
-Marilou éguise frénétiquement Machette.
-Clara prend une Barre de céréales dans sa main mais finalement le laisse tomber au sol.
-Rose regarde un Ballon de foot et décide finalement de ne pas le prendre.
-Samuel utilise Grande trousse de secours pour ce soigner.
-[DEBUG] Joueur 3362 - 493:Grande trousse de secours détruit
-Dylan à fouillé toute la zone sans absolument rien trouvé.
-Clara ramasse une Grande trousse de secours et laisse une M16 à la place.
+Player-test trouve une Kalachnikov en fouillant un buisson.
+Léanne trouve une SSG 97 en fouillant un fourré.
+Sofia fouille ses poches mais n'a absolument rien....
+Noémie ramasse un Ballon de basket caché dans un arbre.
+Mia semble regarder s'il n'a pas quelque chose dans ses poches, mais elles sont vides.
 Émilie à fouillé toute la zone sans absolument rien trouvé.
-Sofia s'amuse à s'entrainer avec son pistolet Revolver .38.
-Lucas s'amuse à s'entrainer avec son pistolet Revolver .38.
+Emy ramasse un Anti douleur dans une vielle maison.
+Audrey trouve un Desert Eagle dans une armurie.
+Anaïs à fouillé toute la zone sans absolument rien trouvé.
+Alexia décide de faire une pause et de regarder ce qu'il a, c'est à dire une Pomme.
+Jour 2 - Aucun mort !
+Player-test ramasse un Revolver .38 mais décide de ne pas le prendre, pas très intéressant.
+Léanne ramasse un Couteau de chasse mais décide de ne pas le prendre, pas très intéressant.
+Sofia trouve un Beretta en fouillant un fourré.
+Noémie s'arrete et regarde ce qu'il possède : un Ballon de basket.
+Mia fait l'inventaire de ses possessions... rien.
+Émilie semble regarder s'il n'a pas quelque chose dans ses poches, mais elles sont vides.
+Emy s'arrete et regarde ce qu'il possède : un Anti douleur.
+Audrey décide de faire une pause et de regarder ce qu'il a, c'est à dire un Desert Eagle.
+Anaïs semble regarder s'il n'a pas quelque chose dans ses poches, mais elles sont vides.
+Alexia fait l'inventaire de ce qu'il possède : juste une Pomme.
+Jour 3 - Aucun mort !
+Player-test fait l'inventaire de ce qu'il possède : juste une Kalachnikov.
+Léanne fait l'inventaire de ce qu'il possède : juste une SSG 97.
+Sofia décide de faire une pause et de regarder ce qu'il a, c'est à dire un Beretta.
+Noémie décide de faire une pause et de regarder ce qu'il a, c'est à dire un Ballon de basket.
+Mia tombe par hasard sur une MKA en regardant le sol.
+Émilie fait l'inventaire de ses possessions... rien.
+Emy décide de faire une pause et de regarder ce qu'il a, c'est à dire un Anti douleur.
+Audrey s'arrete et regarde ce qu'il possède : un Desert Eagle.
+Anaïs fait l'inventaire de ses possessions... rien.
+Alexia trouve un Desert Eagle et décide de jetter une Pomme par manque de place.
+Jour 4 - Aucun mort !
+Player-test décide de faire une pause et de regarder ce qu'il a, c'est à dire une Kalachnikov.
+Léanne décide de faire une pause et de regarder ce qu'il a, c'est à dire une SSG 97.
+Sofia fait le choix de garder un Anti douleur qu'il vient de trouver et de laisser un Beretta à la place
+Noémie s'arrete et regarde ce qu'il possède : un Ballon de basket.
+Mia décide de faire une pause et de regarder ce qu'il a, c'est à dire une MKA.
+Émilie à fouillé toute la zone sans absolument rien trouvé.
+Emy ramasse une Barre de céréales mais décide de ne pas le prendre, pas très intéressant.
+Audrey prend un Glock dans sa main mais finalement le laisse tomber au sol.
+Anaïs ramasse un UZI SMG caché dans un arbre.
+Alexia fait l'inventaire de ce qu'il possède : juste un Desert Eagle.
+Jour 5 - Aucun mort !
+Player-test ramasse un Beretta mais décide de ne pas le prendre, pas très intéressant.
+Léanne prend un Ours en peluche dans sa main mais finalement le laisse tomber au sol.
+Sofia regarde une Pomme mais n'y prête aucune attention.
+Noémie décide de faire une pause et de regarder ce qu'il a, c'est à dire un Ballon de basket.
+Mia fait le choix de garder un Anti douleur qu'il vient de trouver et de laisser une MKA à la place
+Émilie ramasse une MKA caché dans un arbre.
+Emy ramasse une SKS mais décide de ne pas le prendre, pas très intéressant.
+Audrey trouve un Beretta et décide de jetter un Desert Eagle par manque de place.
+Anaïs regarde un Ballon de foot mais n'y prête aucune attention.
+Alexia prend une Boite de conserve dans sa main mais finalement le laisse tomber au sol.
 Jour 6 - Aucun mort !
-Player-test s'amuse à s'entrainer avec SSG 97
-Marilou prend un Anti douleur dans sa main mais finalement le laisse tomber au sol.
-Clara utilise Grande trousse de secours pour ce soigner.
-[DEBUG] Joueur 3360 - 493:Grande trousse de secours détruit
-Rose tire une rafale par erreur en regardant sa M16.
-Samuel trouve un Couteau de chasse dans une armurie et le range dans son Sac de sport.
-Dylan estime que une M16 est plus intéressant que un Katana, il laisse donc un Katana sur place.
-Clara regarde un Desert Eagle mais n'y prête aucune attention.
-Émilie s'amuse à s'entrainer avec son pistolet Desert Eagle.
-Sofia regarde une Barre de céréales mais n'y prête aucune attention.
-Lucas démonte minutieusement son Revolver .38 pour l'inspecter.
+Player-test regarde un Glock mais n'y prête aucune attention.
+Léanne prend un Téléphone dans sa main mais finalement le laisse tomber au sol.
+Sofia fait l'inventaire de ce qu'il possède : juste un Anti douleur.
+Noémie décide de faire une pause et de regarder ce qu'il a, c'est à dire un Ballon de basket.
+Mia fait l'inventaire de ce qu'il possède : juste un Anti douleur.
+Émilie prend un Katana dans sa main mais finalement le laisse tomber au sol.
+Emy s'arrete et regarde ce qu'il possède : un Anti douleur.
+Audrey fait l'inventaire de ce qu'il possède : juste un Beretta.
+Anaïs s'arrete et regarde ce qu'il possède : un UZI SMG.
+Alexia s'arrete et regarde ce qu'il possède : un Desert Eagle.
 Jour 7 - Aucun mort !
-Player-test panique et tire tout autour de lui avec sa SSG 97.
-Marilou manque de se coupé en contemplant Machette.
-Clara s'ennuit, il serait temps d'aller fouiller son environnement.
-Rose tire une rafale par erreur en nettoyant sa M16.
-Samuel fait le choix de garder une MKA qu'il vient de trouver et de laisser un Couteau de chasse à la place
-Dylan regarde un Cure dent et décide finalement de ne pas le prendre.
-Clara prend Grande trousse de secours pour récupérer un peu de vie.
-[DEBUG] Joueur 3364 - 493:Grande trousse de secours détruit
-Émilie pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
-Sofia prend une Casserole dans sa main mais finalement le laisse tomber au sol.
-Lucas démonte minutieusement son Revolver .38 pour l'inspecter.
+Player-test regarde un Ballon de foot mais n'y prête aucune attention.
+Léanne prend une Barre de céréales dans sa main mais finalement le laisse tomber au sol.
+Sofia à fouillé toute la zone sans absolument rien trouvé.
+Noémie s'arrete et regarde ce qu'il possède : un Ballon de basket.
+Mia s'arrete et regarde ce qu'il possède : un Anti douleur.
+Émilie s'arrete et regarde ce qu'il possède : une MKA.
+Emy regarde un Revolver .38 mais n'y prête aucune attention.
+Audrey ramasse un Beretta et laisse un Beretta à la place.
+Anaïs s'arrete et regarde ce qu'il possède : un UZI SMG.
+Alexia décide de faire une pause et de regarder ce qu'il a, c'est à dire un Desert Eagle.
 Jour 8 - Aucun mort !
-Player-test s'amuse à s'entrainer avec SSG 97
-Marilou manque de se coupé en contemplant Machette.
-Clara à faim mais n'a rien à ce mettre sous la dent.
-Rose tire une rafale par erreur en nettoyant sa M16.
-Samuel vide un chargeur de son arme Glock dans un fouré après avoir vu quelque chose bougé.
-Dylan prend un Ballon de basket dans sa main mais finalement le laisse tomber au sol.
-Clara s'ennuit, il serait temps d'aller fouiller son environnement.
-Émilie démonte minutieusement son Desert Eagle pour l'inspecter.
-Sofia vide un chargeur de son arme Revolver .38 dans un fouré après avoir vu quelque chose bougé.
-Lucas à tellement peur qu'il tire partout avec son Revolver .38.
+Player-test prend un Ballon de basket dans sa main mais finalement le laisse tomber au sol.
+Léanne décide de faire une pause et de regarder ce qu'il a, c'est à dire une SSG 97.
+Sofia pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
+Noémie fait l'inventaire de ce qu'il possède : juste un Ballon de basket.
+Mia à fouillé toute la zone sans absolument rien trouvé.
+Émilie regarde un Beretta mais n'y prête aucune attention.
+Emy à fouillé toute la zone sans absolument rien trouvé.
+Audrey fait l'inventaire de ce qu'il possède : juste un Beretta.
+Anaïs décide de faire une pause et de regarder ce qu'il a, c'est à dire un UZI SMG.
+Alexia décide de faire une pause et de regarder ce qu'il a, c'est à dire un Desert Eagle.
 Jour 9 - Aucun mort !
-Player-test ramasse une Grande trousse de secours dans une vielle maison et le range dans son Sac à dos.
-Marilou trouve un Revolver .38 et décide de jetter une Machette par manque de place.
-Clara s'ennuit, il serait temps d'aller fouiller son environnement.
-Rose ramasse une Pomme mais décide de ne pas le prendre, pas très intéressant.
-Samuel manque de se coupé en contemplant Couteau de chasse.
-Dylan ramasse un Sachet de bonbon mais décide de ne pas le prendre, pas très intéressant.
-Clara trouve un Sac de sport et gagne 2 places de plus de stockage.
-Émilie regarde une Machette et décide finalement de ne pas le prendre.
-Sofia vide un chargeur de son arme Revolver .38 dans un fouré après avoir vu quelque chose bougé.
-Lucas n'a rien trouvé d'intéressant ici.
+Player-test s'arrete et regarde ce qu'il possède : une Kalachnikov.
+Léanne s'arrete et regarde ce qu'il possède : une SSG 97.
+Sofia regarde une Machette mais n'y prête aucune attention.
+Noémie estime que un Couteau de chasse est plus intéressant que un Ballon de basket, il laisse donc un Ballon de basket sur place.
+Mia prend une Canette de soda dans sa main mais finalement le laisse tomber au sol.
+Émilie regarde une M16 mais n'y prête aucune attention.
+Emy décide de faire une pause et de regarder ce qu'il a, c'est à dire un Anti douleur.
+Audrey regarde un Ours en peluche mais n'y prête aucune attention.
+Anaïs ramasse une Machette mais décide de ne pas le prendre, pas très intéressant.
+Alexia décide de faire une pause et de regarder ce qu'il a, c'est à dire un Desert Eagle.
 Jour 10 - Aucun mort !
-Player-test ramasse un Ballon de basket mais décide de ne pas le prendre, pas très intéressant.
-Marilou regarde une Canette de soda mais n'y prête aucune attention.
-Clara s'ennuit, il serait temps d'aller fouiller son environnement.
-Rose tire une rafale par erreur en regardant sa M16.
-Samuel à tellement peur qu'il tire partout avec son Glock.
-Dylan s'amuse à s'entrainer avec M16
-Clara à faim mais n'a rien à ce mettre sous la dent.
-Émilie vide un chargeur de son arme Desert Eagle dans un fouré après avoir vu quelque chose bougé.
-Sofia trouve un Sac à dos et gagne 2 places de plus de stockage, du coup il peut garder aussi un Revolver .38.
-Lucas démonte minutieusement son Revolver .38 pour l'inspecter.
+Player-test s'arrete et regarde ce qu'il possède : une Kalachnikov.
+Léanne ramasse une SSG 97 et laisse une SSG 97 à la place.
+Sofia regarde une Machette et décide finalement de ne pas le prendre.
+Noémie ramasse une Canette de soda et laisse un Couteau de chasse à la place.
+Mia s'arrete et regarde ce qu'il possède : un Anti douleur.
+Émilie n'a rien trouvé d'intéressant ici.
+Emy décide de faire une pause et de regarder ce qu'il a, c'est à dire un Anti douleur.
+Audrey fait l'inventaire de ce qu'il possède : juste un Beretta.
+Anaïs estime que une FABARM est plus intéressant que un UZI SMG, il laisse donc un UZI SMG sur place.
+Alexia ramasse un UZI SMG et laisse un Desert Eagle à la place.
 Jour 11 - Aucun mort !
-Player-test prend Grande trousse de secours pour récupérer un peu de vie.
-[DEBUG] Joueur 3358 - 493:Grande trousse de secours détruit
-Marilou vide un chargeur de son arme Revolver .38 dans un fouré après avoir vu quelque chose bougé.
-Clara s'ennuit, il serait temps d'aller fouiller son environnement.
-Rose tire une rafale par erreur en regardant sa M16.
-Samuel vide un chargeur de son arme Glock dans un fouré après avoir vu quelque chose bougé.
-Dylan regarde une Pomme mais n'y prête aucune attention.
-Clara tombe par hasard sur une FABARM en regardant le sol et le range dans son Sac de sport.
-Émilie à tellement peur qu'il tire partout avec son Desert Eagle.
-Sofia démonte minutieusement son Revolver .38 pour l'inspecter.
-Lucas à tellement peur qu'il tire partout avec son Revolver .38.
+Player-test ramasse un UZI SMG mais décide de ne pas le prendre, pas très intéressant.
+Léanne décide de faire une pause et de regarder ce qu'il a, c'est à dire une SSG 97.
+Sofia pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
+Noémie décide de faire une pause et de regarder ce qu'il a, c'est à dire une Canette de soda.
+Mia s'arrete et regarde ce qu'il possède : un Anti douleur.
+Émilie regarde une MKA et décide finalement de ne pas le prendre.
+Emy trouve une Grande trousse de secours et décide de jetter un Anti douleur par manque de place.
+Audrey fait l'inventaire de ce qu'il possède : juste un Beretta.
+Anaïs fait l'inventaire de ce qu'il possède : juste une FABARM.
+Alexia n'a rien trouvé d'intéressant ici.
 Jour 12 - Aucun mort !
-Player-test ramasse une Machette caché dans un arbre et le range dans son Sac à dos.
-Marilou démonte minutieusement son Revolver .38 pour l'inspecter.
-Clara à fouillé toute la zone sans absolument rien trouvé.
-Rose panique et tire tout autour de lui avec sa M16.
-Samuel manque de se coupé en contemplant Couteau de chasse.
-Dylan n'a rien trouvé d'intéressant ici.
-Clara ramasse un Beretta caché dans un arbre et le range dans son Sac de sport.
-Émilie vide un chargeur de son arme Desert Eagle dans un fouré après avoir vu quelque chose bougé.
-Sofia ramasse une Kalachnikov dans une vielle maison et le range dans son Sac à dos.
-Lucas ramasse un Couteau de chasse mais décide de ne pas le prendre, pas très intéressant.
+Player-test n'a rien trouvé d'intéressant ici.
+Léanne fait l'inventaire de ce qu'il possède : juste une SSG 97.
+Sofia fait l'inventaire de ce qu'il possède : juste un Anti douleur.
+Noémie fait le choix de garder une Boite de conserve qu'il vient de trouver et de laisser une Canette de soda à la place
+Mia s'arrete et regarde ce qu'il possède : un Anti douleur.
+Émilie décide de faire une pause et de regarder ce qu'il a, c'est à dire une MKA.
+Emy fait l'inventaire de ce qu'il possède : juste une Grande trousse de secours.
+Audrey décide de faire une pause et de regarder ce qu'il a, c'est à dire un Beretta.
+Anaïs regarde une Casserole mais n'y prête aucune attention.
+Alexia ramasse une Pomme mais décide de ne pas le prendre, pas très intéressant.
 Jour 13 - Aucun mort !
-Player-test regarde une SKS mais n'y prête aucune attention.
-Marilou démonte minutieusement son Revolver .38 pour l'inspecter.
-Clara trouve un Couteau de chasse dans une armurie.
-Rose tire une rafale par erreur en regardant sa M16.
-Samuel fait le choix de garder une Machette qu'il vient de trouver et de laisser un Couteau de chasse à la place
-Dylan pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
-Clara estime que un Glock est plus intéressant que un Beretta, il laisse donc un Beretta sur place.
-Émilie démonte minutieusement son Desert Eagle pour l'inspecter.
-Sofia tire une rafale par erreur en nettoyant sa Kalachnikov.
-Lucas fait le choix de garder une FABARM qu'il vient de trouver et de laisser un Revolver .38 à la place
+Player-test fait l'inventaire de ce qu'il possède : juste une Kalachnikov.
+Léanne décide de faire une pause et de regarder ce qu'il a, c'est à dire une SSG 97.
+Sofia pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
+Noémie décide de faire une pause et de regarder ce qu'il a, c'est à dire une Boite de conserve.
+Mia décide de faire une pause et de regarder ce qu'il a, c'est à dire un Anti douleur.
+Émilie fait l'inventaire de ce qu'il possède : juste une MKA.
+Emy prend une MKA dans sa main mais finalement le laisse tomber au sol.
+Audrey regarde une Petite trousse de secours mais n'y prête aucune attention.
+Anaïs ramasse un Katana mais décide de ne pas le prendre, pas très intéressant.
+Alexia fait l'inventaire de ce qu'il possède : juste un UZI SMG.
 Jour 14 - Aucun mort !
 Jour 15 - Bravo à Player-test qui vient de gagner !
 -----------------------------------
