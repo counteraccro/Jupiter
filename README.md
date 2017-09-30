@@ -4,6 +4,12 @@ Le projet Jupiter est un simulateur de Battle Royale multijoueur ou chaque actio
 
 Le projet est actuellement en version 1.0
 
+### Versions
+
+Version | Commentaire
+------------ | -------------
+V1 | Mise en place du moteur du jeu, 15 actions et 120 situations possible actuellement. Mise en place du mode multijoueur
+
 ### Comment jouer
 Lancer le projet > Définissez le nom de votre joueur > Sélection automatique du lobby et attente d'autres joueurs > Lancement de la partie > Regarder le résultat
 
@@ -68,6 +74,11 @@ Voici la liste des améliorations/évolutions à venir
 * Ajout de l'action suivre
 * Ajout de l'action dons de sponsors
 * Ajout de la notion d'usure des armes
-* Ajout d'une personnalisation des joueurs
+* Ajout d'une personnalisation des joueurs IAs 
 * Ajout d'un caractère aux IA
 * Ajout de la notion de blessure
+* Ajout de statistiques en cours de parties
+* Mise en place d'une identitée visuelle
+* Mise en place d'une zone membre avec statistiques permanents (sur plusieurs parties)
+* Ajouter le cycle nuit
+* Mise en place de zone mortel
