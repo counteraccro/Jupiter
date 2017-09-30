@@ -42,12 +42,17 @@ Lancer le projet > Définissez le nom de votre joueur > Sélection automatique d
 
 `php bin/console doctrine:fixture:load`
 
-Étape 5: accès au projet via l'url 
+Etape 5: installation des assets
+
+`php bin/console assets:install`
+
+Étape 6: accès au projet via l'url 
 
 `http://localhost/jupiter/web/app_dev.php/`
 
 ### Personnalisation
-Il est possible de personnaliser certaines éléments du projet
+Il est possible de personnaliser certaines éléments du projet.
+**Attention la personnalisation est basé sur la V1, celle-ci peut avoir évoluée avec le temps**
 
 #### Le nom des bots
 À la création d'une partie, le programme remplit automatiquement les places libres par des bots. Ces bots sont générés de façon automatique via une liste de noms définis.
@@ -55,6 +60,9 @@ Vous pouvez modifier cette liste qui se trouve ici `jupiter\src\AppBundle\Resour
 
 #### Les logs des actions
 Chaque action est personnalisable dans le fichier `jupiter\src\AppBundle\Resources\data\logs.yml`
+
+#### les objets
+Chaque objet est personnalisable dans le fichier `jupiter\src\AppBundle\Resources\config\DataFixtures\Objects.yml`
 
 #### La probabilitée d'apparition de chaque action
 Vous pouvez influencer sur la probabilité d'apparition des actions dans le fichier `jupiter\src\AppBundle\Resources\data\random_actions_conditions.yml`
