@@ -1,13 +1,13 @@
-#Projet Jupiter#
+# Projet Jupiter
 
 Le projet Jupiter est un simulateur de Battle Royale multijoueur ou chaque action est définie de façon aléatoire mais cohérente.
 
 Le projet est actuellement en version 1.0
 
-###Comment jouer
+### Comment jouer
 Lancer le projet > Définissez le nom de votre joueur > Sélection automatique du lobby et attente d'autres joueurs > Lancement de la partie > Regarder le résultat
 
-###Installation du projet
+### Installation du projet
 
 **Le projet tourne avec les versions suivantes :**
 * Version de PHP : 7.0.10
@@ -40,20 +40,20 @@ Lancer le projet > Définissez le nom de votre joueur > Sélection automatique d
 
 `http://localhost/jupiter/web/app_dev.php/`
 
-###Personnalisation
+### Personnalisation
 Il est possible de personnaliser certaines éléments du projet
 
-####Le nom des bots
+#### Le nom des bots
 À la création d'une partie, le programme remplit automatiquement les places libres par des bots. Ces bots sont générés de façon automatique via une liste de noms définis.
 Vous pouvez modifier cette liste qui se trouve ici `jupiter\src\AppBundle\Resources\data\first_name.yml`
 
-####Les logs des actions
+#### Les logs des actions
 Chaque action est personnalisable dans le fichier `jupiter\src\AppBundle\Resources\data\logs.yml`
 
-####La probabilitée d'apparition de chaque action
+#### La probabilitée d'apparition de chaque action
 Vous pouvez influencer sur la probabilité d'apparition des actions dans le fichier `jupiter\src\AppBundle\Resources\data\random_actions_conditions.yml`
 
-####Le nombre maximum de joueur dans une partie
+#### Le nombre maximum de joueur dans une partie
 Vous pouvez modifier le nombre de joueurs maximum dans une partie en modifiant la variable suivante : `$this->nbPlaceMax = 10;` dans le fichier
 `jupiter\src\AppBundle\Entity\Lobby.php`
 
@@ -61,7 +61,7 @@ Par défaut, la valeur est à 10.
 
 **Attention plus la valeur sera grande et plus le temps d'exécution du script sera long**
 
-###Evolutions à venir
+### Evolutions à venir
 Voici la liste des améliorations/évolutions à venir
 * Ajout d'une notion aléatoire de contre et d'échec sur l'action tuer
 * Refonte des logs pour prendre en compte le joueur masculin et féminin
