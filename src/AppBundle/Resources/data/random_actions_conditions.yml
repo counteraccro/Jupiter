@@ -4,20 +4,20 @@ parameters:
             0: moving
             1: find
             2: inventory
-            3: wtf
-            4: various
+            3: find
+            4: find
         2:
             0: moving
             1: find
             2: inventory
-            3: wtf
-            4: various
+            3: find
+            4: find
         3:
             0: moving
             1: find
             2: inventory
-            3: wtf
-            4: various
+            3: find
+            4: find
         4:
             0: moving
             1: find

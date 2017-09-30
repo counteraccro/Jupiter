@@ -16,6 +16,25 @@ parameters:
             0: $player$ à décidé de ce suicider en ce jettant dans le vide.
             1: $player$ à fait une chute fatale en tombant sur la tête.
             2: $player$ se noie en tentant de traverser une rivière en crue.
+        kill_gun:
+            0: $player$ supprime $player_kill$ d'une balle en plein coeur.
+            1: $player$ élimine froidement $player_kill$ avec son $object$.
+            2: $player$ tue sans aucun remort $player_kill$ avec son $object$.
+        kill_rifle:
+            0: $player$ vide son chargeur de $object$ dans le ventre de $player_kill$.
+            1: $player$ tire une rafale de $object$ sur $player_kill$ qui s'écroule mort.
+            2: $player$ mitraille $player_kill$ sans aucun remort.
+        kill_sharp:
+            0: $player$ transperce $player_kill avec son $object$ par surprise.
+            1: $player$ blesse mortellement $player_kill avec son $object$.
+            2: $player$ plante $player_kill avec $object$ en le regardant droit dans les yeux.
+        kill_no_object:
+            0: $player$ pousse violament $player_kill$ dans le vide.
+            1: $player$ étrangle à main nue $player_kill$.
+            2: $player$ noie $player_kill$ dans la petite marre à côté de lui.
+            3: $player$ frappe mortellement $player_kill$ avec une barre de faire trouvé pendant l'action.
+            4: $player$ empalle $player_kill$ avec un bout de bois trouvé sur place.
+            5: $player$ explose la tête de $player_kill$ contre un mur après une bagarre acharnée.
         find:
             0: $player$ trouve $object$ en fouillant un fourré.
             1: $player$ trouve $object$ en fouillant un buisson.

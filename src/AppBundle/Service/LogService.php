@@ -94,16 +94,20 @@ class LogService extends AppService {
 	 * @param Player $playerKill
 	 * @param Lobby $lobby
 	 */
-	public function killLog(Player $player, Player $playerKill, Lobby $lobby, $action = self::ACTION_KILL)
+	public function killLog(Player $player, Player $playerKill, Lobby $lobby, $action, Object $object = null)
 	{
 		$strLog = $this->getRandomLog($action);
-		if($action == self::ACTION_KILL)
+		if($action == self::ACTION_SELF_KILL)
+		{
+			$strLog = $this->generateFinalLog($strLog, ['$player$' => $player->getName()]);
+		}
+		else if($action == self::ACTION_KILL_NO_OBJECT)
 		{
 			$strLog = $this->generateFinalLog($strLog, ['$player$' => $player->getName(), '$player_kill$' => $playerKill->getName()]);
 		}
-		else if($action == self::ACTION_SELF_KILL)
+		else
 		{
-			$strLog = $this->generateFinalLog($strLog, ['$player$' => $player->getName()]);
+			$strLog = $this->generateFinalLog($strLog, ['$player$' => $player->getName(), '$player_kill$' => $playerKill->getName(), '$object$' => $object->getName()]);
 		}
 		
 		$this->createLogEntity($player, $lobby, $strLog, 1);

@@ -5,6 +5,8 @@ namespace AppBundle\Service;
 class AppService {
 	const ACTION_MOVING = 'moving';
 	const ACTION_KILL = 'kill';
+	const ACTION_KILL_ = 'kill_';
+	const ACTION_KILL_NO_OBJECT = 'kill_no_object';
 	const ACTION_FIND = 'find';
 	const ACTION_FIND_WITH_BACKPACK = 'find_with_backpack';
 	const ACTION_FIND_LET_OBJECT = 'find_let_object';
@@ -22,12 +24,12 @@ class AppService {
 	const ACTION_VARIOUS = 'various';
 	const ACTION_USE = 'use';
 	const ACTION_USE_OBJECT_ = 'use_object_';
-	const ACTION_USE_OBJECT_VARIOUS = 'use_object_various';
+	/*const ACTION_USE_OBJECT_VARIOUS = 'use_object_various';
 	const ACTION_USE_OBJECT_GUN = 'use_object_gun';
 	const ACTION_USE_OBJECT_RIFLE = 'use_object_rifle';
 	const ACTION_USE_OBJECT_CARE = 'use_object_care';
 	const ACTION_USE_OBJECT_FOOD = 'use_object_food';
-	const ACTION_USE_OBJECT_SHARP = 'use_object_sharp';
+	const ACTION_USE_OBJECT_SHARP = 'use_object_sharp';*/
 	const ACTION_USE_NO_OBJECT = 'use_no_object';
 	const LOG_DAY = 'log_day';
 	const LOG_DAY_NO_KILL = 'no_kill';
@@ -35,6 +37,9 @@ class AppService {
 	const LOG_DAY_KILLS = 'kills';
 	const LOG_DAY_WINNER = 'winner';
 	const OBJECT_CONSUMABLE = 1;
+	const OBJECT_TYPE_GUN = 'gun';
+	const OBJECT_TYPE_RIFLE = 'rifle';
+	const OBJECT_TYPE_SHARP = 'sharp';
 	
 	/**
 	 * Maximum number of days of game duration
@@ -46,5 +51,5 @@ class AppService {
 	 * debug mode
 	 * @var string
 	 */
-	protected $debug = true;
+	protected $debug = false;
 }

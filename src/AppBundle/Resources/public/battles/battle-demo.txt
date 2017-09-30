@@ -156,3 +156,161 @@ Jour 14 - Aucun mort !
 Jour 15 - Bravo à Player-test qui vient de gagner !
 -----------------------------------
 
+Bienvenue à nos 10 joueurs qui sont : Player-test, Claire, Thomas, Charles, Elizabeth, Raphaël, Nathan, Chloé, Charlotte, Léa.
+Player-test tombe par hasard sur un Téléphone en regardant le sol.
+Claire ramasse une Pomme caché dans un arbre.
+Thomas semble regarder s'il n'a pas quelque chose dans ses poches, mais elles sont vides.
+Charles à fouillé toute la zone sans absolument rien trouvé.
+Elizabeth trouve un Sac à dos et gagne 2 places de plus de stockage.
+Raphaël trouve un Cure dent en fouillant un buisson.
+Nathan fait l'inventaire de ses possessions... rien.
+Chloé trouve un UZI SMG en fouillant un fourré.
+Charlotte fouille ses poches mais n'a absolument rien....
+Léa pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
+Jour 1 - Aucun mort !
+Player-test trouve un Glock et décide de jetter un Téléphone par manque de place.
+Claire estime que une M16 est plus intéressant que une Pomme, il laisse donc une Pomme sur place.
+Thomas trouve une Canette de soda dans un batiment en ruine.
+Charles trouve une Grande trousse de secours dans une armurie.
+Elizabeth trouve une FABARM en fouillant un fourré et le range dans son Sac à dos.
+Raphaël décide de faire une pause et de regarder ce qu'il a, c'est à dire un Cure dent.
+Nathan ramasse une SSG 97 caché dans un arbre.
+Chloé regarde une Canette de soda et décide finalement de ne pas le prendre.
+Charlotte tombe par hasard sur une Boite de conserve en regardant le sol.
+Léa trouve un Beretta en fouillant un fourré.
+Jour 2 - Aucun mort !
+Player-test ramasse un Glock mais décide de ne pas le prendre, pas très intéressant.
+Claire ramasse un Sachet de bonbon mais décide de ne pas le prendre, pas très intéressant.
+Thomas fait le choix de garder une MKA qu'il vient de trouver et de laisser une Canette de soda à la place
+Charles décide de faire une pause et de regarder ce qu'il a, c'est à dire une Grande trousse de secours.
+Elizabeth inspect son Sac à dos et liste ses trouvailles : une FABARM.
+Raphaël fait l'inventaire de ce qu'il possède : juste un Cure dent.
+Nathan fait l'inventaire de ce qu'il possède : juste une SSG 97.
+Chloé fait l'inventaire de ce qu'il possède : juste un UZI SMG.
+Charlotte trouve une M16 et décide de jetter une Boite de conserve par manque de place.
+Léa ramasse une MKA et laisse un Beretta à la place.
+Jour 3 - Aucun mort !
+Player-test s'arrete et regarde ce qu'il possède : un Glock.
+Claire n'a rien trouvé d'intéressant ici.
+Thomas trouve un Sac de sport et gagne 2 places de plus de stockage, du coup il peut garder aussi une MKA.
+Charles s'arrete et regarde ce qu'il possède : une Grande trousse de secours.
+Elizabeth tombe par hasard sur un Beretta en regardant le sol et le range dans son Sac à dos.
+Raphaël trouve un Ours en peluche et décide de jetter un Cure dent par manque de place.
+Nathan trouve un Sac à dos et gagne 2 places de plus de stockage, du coup il peut garder aussi une SSG 97.
+Chloé ramasse une MKA mais décide de ne pas le prendre, pas très intéressant.
+Charlotte fait l'inventaire de ce qu'il possède : juste une M16.
+Léa prend un UZI SMG dans sa main mais finalement le laisse tomber au sol.
+Jour 4 - Aucun mort !
+Player-test ramasse un Sachet de bonbon mais décide de ne pas le prendre, pas très intéressant.
+Claire s'arrete et regarde ce qu'il possède : une M16.
+Thomas fouille son Sac de sport et sort une MKA.
+Charles s'arrete et regarde ce qu'il possède : une Grande trousse de secours.
+Elizabeth regarde un Sachet de bonbon mais n'y prête aucune attention.
+Raphaël fait l'inventaire de ce qu'il possède : juste un Ours en peluche.
+Nathan fouille son Sac à dos et sort une SSG 97.
+Chloé trouve un Beretta et décide de jetter un UZI SMG par manque de place.
+Charlotte fait l'inventaire de ce qu'il possède : juste une M16.
+Léa décide de faire une pause et de regarder ce qu'il a, c'est à dire une MKA.
+Jour 5 - Aucun mort !
+Player-test regarde une Kalachnikov et décide finalement de ne pas le prendre.
+Claire n'a rien trouvé d'intéressant ici.
+Thomas inspect son Sac de sport et liste ses trouvailles : une MKA.
+Charles s'arrete et regarde ce qu'il possède : une Grande trousse de secours.
+Elizabeth fait le choix de garder une M16 qu'il vient de trouver et de laisser une FABARM à la place
+Raphaël estime que un Cure dent est plus intéressant que un Ours en peluche, il laisse donc un Ours en peluche sur place.
+Nathan inspect son Sac à dos et liste ses trouvailles : une SSG 97.
+Chloé pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
+Charlotte n'a rien trouvé d'intéressant ici.
+Léa décide de faire une pause et de regarder ce qu'il a, c'est à dire une MKA.
+Jour 6 - Aucun mort !
+Player-test décide de faire une pause et de regarder ce qu'il a, c'est à dire un Glock.
+Claire s'arrete et regarde ce qu'il possède : une M16.
+Thomas fouille son Sac de sport et sort une MKA.
+Charles décide de faire une pause et de regarder ce qu'il a, c'est à dire une Grande trousse de secours.
+Elizabeth regarde une Machette et décide finalement de ne pas le prendre.
+Raphaël ramasse une Canette de soda et laisse un Cure dent à la place.
+Nathan trouve une M16 en fouillant un fourré et le range dans son Sac à dos.
+Chloé décide de faire une pause et de regarder ce qu'il a, c'est à dire un Beretta.
+Charlotte regarde un Beretta mais n'y prête aucune attention.
+Léa regarde une Casserole et décide finalement de ne pas le prendre.
+Jour 7 - Aucun mort !
+Player-test ramasse un Revolver .38 et laisse un Glock à la place.
+Claire à fouillé toute la zone sans absolument rien trouvé.
+Thomas fouille son Sac de sport et sort une MKA.
+Charles regarde une Machette mais n'y prête aucune attention.
+Elizabeth fouille son Sac à dos et sort une FABARM et un Beretta.
+Raphaël trouve un Sac de sport et gagne 2 places de plus de stockage, du coup il peut garder aussi une Canette de soda.
+Nathan inspect son Sac à dos et liste ses trouvailles : une SSG 97 et une M16.
+Chloé s'arrete et regarde ce qu'il possède : un Beretta.
+Charlotte regarde une Barre de céréales et décide finalement de ne pas le prendre.
+Léa trouve une Petite trousse de secours et décide de jetter une MKA par manque de place.
+Jour 8 - Aucun mort !
+Player-test estime que une M16 est plus intéressant que un Revolver .38, il laisse donc un Revolver .38 sur place.
+Claire s'arrete et regarde ce qu'il possède : une M16.
+Thomas trouve un Ballon de foot dans une armurie et le range dans son Sac de sport.
+Charles fait l'inventaire de ce qu'il possède : juste une Grande trousse de secours.
+Elizabeth inspect son Sac à dos et liste ses trouvailles : une FABARM et un Beretta.
+Raphaël pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
+Nathan ramasse un Beretta mais décide de ne pas le prendre, pas très intéressant.
+Chloé regarde une Casserole mais n'y prête aucune attention.
+Charlotte s'arrete et regarde ce qu'il possède : une M16.
+Léa décide de faire une pause et de regarder ce qu'il a, c'est à dire une Petite trousse de secours.
+Jour 9 - Aucun mort !
+Player-test ramasse un Couteau de chasse mais décide de ne pas le prendre, pas très intéressant.
+Claire pensait avoir trouvé quelque chose mais en fait il n'en ai rien.
+Thomas trouve une MKA et décide de jetter une MKA par manque de place.
+Charles décide de faire une pause et de regarder ce qu'il a, c'est à dire une Grande trousse de secours.
+Elizabeth inspect son Sac à dos et liste ses trouvailles : une FABARM et un Beretta.
+Raphaël ramasse un Ballon de foot dans une vielle maison et le range dans son Sac de sport.
+Nathan décide de vider son Sac à dos pour faire l'inventaire de ce qu'il possède, c'est à dire une SSG 97 et une M16.
+Chloé ramasse un Sachet de bonbon mais décide de ne pas le prendre, pas très intéressant.
+Charlotte s'arrete et regarde ce qu'il possède : une M16.
+Léa s'arrete et regarde ce qu'il possède : une Petite trousse de secours.
+Jour 10 - Aucun mort !
+Player-test fait l'inventaire de ce qu'il possède : juste une M16.
+Claire fait l'inventaire de ce qu'il possède : juste une M16.
+Thomas n'a rien trouvé d'intéressant ici.
+Charles ramasse une Barre de céréales mais décide de ne pas le prendre, pas très intéressant.
+Elizabeth à fouillé toute la zone sans absolument rien trouvé.
+Raphaël estime que un Sac de sport est plus intéressant que une Canette de soda, il laisse donc une Canette de soda sur place.
+Nathan inspect son Sac à dos et liste ses trouvailles : une SSG 97 et une M16.
+Chloé trouve un Sac de sport et gagne 2 places de plus de stockage, du coup il peut garder aussi un Beretta.
+Charlotte n'a rien trouvé d'intéressant ici.
+Léa s'arrete et regarde ce qu'il possède : une Petite trousse de secours.
+Jour 11 - Aucun mort !
+Player-test s'arrete et regarde ce qu'il possède : une M16.
+Claire décide de faire une pause et de regarder ce qu'il a, c'est à dire une M16.
+Thomas inspect son Sac de sport et liste ses trouvailles : une MKA et un Ballon de foot.
+Charles fait l'inventaire de ce qu'il possède : juste une Grande trousse de secours.
+Elizabeth ramasse un Glock et laisse un Beretta à la place.
+Raphaël inspect son Sac de sport et liste ses trouvailles : une Canette de soda et un Ballon de foot.
+Nathan inspect son Sac à dos et liste ses trouvailles : une SSG 97 et une M16.
+Chloé fouille son Sac de sport et sort un Beretta.
+Charlotte fait l'inventaire de ce qu'il possède : juste une M16.
+Léa ramasse un Couteau de chasse mais décide de ne pas le prendre, pas très intéressant.
+Jour 12 - Aucun mort !
+Player-test estime que une M16 est plus intéressant que une M16, il laisse donc une M16 sur place.
+Claire prend un Beretta dans sa main mais finalement le laisse tomber au sol.
+Thomas trouve une M16 et décide de jetter une MKA par manque de place.
+Charles ramasse une Machette mais décide de ne pas le prendre, pas très intéressant.
+Elizabeth décide de vider son Sac à dos pour faire l'inventaire de ce qu'il possède, c'est à dire une FABARM et un Beretta.
+Raphaël décide de vider son Sac de sport pour faire l'inventaire de ce qu'il possède, c'est à dire une Canette de soda et un Ballon de foot.
+Nathan trouve une Kalachnikov et décide de jetter une SSG 97 par manque de place.
+Chloé trouve un Desert Eagle dans une armurie et le range dans son Sac de sport.
+Charlotte fait le choix de garder une SKS qu'il vient de trouver et de laisser une M16 à la place
+Léa fait le choix de garder un Anti douleur qu'il vient de trouver et de laisser une Petite trousse de secours à la place
+Jour 13 - Aucun mort !
+Player-test s'arrete et regarde ce qu'il possède : une M16.
+Claire s'arrete et regarde ce qu'il possède : une M16.
+Thomas fouille son Sac de sport et sort une MKA et un Ballon de foot.
+Charles prend une SKS dans sa main mais finalement le laisse tomber au sol.
+Elizabeth ramasse une Grande trousse de secours et laisse une FABARM à la place.
+Raphaël à fouillé toute la zone sans absolument rien trouvé.
+Nathan prend un Cure dent dans sa main mais finalement le laisse tomber au sol.
+Chloé trouve un UZI SMG et décide de jetter un Beretta par manque de place.
+Charlotte regarde une Pomme et décide finalement de ne pas le prendre.
+Léa prend une MKA dans sa main mais finalement le laisse tomber au sol.
+Jour 14 - Aucun mort !
+Jour 15 - Bravo à Player-test qui vient de gagner !
+-----------------------------------
+
