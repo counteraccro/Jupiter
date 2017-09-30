@@ -7,7 +7,7 @@ Le projet est actuellement en version 1.0
 ### Versions
 
 Date | Versions | Commentaires
------------- | -------------
+------------ | ------------ | -------------
 30/09/2017 | V1.0 | Mise en place du moteur du jeu, 15 actions et 120 situations possible actuellement. Mise en place du mode multijoueur
 
 ### Comment jouer
