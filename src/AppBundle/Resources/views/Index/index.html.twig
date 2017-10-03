@@ -8,9 +8,8 @@ Battle Royale
 
 
 <div id="global-bloc">
-	<h1>Welcome</h1>
+	<br /><br />
 	<div class="center-align">
-
 		<div class="preloader-wrapper small active">
 			<div class="spinner-layer spinner-red-only">
 				<div class="circle-clipper left">
@@ -32,20 +31,27 @@ Battle Royale
 {% endblock %}
 
 {% block javascripts %}
- <script type="text/javascript" src="{{ asset('/bundles/app/js/Index/Index.js') }}?{{ date().timestamp }}"></script>
- <script type="text/javascript" src="{{ asset('/bundles/app/js/HtmlRender.js') }}?{{ date().timestamp }}"></script>
- 
-<script type="text/javascript">
+<script type="text/javascript"
+	src="{{ asset('/bundles/app/js/Index/Index.js') }}?{{ date().timestamp }}"></script>
+<script type="text/javascript"
+	src="{{ asset('/bundles/app/js/HtmlRender.js') }}?{{ date().timestamp }}"></script>
 
-	HtmlRender.Launch();
+<script type="text/javascript">
 
 	var params = {
 		url_menu : '{{ path('ajax_game_menu') }}',
 		url_new_player : '{{ path('ajax_new_player_form')}}',
 	};
 
-	Index.Launch(params);
-	Index.LoadGameMenu();
+	$(document).ready(function()
+	{
+		$('.parallax').parallax();
+		HtmlRender.Launch();
+		Index.Launch(params);
+		Index.LoadGameMenu();
+  	});
+
+	
 </script>
 
 {% endblock %}

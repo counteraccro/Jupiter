@@ -90,3 +90,4 @@ Voici la liste des améliorations/évolutions à venir
 * Mise en place d'une zone membre avec statistiques permanents (sur plusieurs parties)
 * Ajouter le cycle nuit
 * Mise en place de zone mortel
+* Ajouter un mode par équipe

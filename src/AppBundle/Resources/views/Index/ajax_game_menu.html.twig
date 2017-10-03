@@ -1,14 +1,76 @@
-<h1>Welcome</h1>
-<div id="btn-bloc">
-	<a class="waves-effect waves-light btn" id="btn-fight">
-		<i class="material-icons left">trending_flat</i>Participer
-	</a> 
-	<a class="waves-effect waves-light btn" id="btn-see">
-		<i class="material-icons left">visibility</i>Regarder
-	</a>
+<div class="parallax-container">
+	<div class="parallax">
+		<img src="{{ asset('/bundles/app/img/fond.png') }}">
+	</div>
 </div>
+<div class="section white">
+	<div class="row container">
+		<h2 class="header">Commencer à Simuler</h2>
+		<div class="row">
+			<div class="col s6">
+				[BSR] est un simulateur de battle royale ou chaque action de chaque joueur est défini de façon aléatoire et cohérente. <br />Créer votre avatar et
+				regarder le tenter de survivre dans une guerre sans pitier en solo ou en multi-joueur. <br />
+				Dans tous les cas, à la fin il s'en restera qu'un ! Et ce ne sera pas toujours vous...
+				
+				<br /> <br /><blockquote><i>La mort est une belle journée qui mérite d'être vécu !</i></blockquote>
+				
+				<br /> Envi d'essayer, c'est simple, cliquez sur <b>Participer</b> choisissez un nom et regarder votre avatar gagner ou mourir !
+				
+			</div>
+			<div class="col s6">
+				
+				<div class="col s12 m2">
+					<p class="z-depth-1 center"><i class="material-icons medium">flight</i> Larguage</p>
+				</div>
+				<div class="col s12 m2">
+					<p class="z-depth-1 center"><i class="material-icons medium">autorenew</i> Rejouabilité</p>
+				</div>
+				<div class="col s12 m2">
+					<p class="z-depth-1 center"><i class="material-icons medium">chat</i>Intéraction</p>
+				</div>
+				<div class="col s12 m3">
+					<p class="z-depth-1 center"><i class="material-icons medium">directions_run</i> Déplacement</p>
+				</div>
+				<div class="col s12 m2">
+					<p class="z-depth-1 center"><i class="material-icons medium">group</i>Multi-joueur</p>
+				</div>
+				<div class="col s12 m2">
+					<p class="z-depth-1 center"><i class="material-icons medium">insert_emoticon</i>Emotions</p>
+				</div>
+				<div class="col s12 m2">
+					<p class="z-depth-1 center"><i class="material-icons medium">insert_chart</i>Statistiques</p>
+				</div>
+				<div class="col s12 m2">
+					<p class="z-depth-1 center"><i class="material-icons medium">airplanemode_active</i> Larguage</p>
+				</div>
+				<div class="col s12 m2">
+					<p class="z-depth-1 center"><i class="material-icons medium">airplanemode_active</i> Larguage</p>
+				</div>
+			</div>
+		</div>
+
+		<a class="waves-effect waves-light btn" id="btn-fight"> <i
+			class="material-icons left">trending_flat</i>Participer
+			</a> <a class="waves-effect waves-light btn" id="btn-see"> <i
+			class="material-icons left">visibility</i>Regarder
+			</a>
+		</div>
+	</div>
+</div>
+<div class="parallax-container">
+	<div class="parallax">
+		<img src="{{ asset('/bundles/app/img/fond-2.png') }}">
+	</div>
+</div>
+
 {% block javascripts %}
 <script type="text/javascript">
-	Index.EventAjaxGameMenu();
+
+$(document).ready(function()
+{
+    $('.parallax').parallax();
+    Index.EventAjaxGameMenu();
+  });
+
 </script>
 {% endblock %}
